@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import routes from "./config/routes";
 import Loader from "./components/Loader";
 
-function App() {
+const App = () => {
   return (
     <Suspense fallback={<Loader />}>
       <Router>
@@ -16,6 +16,6 @@ function App() {
       </Router>
     </Suspense>
   );
-}
+};
 
 export default App;

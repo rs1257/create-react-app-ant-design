@@ -53,6 +53,4 @@ TODO
 - Prettier
 - folder structure
 - deps
-- router/separate routes config file.
 - mock api
-- 404 not found page
