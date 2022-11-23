@@ -1,9 +1,12 @@
-const routes = [
+import { lazy } from "react";
+import { RouteObject } from "react-router-dom";
+
+const Test = lazy(() => import("../components/Test"));
+
+const routes: RouteObject[] = [
   {
-    name: "Test",
     path: "/test",
-    component: "Test",
-    element: "Test",
+    element: <Test />,
   },
 ];
 
