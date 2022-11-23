@@ -50,7 +50,7 @@ TODO
 - Husky Pre commit hooks
 - Linting
 - Tests/jest
-- Prettier
 - folder structure
 - deps
 - mock api
+- style lint

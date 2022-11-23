@@ -1,8 +1,8 @@
-import { Suspense } from "react";
-import "./App.scss";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import routes from "./config/routes";
-import Loader from "./components/Loader";
+import { Suspense } from 'react';
+import './App.scss';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import routes from './config/routes';
+import Loader from './components/Loader';
 
 const App = () => {
   return (
