@@ -52,7 +52,6 @@
     "eslint-plugin-react": "^7.31.11",
     "prettier": "^2.8.0",
     "stylelint": "^14.15.0",
-    "stylelint-a11y": "^1.2.3",
     "stylelint-config-prettier-scss": "0.0.1",
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-selector-bem-pattern": "^2.1.1"
