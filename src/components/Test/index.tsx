@@ -1,4 +1,4 @@
-const Test = () => {
+const Test = (): JSX.Element => {
   return <div>Test</div>;
 };
 
