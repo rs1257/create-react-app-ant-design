@@ -1,9 +1,5 @@
 {
-  "extends": [
-    "stylelint-config-standard-scss",
-    "stylelint-a11y/recommended",
-    "stylelint-config-prettier-scss"
-  ],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier-scss"],
   "plugins": ["stylelint-selector-bem-pattern"],
   "rules": {
     "plugin/selector-bem-pattern": {
