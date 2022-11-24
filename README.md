@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Versions
+
+Make sure the following versions are installed globally on your machine:
+node.js 18.12.1
+npm 8.19.2
+
+## Install Packages
+
+In the terminal run npm install
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -53,4 +63,4 @@ TODO
 - folder structure
 - deps
 - mock api
-- style lint
+- style lint - BEM rules & remove ignore array
