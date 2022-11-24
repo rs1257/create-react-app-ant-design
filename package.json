@@ -24,13 +24,13 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md,yml,yaml}": [
+    "**/*.{js,jsx,ts,tsx,json,css,scss,md,yml,yaml}": [
       "npm run format:fix"
     ],
-    "src/**/*.{ts,tsx}": [
+    "**/*.{ts,tsx}": [
       "npm run eslint"
     ],
-    "src/**/*.{css,scss}": [
+    "**/*.{css,scss}": [
       "npm run stylelint"
     ]
   },
