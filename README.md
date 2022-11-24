@@ -60,3 +60,4 @@ TODO
 - Husky Pre commit hooks
 - mock api
 - style lint - BEM rules & remove ignore array
+- Error boundary (catch all)
