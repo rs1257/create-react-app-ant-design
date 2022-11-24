@@ -59,4 +59,4 @@ TODO
 
 - mock api
 - style lint - BEM rules & remove ignore array
-- Error boundary (catch all)
+- Add tests to components that will stay
