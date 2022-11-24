@@ -58,9 +58,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 TODO
 
 - Husky Pre commit hooks
-- Linting
-- Tests/jest
-- folder structure
-- deps
 - mock api
 - style lint - BEM rules & remove ignore array

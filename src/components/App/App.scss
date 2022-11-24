@@ -36,6 +36,8 @@
   }
 }
 
-.block-asd {
-  columns: 12;
+.block_element {
+  &_element {
+    columns: 12;
+  }
 }
