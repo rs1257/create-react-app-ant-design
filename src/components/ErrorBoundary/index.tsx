@@ -30,8 +30,7 @@ class ErrorBoundary extends Component<Props, State> {
         <div className="error-boundary">
           <h2>Oops... Something went wrong.</h2>
           <details>
-            {this.state.error && this.state.error.toString()}
-            <br />
+            <div>{this.state.error && this.state.error.toString()}</div>
             {this.state.errorInfo?.componentStack}
           </details>
         </div>
