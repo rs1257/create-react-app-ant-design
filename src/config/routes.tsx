@@ -6,7 +6,39 @@ const PageNotFound = lazy(() => import('../pages/Error/PageNotFound'));
 
 const routes: RouteObject[] = [
   {
-    path: '/test',
+    path: '/',
+    element: <Test />,
+  },
+  {
+    path: '/StatusView',
+    element: <Test />,
+  },
+  {
+    path: '/InstantaneousView',
+    element: <Test />,
+  },
+  {
+    path: '/UserDefinedDownload',
+    element: <Test />,
+  },
+  {
+    path: '/DataItemExplorer',
+    element: <Test />,
+  },
+  {
+    path: '/ReportExplorer',
+    element: <Test />,
+  },
+  {
+    path: '/Links',
+    element: <Test />,
+  },
+  {
+    path: '/EntryZoneGraphs',
+    element: <Test />,
+  },
+  {
+    path: '/EntryZoneGraphsPage',
     element: <Test />,
   },
   { path: '*', element: <PageNotFound /> },
