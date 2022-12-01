@@ -1,45 +1,53 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Test = lazy(() => import('../components/Test'));
+const Home = lazy(() => import('../pages/Home'));
+const StatusView = lazy(() => import('../pages/StatusView'));
+const InstantaneousView = lazy(() => import('../pages/InstantaneousView'));
+const UserDefinedDownload = lazy(() => import('../pages/UserDefinedDownload'));
+const DataItemExplorer = lazy(() => import('../pages/DataItemExplorer'));
+const ReportExplorer = lazy(() => import('../pages/ReportExplorer'));
+const Links = lazy(() => import('../pages/Links'));
+const EntryZoneGraphs = lazy(() => import('../pages/EntryZoneGraphs'));
 const PageNotFound = lazy(() => import('../pages/Error/PageNotFound'));
 
-const routes: RouteObject[] = [
+type CustomRouteObject = RouteObject & {
+  hideHeader?: boolean;
+  hideFooter?: boolean;
+};
+
+const routes: CustomRouteObject[] = [
   {
     path: '/',
-    element: <Test />,
+    element: <Home />,
   },
   {
     path: '/StatusView',
-    element: <Test />,
+    element: <StatusView />,
   },
   {
     path: '/InstantaneousView',
-    element: <Test />,
+    element: <InstantaneousView />,
   },
   {
     path: '/UserDefinedDownload',
-    element: <Test />,
+    element: <UserDefinedDownload />,
   },
   {
     path: '/DataItemExplorer',
-    element: <Test />,
+    element: <DataItemExplorer />,
   },
   {
     path: '/ReportExplorer',
-    element: <Test />,
+    element: <ReportExplorer />,
   },
   {
     path: '/Links',
-    element: <Test />,
+    element: <Links />,
   },
   {
     path: '/EntryZoneGraphs',
-    element: <Test />,
-  },
-  {
-    path: '/EntryZoneGraphsPage',
-    element: <Test />,
+    element: <EntryZoneGraphs />,
   },
   { path: '*', element: <PageNotFound /> },
 ];
