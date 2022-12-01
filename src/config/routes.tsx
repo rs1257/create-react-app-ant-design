@@ -4,7 +4,12 @@ import { RouteObject } from 'react-router-dom';
 const Test = lazy(() => import('../components/Test'));
 const PageNotFound = lazy(() => import('../pages/Error/PageNotFound'));
 
-const routes: RouteObject[] = [
+type CustomRouteObject = RouteObject & {
+  hideHeader?: boolean;
+  hideFooter?: boolean;
+};
+
+const routes: CustomRouteObject[] = [
   {
     path: '/',
     element: <Test />,
