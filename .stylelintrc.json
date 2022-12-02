@@ -5,5 +5,5 @@
     "selector-nested-pattern": "^[a-z&.](([a-z]+-?)+)?(__([a-z]+-?)+)?(--([a-z]+-?)+){0,2}$",
     "declaration-no-important": true
   },
-  "ignoreFiles": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
+  "ignoreFiles": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.snap"]
 }

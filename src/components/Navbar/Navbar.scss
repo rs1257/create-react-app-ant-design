@@ -1,0 +1,12 @@
+.navbar {
+  &__menu {
+    background-color: #0079c1;
+    color: #fff;
+  }
+}
+
+.ant-layout {
+  .navbar {
+    background: #0079c1;
+  }
+}

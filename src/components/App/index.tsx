@@ -7,30 +7,39 @@ import { Suspense } from 'react';
 import Loader from '../Loader';
 import Navbar from '../Navbar';
 import PageFooter from '../Footer';
+import { ConfigProvider } from 'antd';
 
 const App = (): JSX.Element => {
   return (
-    <Suspense fallback={<Loader />}>
-      <ErrorBoundary>
-        <Router>
-          <Routes>
-            {routes.map(({ element, path, hideHeader, hideFooter }, index) => (
-              <Route
-                key={index}
-                element={
-                  <Layout
-                    page={element}
-                    header={!hideHeader ? <Navbar /> : undefined}
-                    footer={!hideFooter ? <PageFooter /> : undefined}
-                  />
-                }
-                path={path}
-              />
-            ))}
-          </Routes>
-        </Router>
-      </ErrorBoundary>
-    </Suspense>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: '#0079c1',
+        },
+      }}
+    >
+      <Suspense fallback={<Loader />}>
+        <ErrorBoundary>
+          <Router>
+            <Routes>
+              {routes.map(({ element, path, hideHeader, hideFooter }, index) => (
+                <Route
+                  key={index}
+                  element={
+                    <Layout
+                      page={element}
+                      header={!hideHeader ? <Navbar /> : undefined}
+                      footer={!hideFooter ? <PageFooter /> : undefined}
+                    />
+                  }
+                  path={path}
+                />
+              ))}
+            </Routes>
+          </Router>
+        </ErrorBoundary>
+      </Suspense>
+    </ConfigProvider>
   );
 };
 
