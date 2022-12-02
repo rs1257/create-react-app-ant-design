@@ -1,7 +1,10 @@
 import { render } from '@testing-library/react';
 import App from '..';
 
-test('renders learn react link', () => {
-  render(<App />);
-  expect(true).toBeTruthy();
+describe('App component', () => {
+  it('should display App component when rendered', () => {
+    const { container } = render(<App />);
+
+    expect(container).toBeTruthy();
+  });
 });

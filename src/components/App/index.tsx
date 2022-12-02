@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import routes from '../../config/routes';
 import ErrorBoundary from '../ErrorBoundary';
 import Layout from '../Layout';
-import { ReactElement } from 'react';
+import { ReactElement, Suspense } from 'react';
+import Loader from '../Loader';
 
 const Header = (): ReactElement => {
   return <div>Header</div>;
@@ -15,25 +16,27 @@ const Footer = (): ReactElement => {
 
 const App = (): JSX.Element => {
   return (
-    <ErrorBoundary>
-      <Router>
-        <Routes>
-          {routes.map(({ element, path, hideHeader, hideFooter }, index) => (
-            <Route
-              key={index}
-              element={
-                <Layout
-                  page={element}
-                  header={!hideHeader ? <Header /> : undefined}
-                  footer={!hideFooter ? <Footer /> : undefined}
-                />
-              }
-              path={path}
-            />
-          ))}
-        </Routes>
-      </Router>
-    </ErrorBoundary>
+    <Suspense fallback={<Loader />}>
+      <ErrorBoundary>
+        <Router>
+          <Routes>
+            {routes.map(({ element, path, hideHeader, hideFooter }, index) => (
+              <Route
+                key={index}
+                element={
+                  <Layout
+                    page={element}
+                    header={!hideHeader ? <Header /> : undefined}
+                    footer={!hideFooter ? <Footer /> : undefined}
+                  />
+                }
+                path={path}
+              />
+            ))}
+          </Routes>
+        </Router>
+      </ErrorBoundary>
+    </Suspense>
   );
 };
 
