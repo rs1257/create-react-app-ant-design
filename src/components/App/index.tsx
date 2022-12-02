@@ -3,13 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import routes from '../../config/routes';
 import ErrorBoundary from '../ErrorBoundary';
 import Layout from '../Layout';
-import { ReactElement, Suspense } from 'react';
+import { Suspense } from 'react';
 import Loader from '../Loader';
 import Navbar from '../Navbar';
-
-const Footer = (): ReactElement => {
-  return <div>Footer</div>;
-};
+import PageFooter from '../Footer';
 
 const App = (): JSX.Element => {
   return (
@@ -24,7 +21,7 @@ const App = (): JSX.Element => {
                   <Layout
                     page={element}
                     header={!hideHeader ? <Navbar /> : undefined}
-                    footer={!hideFooter ? <Footer /> : undefined}
+                    footer={!hideFooter ? <PageFooter /> : undefined}
                   />
                 }
                 path={path}
