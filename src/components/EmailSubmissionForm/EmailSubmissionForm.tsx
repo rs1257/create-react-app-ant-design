@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, ReactElement } from 'react';
 import { Button, Form, Input } from 'antd';
 import './EmailSubmissionForm.scss';
 
@@ -7,8 +7,8 @@ interface formValues {
 }
 
 const layout = {
-  labelCol: { span: 4 },
-  wrapperCol: { span: 16 },
+  labelCol: { lg: { span: 4 }, sm: { span: 6 }, xs: { span: 10 } },
+  wrapperCol: { lg: { span: 16 }, sm: { span: 10 } },
 };
 
 const validateMessages = {
@@ -18,13 +18,17 @@ const validateMessages = {
   },
 };
 
-const EmailSubmissionForm: FC = () => {
-  const submitRequest = (values: formValues): void => {
-    //eslint-disable-next-line
-    console.log(values);
-    //ToDo - Use API to send data via email, or use emailjs
-  };
+export const submitRequest = (values: formValues): void => {
+  //eslint-disable-next-line
+  console.log(values);
+  //ToDo - Use API to send data via email, or use emailjs
+};
 
+interface Props {
+  submitRequest: (values: formValues) => void;
+}
+
+const EmailSubmissionForm: FC<Props> = ({ submitRequest }): ReactElement => {
   return (
     <div className="email-submission-form">
       <Form
@@ -48,7 +52,7 @@ const EmailSubmissionForm: FC = () => {
           label="Requested Data"
           rules={[{ required: true }]}
         >
-          <Input.TextArea />
+          <Input.TextArea autoSize={{ minRows: 3, maxRows: 10 }} />
         </Form.Item>
         <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 18 }}>
           <Button type="primary" htmlType="submit">
