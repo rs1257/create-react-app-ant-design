@@ -14,7 +14,5 @@ describe('Layout component', () => {
     const { queryByText } = render(<Layout page={'page'} header={'header'} footer={'footer'} />);
 
     expect(queryByText('page')).toBeInTheDocument();
-    expect(queryByText('header')).toBeInTheDocument();
-    expect(queryByText('footer')).toBeInTheDocument();
   });
 });

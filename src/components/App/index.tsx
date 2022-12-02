@@ -5,10 +5,7 @@ import ErrorBoundary from '../ErrorBoundary';
 import Layout from '../Layout';
 import { ReactElement, Suspense } from 'react';
 import Loader from '../Loader';
-
-const Header = (): ReactElement => {
-  return <div>Header</div>;
-};
+import Navbar from '../Navbar';
 
 const Footer = (): ReactElement => {
   return <div>Footer</div>;
@@ -26,7 +23,7 @@ const App = (): JSX.Element => {
                 element={
                   <Layout
                     page={element}
-                    header={!hideHeader ? <Header /> : undefined}
+                    header={!hideHeader ? <Navbar /> : undefined}
                     footer={!hideFooter ? <Footer /> : undefined}
                   />
                 }

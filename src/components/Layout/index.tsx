@@ -1,4 +1,5 @@
 import { ReactElement, ReactNode, FC } from 'react';
+import { Layout as AntLayout } from 'antd';
 import './layout.scss';
 
 type LayoutType = {
@@ -9,11 +10,11 @@ type LayoutType = {
 
 const Layout: FC<LayoutType> = ({ header, footer, page }): ReactElement => {
   return (
-    <div className="layout">
-      {header && <div className="layout__header">{header}</div>}
+    <AntLayout className="layout">
+      {header}
       <div className="layout__content">{page}</div>
-      {footer && <div className="layout__header">{footer}</div>}
-    </div>
+      {footer}
+    </AntLayout>
   );
 };
 
