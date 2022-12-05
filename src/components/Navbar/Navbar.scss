@@ -2,6 +2,10 @@
   &__menu {
     background-color: #0079c1;
     color: #fff;
+
+    &:focus {
+      color: #fff;
+    }
   }
 }
 

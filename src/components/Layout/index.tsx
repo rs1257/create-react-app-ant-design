@@ -11,9 +11,9 @@ type LayoutType = {
 const Layout: FC<LayoutType> = ({ header, footer, page }): ReactElement => {
   return (
     <AntLayout className="layout">
-      {header}
+      <div>{header}</div>
       <div className="layout__content">{page}</div>
-      {footer}
+      <div>{footer}</div>
     </AntLayout>
   );
 };
