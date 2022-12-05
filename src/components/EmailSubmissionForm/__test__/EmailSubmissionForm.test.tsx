@@ -4,19 +4,17 @@ import EmailSubmissionForm from '..';
 
 describe('should have empty fields by default', () => {
   const submitRequest = jest.fn();
+  const { queryByRole } = render(<EmailSubmissionForm submitRequest={submitRequest} />);
+  const nameInput = queryByRole('textbox', { name: 'Name' });
+  const emailInput = queryByRole('textbox', { name: 'Email' });
+  const requestInput = queryByRole('textbox', { name: 'Requested Data' });
   it('Should have empty name input by default', () => {
-    render(<EmailSubmissionForm submitRequest={submitRequest} />);
-    const nameInput = screen.getByRole('textbox', { name: 'Name' });
     expect(nameInput).toHaveTextContent('');
   });
   it('Should have empty email input by default', () => {
-    render(<EmailSubmissionForm submitRequest={submitRequest} />);
-    const emailInput = screen.getByRole('textbox', { name: 'Email' });
     expect(emailInput).toHaveTextContent('');
   });
   it('Should have empty name input by default', () => {
-    render(<EmailSubmissionForm submitRequest={submitRequest} />);
-    const requestInput = screen.getByRole('textbox', { name: 'Requested Data' });
     expect(requestInput).toHaveTextContent('');
   });
 });
