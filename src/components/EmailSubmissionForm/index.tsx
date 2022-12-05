@@ -24,11 +24,11 @@ export const submitRequest = (values: formValues): void => {
   //ToDo - Use API to send data via email, or use emailjs
 };
 
-interface Props {
+export type EmailSubmissionFormProps = {
   submitRequest: (values: formValues) => void;
-}
+};
 
-const EmailSubmissionForm: FC<Props> = ({ submitRequest }): ReactElement => {
+const EmailSubmissionForm: FC<EmailSubmissionFormProps> = ({ submitRequest }): ReactElement => {
   return (
     <div className="email-submission-form">
       <Form

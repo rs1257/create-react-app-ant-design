@@ -1,6 +1,6 @@
 import { act, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import EmailSubmissionForm from '../EmailSubmissionForm';
+import EmailSubmissionForm from '..';
 
 describe('should have empty fields by default', () => {
   const submitRequest = jest.fn();
