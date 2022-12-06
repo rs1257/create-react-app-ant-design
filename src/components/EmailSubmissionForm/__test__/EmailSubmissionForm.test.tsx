@@ -31,6 +31,7 @@ describe('should type text correctly', () => {
     await act(() => {
       userEvent.type(nameInput, 'Test Name');
     });
+
     expect(nameInput).toHaveValue('Test Name');
   });
   it('should insert text into email input', async () => {
@@ -39,6 +40,7 @@ describe('should type text correctly', () => {
     await act(() => {
       userEvent.type(emailInput, 'test@gmail.com');
     });
+
     expect(emailInput).toHaveValue('test@gmail.com');
   });
   it('should insert text into request input', async () => {
@@ -47,6 +49,28 @@ describe('should type text correctly', () => {
     await act(() => {
       userEvent.type(requestInput, 'Test Request');
     });
+
     expect(requestInput).toHaveValue('Test Request');
+  });
+});
+
+describe('Form should submit when correct values entered and submit button hit', () => {
+  it('should call submit request when form submitted', async () => {
+    const submitRequest = jest.fn();
+    const { findByRole } = render(<EmailSubmissionForm submitRequest={submitRequest} />);
+    const nameInput = await findByRole('textbox', { name: 'Name' });
+    const emailInput = await findByRole('textbox', { name: 'Email' });
+    const requestInput = await findByRole('textbox', { name: 'Requested Data' });
+    const submitButton = await findByRole('button', { name: 'Submit' });
+    await act(() => {
+      userEvent.type(nameInput, 'Test Name');
+      userEvent.type(emailInput, 'test@gmail.com');
+      userEvent.type(requestInput, 'Test Request');
+    });
+    await act(() => {
+      userEvent.click(submitButton);
+    });
+
+    expect(submitRequest).toHaveBeenCalled();
   });
 });

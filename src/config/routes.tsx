@@ -14,42 +14,51 @@ const PageNotFound = lazy(() => import('../pages/Error/PageNotFound'));
 type CustomRouteObject = RouteObject & {
   hideHeader?: boolean;
   hideFooter?: boolean;
+  name: string;
 };
 
 const routes: CustomRouteObject[] = [
   {
     path: '/',
+    name: 'home',
     element: <Home />,
   },
   {
     path: '/StatusView',
+    name: 'statusView',
     element: <StatusView />,
   },
   {
     path: '/InstantaneousView',
+    name: 'instantaneousView',
     element: <InstantaneousView />,
   },
   {
     path: '/UserDefinedDownload',
+    name: 'userDefinedDownload',
     element: <UserDefinedDownload />,
   },
   {
     path: '/DataItemExplorer',
+    name: 'dataItemExplorer',
     element: <DataItemExplorer />,
   },
   {
     path: '/ReportExplorer',
+    name: 'reportExplorer',
     element: <ReportExplorer />,
   },
   {
     path: '/Links',
+    name: 'links',
     element: <Links />,
   },
   {
     path: '/EntryZoneGraphs',
+    name: 'entryZoneGraphs',
     element: <EntryZoneGraphs />,
   },
-  { path: '*', element: <PageNotFound /> },
+  { path: '*', name: 'notFound', element: <PageNotFound /> },
 ];
 
 export default routes;
