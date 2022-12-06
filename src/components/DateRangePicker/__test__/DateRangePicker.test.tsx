@@ -1,4 +1,5 @@
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import dayjs from 'dayjs';
 import DateRangePicker from '..';
 
@@ -45,5 +46,30 @@ describe('should render dates correctly', () => {
     );
     const endDate = (await findByPlaceholderText('End date')) as HTMLInputElement;
     expect(endDate.value).toEqual(dates[1]);
+  });
+});
+
+describe('Handle change function should set date range state', () => {
+  it('Should call setDateRange when dates changed', async () => {
+    const setDateRange = jest.fn();
+    const { queryByRole, findByPlaceholderText, queryByLabelText } = render(
+      <DateRangePicker dateRange={null} setDateRange={setDateRange} />
+    );
+    const startDate = (await findByPlaceholderText('Start date')) as HTMLInputElement;
+    const endDate = (await findByPlaceholderText('End date')) as HTMLInputElement;
+    const clearButton = queryByLabelText('close-circle') as HTMLElement;
+    await waitFor(() => {
+      userEvent.click(clearButton);
+    });
+    await waitFor(() => {
+      const button = queryByRole('button', { name: /ok/i }) as HTMLButtonElement;
+      userEvent.type(startDate, '2022-08-12 12:00:00');
+      userEvent.click(button);
+      userEvent.type(endDate, '2022-10-12 12:00:00');
+      userEvent.click(button);
+    });
+    await waitFor(() => {
+      expect(setDateRange).toHaveBeenCalled();
+    });
   });
 });

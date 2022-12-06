@@ -10,10 +10,12 @@ const { RangePicker } = DatePicker;
 export const handleChange = (
   values: RangeValue<Dayjs>,
   formatString: [string, string],
-  setValue: (values: RangeValue<Dayjs>) => void,
+  setDisplayValue: (values: RangeValue<Dayjs>) => void,
   setDateRange: (values: [string, string]) => void
 ): void => {
-  setValue(values);
+  // eslint-disable-next-line no-console
+  console.log('here');
+  setDisplayValue(values);
   setDateRange(formatString);
 };
 
@@ -29,19 +31,19 @@ export const getValue = (dateRange?: [string, string] | null): RangeValue<Dayjs>
 
 const DateRangePicker: FC<DateRangePickerProps> = ({ dateRange, setDateRange }): ReactElement => {
   const defaultValue = getValue(dateRange);
-  const [value, setValue] = useState<[EventValue<dayjs.Dayjs>, EventValue<dayjs.Dayjs>] | null>(
-    defaultValue
-  );
+  const [displayValue, setDisplayValue] = useState<
+    [EventValue<dayjs.Dayjs>, EventValue<dayjs.Dayjs>] | null
+  >(defaultValue);
 
   return (
     <div className="date-picker">
       <RangePicker
         allowClear
-        value={value}
+        value={displayValue}
         showTime={{ defaultValue: [dayjs('00:00:00', 'HH:mm:ss'), dayjs('11:59:59', 'HH:mm:ss')] }}
         showNow
         onChange={(values: RangeValue<Dayjs>, formatString: [string, string]): void =>
-          handleChange(values, formatString, setValue, setDateRange)
+          handleChange(values, formatString, setDisplayValue, setDateRange)
         }
       />
     </div>
