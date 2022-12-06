@@ -13,8 +13,6 @@ export const handleChange = (
   setDisplayValue: (values: RangeValue<Dayjs>) => void,
   setDateRange: (values: [string, string]) => void
 ): void => {
-  // eslint-disable-next-line no-console
-  console.log('here');
   setDisplayValue(values);
   setDateRange(formatString);
 };
