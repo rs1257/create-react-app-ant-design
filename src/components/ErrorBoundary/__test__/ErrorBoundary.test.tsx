@@ -15,6 +15,11 @@ const ValidTestComponent = (): JSX.Element => {
 };
 
 describe('Error Boundary', () => {
+  beforeEach(() => {
+    jest.spyOn(console, 'error').mockImplementation(() => {
+      //** This is to remove annoying error warning (which is correctly thrown)
+    });
+  });
   it('Should catch error in component', () => {
     render(
       <ErrorBoundary>

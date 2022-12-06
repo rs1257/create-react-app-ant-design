@@ -1,6 +1,10 @@
 import { act, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import EmailSubmissionForm from '..';
+//** Removes incorrect email invalidation on tests
+//eslint-disable-next-line
+// @ts-ignore
+global.ASYNC_VALIDATOR_NO_WARNING = 1;
 
 describe('should have empty fields by default', () => {
   const submitRequest = jest.fn();
