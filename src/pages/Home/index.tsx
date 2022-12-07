@@ -1,5 +1,6 @@
 import CustomButton from '../../components/CustomButton';
 import LinkButton from '../../components/LinkButton';
+import Loader from '../../components/Loader';
 import './Home.scss';
 
 const Home = (): JSX.Element => {
@@ -46,6 +47,10 @@ const Home = (): JSX.Element => {
         <LinkButton size="large" href={'#'}>
           Click Me
         </LinkButton>
+      </div>
+      <div>
+        <h1>Loader</h1>
+        <Loader />
       </div>
     </>
   );
