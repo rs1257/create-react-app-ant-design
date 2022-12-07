@@ -12,6 +12,13 @@ export interface CustomButtonProps {
   children: ReactNode;
 }
 
+export type LinkButtonProps = {
+  size?: SizeType;
+  href: string;
+  target?: string;
+  children: ReactNode;
+};
+
 export interface DateRangePickerProps {
   dateRange?: [string, string] | null;
   setDateRange: (date: [string, string]) => void;

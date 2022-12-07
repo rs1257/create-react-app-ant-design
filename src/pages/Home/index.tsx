@@ -1,4 +1,5 @@
 import CustomButton from '../../components/CustomButton';
+import LinkButton from '../../components/LinkButton';
 import './Home.scss';
 
 const Home = (): JSX.Element => {
@@ -35,6 +36,16 @@ const Home = (): JSX.Element => {
         <CustomButton size="small" onClick={onClick}>
           Click Me
         </CustomButton>
+      </div>
+
+      <div>
+        <h1>Link</h1>
+        <LinkButton size="large" href={'#'} target="_blank">
+          Click Me New tab
+        </LinkButton>
+        <LinkButton size="large" href={'#'}>
+          Click Me
+        </LinkButton>
       </div>
     </>
   );
