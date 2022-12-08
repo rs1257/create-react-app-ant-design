@@ -1,43 +1,23 @@
 import { FilterOutlined } from '@ant-design/icons';
-import { InputRef } from 'antd';
 import type { ColumnsType, ColumnType } from 'antd/es/table';
-import { FilterConfirmProps } from 'antd/es/table/interface';
-import { Dispatch, RefObject, SetStateAction } from 'react';
 import Highlighter from 'react-highlight-words';
+import { DataTableColumnsProps } from '../../../types/props';
 import { DataIndex, DataType } from '../dummyData';
 import FilterDropdown from './FilterDropdown';
 
-interface ColumnsProps {
-  searchInput: RefObject<InputRef>;
-  handleSearch: (
-    selectedKeys: string[],
-    confirm: (param?: FilterConfirmProps) => void,
-    dataIndex: DataIndex
-  ) => void;
-  searchText: string;
-  setSearchText: Dispatch<SetStateAction<string>>;
-  handleReset: (clearFilters: () => void) => void;
-  searchedColumn: string;
-  setSearchedColumn: Dispatch<SetStateAction<string>>;
-}
-
 const Columns = ({
   searchInput,
-  handleSearch,
   searchText,
   setSearchText,
-  handleReset,
   searchedColumn,
   setSearchedColumn,
-}: ColumnsProps): ColumnsType<DataType> => {
+}: DataTableColumnsProps): ColumnsType<DataType> => {
   const getColumnSearchProps = (dataIndex: DataIndex): ColumnType<DataType> => ({
     filterDropdown: (filterDropdownProps) => (
       <FilterDropdown
         filterDropdownProps={filterDropdownProps}
         searchInput={searchInput}
         dataIndex={dataIndex}
-        handleSearch={handleSearch}
-        handleReset={handleReset}
         setSearchText={setSearchText}
         setSearchedColumn={setSearchedColumn}
       />
@@ -75,6 +55,8 @@ const Columns = ({
       key: 'name',
       width: '30%',
       ...getColumnSearchProps('name'),
+      sorter: (a, b) => a.name.localeCompare(b.name),
+      sortDirections: ['descend', 'ascend'],
     },
     {
       title: 'Age',
@@ -82,13 +64,15 @@ const Columns = ({
       key: 'age',
       width: '20%',
       ...getColumnSearchProps('age'),
+      sorter: (a, b) => a.age - b.age,
+      sortDirections: ['descend', 'ascend'],
     },
     {
       title: 'Address',
       dataIndex: 'address',
       key: 'address',
       ...getColumnSearchProps('address'),
-      sorter: (a, b) => a.address.length - b.address.length,
+      sorter: (a, b) => a.address.localeCompare(b.address),
       sortDirections: ['descend', 'ascend'],
     },
   ];

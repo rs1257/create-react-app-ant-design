@@ -1,80 +1,58 @@
-import { Dispatch, FC, RefObject, SetStateAction } from 'react';
-import { Button, Input, InputRef, Space } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
-import { FilterConfirmProps, FilterDropdownProps } from 'antd/es/table/interface';
-import { DataIndex } from '../dummyData';
+import { FC, useEffect } from 'react';
+import { Input, Space } from 'antd';
+import { CheckOutlined, UndoOutlined } from '@ant-design/icons';
+import CustomButton from '../../CustomButton';
+import { DataTableFilterProps } from '../../../types/props';
 
-type FilterProps = {
-  filterDropdownProps: FilterDropdownProps;
-  searchInput: RefObject<InputRef>;
-  dataIndex: DataIndex;
-  setSearchText: Dispatch<SetStateAction<string>>;
-  setSearchedColumn: Dispatch<SetStateAction<string>>;
-  handleSearch: (
-    selectedKeys: string[],
-    confirm: (param?: FilterConfirmProps) => void,
-    dataIndex: DataIndex
-  ) => void;
-  handleReset: (clearFilters: () => void) => void;
-};
-
-const FilterDropdown: FC<FilterProps> = ({
+const FilterDropdown: FC<DataTableFilterProps> = ({
   filterDropdownProps,
   searchInput,
   dataIndex,
-  handleSearch,
-  handleReset,
   setSearchText,
   setSearchedColumn,
 }) => {
   const { setSelectedKeys, selectedKeys, confirm, clearFilters, close } = filterDropdownProps;
+
+  const handleReset = (clearFilters: () => void): void => {
+    clearFilters();
+    setSearchText('');
+  };
+
+  useEffect(() => {
+    const keys = selectedKeys as string[];
+    setSearchText(keys[0]);
+    setSearchedColumn(dataIndex);
+    confirm({ closeDropdown: false });
+  }, [selectedKeys, dataIndex, confirm, setSearchText, setSearchedColumn]);
   return (
     <div style={{ padding: 8 }} onKeyDown={(e): void => e.stopPropagation()}>
       <Input
         ref={searchInput}
         placeholder={`Search ${dataIndex}`}
         value={selectedKeys[0]}
+        onPressEnter={(): void => confirm()}
         onChange={(e): void => setSelectedKeys(e.target.value ? [e.target.value] : [])}
-        onPressEnter={(): void => handleSearch(selectedKeys as string[], confirm, dataIndex)}
         style={{ marginBottom: 8, display: 'block' }}
       />
       <Space>
-        <Button
-          type="primary"
-          onClick={(): void => handleSearch(selectedKeys as string[], confirm, dataIndex)}
-          icon={<SearchOutlined />}
-          size="small"
-          style={{ width: 90 }}
-        >
-          Search
-        </Button>
-        <Button
+        <CustomButton
           onClick={(): void => clearFilters && handleReset(clearFilters)}
-          size="small"
-          style={{ width: 90 }}
+          size="middle"
+          icon={<UndoOutlined />}
+          type={'primary'}
         >
           Reset
-        </Button>
-        <Button
-          type="link"
-          size="small"
-          onClick={(): void => {
-            confirm({ closeDropdown: false });
-            setSearchText((selectedKeys as string[])[0]);
-            setSearchedColumn(dataIndex);
-          }}
-        >
-          Filter
-        </Button>
-        <Button
-          type="link"
-          size="small"
+        </CustomButton>
+        <CustomButton
+          size="middle"
+          type={'primary'}
+          icon={<CheckOutlined />}
           onClick={(): void => {
             close();
           }}
         >
-          close
-        </Button>
+          OK
+        </CustomButton>
       </Space>
     </div>
   );

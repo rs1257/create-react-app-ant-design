@@ -1,6 +1,10 @@
 import { ButtonType } from 'antd/es/button';
 import { SizeType } from 'antd/es/config-provider/SizeContext';
 import { ReactNode } from 'react';
+import { Dispatch, RefObject, SetStateAction } from 'react';
+import { InputRef } from 'antd';
+import { FilterDropdownProps } from 'antd/es/table/interface';
+import { DataIndex } from '../components/DataTable/dummyData';
 
 //** Components
 
@@ -13,6 +17,22 @@ export interface CustomButtonProps {
   onClick: () => void;
   children: ReactNode;
 }
+
+export interface DataTableColumnsProps {
+  searchInput: RefObject<InputRef>;
+  searchText: string;
+  setSearchText: Dispatch<SetStateAction<string>>;
+  searchedColumn: string;
+  setSearchedColumn: Dispatch<SetStateAction<string>>;
+}
+
+export type DataTableFilterProps = {
+  filterDropdownProps: FilterDropdownProps;
+  searchInput: RefObject<InputRef>;
+  dataIndex: DataIndex;
+  setSearchText: Dispatch<SetStateAction<string>>;
+  setSearchedColumn: Dispatch<SetStateAction<string>>;
+};
 
 export type LinkButtonProps = {
   size?: SizeType;
