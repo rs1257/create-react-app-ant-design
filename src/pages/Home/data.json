@@ -1,0 +1,231 @@
+{
+  "gasDay": {
+    "day": "2022-12-09T00:00:00Z",
+    "startUtc": "2022-12-09T05:00:00Z",
+    "endUtc": "2022-12-10T05:00:00Z",
+    "startUkLocalTime": "2022-12-09T05:00:00+00:00",
+    "endUkLocalTime": "2022-12-10T05:00:00+00:00"
+  },
+  "data": [
+    {
+      "value": 378.9405150784583,
+      "applicableAt": "2022-12-09T14:12:58Z",
+      "applicableAtUkLocalTime": "2022-12-09T14:12:58+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Demand",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T14:13:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T14:13:00+00:00",
+      "rawDisplayValue": "378.9405150784583"
+    },
+    {
+      "value": 362.4949695633847,
+      "applicableAt": "2022-12-09T14:00:00Z",
+      "applicableAtUkLocalTime": "2022-12-09T14:00:00+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Supply",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T14:05:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T14:05:00+00:00",
+      "rawDisplayValue": "362.494969563384726"
+    },
+    {
+      "value": 379.20284657102923,
+      "applicableAt": "2022-12-09T13:02:53Z",
+      "applicableAtUkLocalTime": "2022-12-09T13:02:53+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Demand",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T13:02:54Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T13:02:54+00:00",
+      "rawDisplayValue": "379.2028465710292"
+    },
+    {
+      "value": 360.83964056338471,
+      "applicableAt": "2022-12-09T13:00:00Z",
+      "applicableAtUkLocalTime": "2022-12-09T13:00:00+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Supply",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T13:05:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T13:05:00+00:00",
+      "rawDisplayValue": "360.839640563384726"
+    },
+    {
+      "value": 376.03441249029748,
+      "applicableAt": "2022-12-09T12:01:45Z",
+      "applicableAtUkLocalTime": "2022-12-09T12:01:45+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Demand",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T12:01:46Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T12:01:46+00:00",
+      "rawDisplayValue": "376.0344124902975"
+    },
+    {
+      "value": 360.28034156338475,
+      "applicableAt": "2022-12-09T12:00:00Z",
+      "applicableAtUkLocalTime": "2022-12-09T12:00:00+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Supply",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T12:05:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T12:05:00+00:00",
+      "rawDisplayValue": "360.280341563384726"
+    },
+    {
+      "value": 374.00773623380042,
+      "applicableAt": "2022-12-09T11:02:42Z",
+      "applicableAtUkLocalTime": "2022-12-09T11:02:42+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Demand",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T11:02:44Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T11:02:44+00:00",
+      "rawDisplayValue": "374.0077362338004"
+    },
+    {
+      "value": 359.67802056338473,
+      "applicableAt": "2022-12-09T11:00:00Z",
+      "applicableAtUkLocalTime": "2022-12-09T11:00:00+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Supply",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T11:05:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T11:05:00+00:00",
+      "rawDisplayValue": "359.678020563384726"
+    },
+    {
+      "value": 373.52944614441572,
+      "applicableAt": "2022-12-09T10:04:36Z",
+      "applicableAtUkLocalTime": "2022-12-09T10:04:36+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Demand",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T10:04:37Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T10:04:37+00:00",
+      "rawDisplayValue": "373.5294461444157"
+    },
+    {
+      "value": 362.71806948005138,
+      "applicableAt": "2022-12-09T10:00:00Z",
+      "applicableAtUkLocalTime": "2022-12-09T10:00:00+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Supply",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T10:05:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T10:05:00+00:00",
+      "rawDisplayValue": "362.718069480051402"
+    },
+    {
+      "value": 369.20267909137931,
+      "applicableAt": "2022-12-09T09:02:46Z",
+      "applicableAtUkLocalTime": "2022-12-09T09:02:46+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Demand",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T09:02:47Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T09:02:47+00:00",
+      "rawDisplayValue": "369.2026790913793"
+    },
+    {
+      "value": 360.44902848005142,
+      "applicableAt": "2022-12-09T09:00:00Z",
+      "applicableAtUkLocalTime": "2022-12-09T09:00:00+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Supply",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T09:05:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T09:05:00+00:00",
+      "rawDisplayValue": "360.449028480051402"
+    },
+    {
+      "value": 369.11340846224613,
+      "applicableAt": "2022-12-09T08:01:50Z",
+      "applicableAtUkLocalTime": "2022-12-09T08:01:50+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Demand",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T08:01:51Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T08:01:51+00:00",
+      "rawDisplayValue": "369.1134084622461"
+    },
+    {
+      "value": 366.67425981338471,
+      "applicableAt": "2022-12-09T08:00:00Z",
+      "applicableAtUkLocalTime": "2022-12-09T08:00:00+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Supply",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T08:05:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T08:05:00+00:00",
+      "rawDisplayValue": "366.674259813384727"
+    },
+    {
+      "value": 368.84029947934408,
+      "applicableAt": "2022-12-09T07:02:05Z",
+      "applicableAtUkLocalTime": "2022-12-09T07:02:05+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Demand",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T07:02:06Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T07:02:06+00:00",
+      "rawDisplayValue": "368.8402994793441"
+    },
+    {
+      "value": 366.67425981338471,
+      "applicableAt": "2022-12-09T07:00:00Z",
+      "applicableAtUkLocalTime": "2022-12-09T07:00:00+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Supply",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T07:05:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T07:05:00+00:00",
+      "rawDisplayValue": "366.674259813384727"
+    },
+    {
+      "value": 370.64329421524724,
+      "applicableAt": "2022-12-09T06:01:56Z",
+      "applicableAtUkLocalTime": "2022-12-09T06:01:56+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Demand",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T06:01:57Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T06:01:57+00:00",
+      "rawDisplayValue": "370.64329421524724"
+    },
+    {
+      "value": 366.67757581338475,
+      "applicableAt": "2022-12-09T06:00:00Z",
+      "applicableAtUkLocalTime": "2022-12-09T06:00:00+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Supply",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T06:05:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T06:05:00+00:00",
+      "rawDisplayValue": "366.677575813384727"
+    },
+    {
+      "value": 368.97902623671905,
+      "applicableAt": "2022-12-09T05:06:23Z",
+      "applicableAtUkLocalTime": "2022-12-09T05:06:23+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Demand",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T05:06:25Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T05:06:25+00:00",
+      "rawDisplayValue": "368.97902623671905"
+    },
+    {
+      "value": 366.11765581338472,
+      "applicableAt": "2022-12-09T05:00:00Z",
+      "applicableAtUkLocalTime": "2022-12-09T05:00:00+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Supply",
+      "applicableFor": "2022-12-09T00:00:00Z",
+      "generatedTimeStamp": "2022-12-09T05:05:00Z",
+      "generatedTimeStampUkLocalTime": "2022-12-09T05:05:00+00:00",
+      "rawDisplayValue": "366.117655813384727"
+    }
+  ]
+}
