@@ -1,5 +1,4 @@
 import './LineGraph.scss';
-import forecastSupplyDemandData from '../../data/forecastSupplyDemand.json';
 import dayjs from 'dayjs';
 import {
   ResponsiveContainer,
@@ -11,42 +10,12 @@ import {
   Line,
 } from 'recharts';
 
-interface Datum {
-  value: number;
-  applicableAt: string;
-  applicableAtUkLocalTime: string | number;
-  qualityIndicator: null;
-  publicationObjectName: string;
-  applicableFor: string;
-  generatedTimeStamp: string;
-  generatedTimeStampUkLocalTime: string;
-  rawDisplayValue: string;
+interface Props {
+  lines: unknown[];
 }
 
-interface SupplyDemandData {
-  supply: Datum[];
-  demand: Datum[];
-}
-
-const LineGraph = (): JSX.Element => {
-  const { data } = forecastSupplyDemandData;
-
-  const initialSupplyDemandData: SupplyDemandData = { supply: [], demand: [] };
-  const transformedSupplyDemandData = data.reduce((acc, datum) => {
-    const { applicableAtUkLocalTime } = datum;
-    const epochTime = +dayjs(applicableAtUkLocalTime).startOf('hour');
-
-    const dataItem = { ...datum, applicableAtUkLocalTime: epochTime };
-    if (datum.publicationObjectName === 'Supply') {
-      acc.supply.push(dataItem);
-    }
-
-    if (datum.publicationObjectName === 'Demand') {
-      acc.demand.push(dataItem);
-    }
-
-    return acc;
-  }, initialSupplyDemandData);
+const LineGraph = ({ lines }: Props): JSX.Element => {
+  const lineColours = ['#8884d8', '#82ca9d'];
 
   return (
     <ResponsiveContainer width="100%" height={500}>
@@ -66,9 +35,8 @@ const LineGraph = (): JSX.Element => {
           }}
           label={{
             value: 'Time',
-            dy: 15,
+            dy: 20,
           }}
-          tickCount={5}
         />
         <YAxis
           domain={['auto', 'auto']}
@@ -80,7 +48,6 @@ const LineGraph = (): JSX.Element => {
             angle: -90,
             dx: -40,
           }}
-          tickMargin={5}
         />
         <Tooltip
           formatter={(value: string): string => {
@@ -90,22 +57,19 @@ const LineGraph = (): JSX.Element => {
             return 'Time: ' + dayjs(value).format('HH:mm');
           }}
         />
-        <Line
-          type="monotone"
-          data={transformedSupplyDemandData.supply}
-          dataKey="value"
-          stroke="#8884d8"
-          strokeWidth={2}
-          isAnimationActive={false}
-        />
-        <Line
-          type="monotone"
-          data={transformedSupplyDemandData.demand}
-          dataKey="value"
-          stroke="#82ca9d"
-          strokeWidth={2}
-          isAnimationActive={false}
-        />
+        {lines.map((line, index) => {
+          return (
+            <Line
+              key={index}
+              type="monotone"
+              data={line}
+              dataKey="value"
+              stroke={lineColours[index]}
+              strokeWidth={2}
+              isAnimationActive={false}
+            />
+          );
+        })}
       </LineChart>
     </ResponsiveContainer>
   );

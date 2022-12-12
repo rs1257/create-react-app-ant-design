@@ -2,7 +2,7 @@ import CustomButton from '../../components/CustomButton';
 import LinkButton from '../../components/LinkButton';
 import Loader from '../../components/Loader';
 import './Home.scss';
-import LineGraph from '../../components/LineGraph';
+import ForecastSupplyDemandGraph from './Graphs/ForecastSupplyDemandGraph';
 
 const Home = (): JSX.Element => {
   const onClick = (): void => {
@@ -54,7 +54,7 @@ const Home = (): JSX.Element => {
         <Loader />
       </div>
 
-      <LineGraph />
+      <ForecastSupplyDemandGraph />
     </>
   );
 };
