@@ -58,7 +58,7 @@ const Columns = ({
     column: keyof DataTableDataType
   ): number => {
     if (typeof a[column] === 'number' && typeof b[column] === 'number') {
-      return Number(a[column]) - Number(b[column]);
+      return +a[column] - +b[column];
     }
     return String(a[column]).localeCompare(String(b[column]));
   };

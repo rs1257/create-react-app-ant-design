@@ -17,6 +17,11 @@ export interface CustomButtonProps {
   children: ReactNode;
 }
 
+export interface DataTableProps {
+  data: DataTableDataType[];
+  headers: DataTableHeader[];
+}
+
 export interface DataTableColumnsProps {
   searchInput: RefObject<InputRef>;
   searchText: string;
