@@ -31,7 +31,7 @@ const FilterDropdown: FC<DataTableFilterProps> = ({
         placeholder={`Search ${dataIndex}`}
         value={selectedKeys[0]}
         onPressEnter={(): void => confirm()}
-        onChange={(e): void => setSelectedKeys(e.target.value ? [e.target.value] : [])}
+        onChange={(e): void => setSelectedKeys(e.target.value ? [e.target.value.toString()] : [])}
         style={{ marginBottom: 8, display: 'block' }}
       />
       <Space>

@@ -1,7 +1,7 @@
 import { FC, useRef, useState } from 'react';
 import { InputRef } from 'antd';
 import { Table } from 'antd';
-import { dummyData } from './dummyData';
+import { formattedData } from './dummyData';
 import Columns from './Columns/Columns';
 
 const DataTable: FC = () => {
@@ -10,15 +10,18 @@ const DataTable: FC = () => {
 
   const searchInput = useRef<InputRef>(null);
 
+  const { headers, data } = formattedData;
+
   const columns = Columns({
     searchInput,
     searchText,
     setSearchText,
     searchedColumn,
     setSearchedColumn,
+    headers,
   });
 
-  return <Table columns={columns} dataSource={dummyData} />;
+  return <Table columns={columns} dataSource={data} />;
 };
 
 export default DataTable;

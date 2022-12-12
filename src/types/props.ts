@@ -4,7 +4,6 @@ import { ReactNode } from 'react';
 import { Dispatch, RefObject, SetStateAction } from 'react';
 import { InputRef } from 'antd';
 import { FilterDropdownProps } from 'antd/es/table/interface';
-import { DataIndex } from '../components/DataTable/dummyData';
 
 //** Components
 
@@ -24,6 +23,7 @@ export interface DataTableColumnsProps {
   setSearchText: Dispatch<SetStateAction<string>>;
   searchedColumn: string;
   setSearchedColumn: Dispatch<SetStateAction<string>>;
+  headers: DataTableHeader[];
 }
 
 export type DataTableFilterProps = {
@@ -33,6 +33,22 @@ export type DataTableFilterProps = {
   setSearchText: Dispatch<SetStateAction<string>>;
   setSearchedColumn: Dispatch<SetStateAction<string>>;
 };
+
+export interface DataTableDataType {
+  value: number;
+  name: string;
+}
+
+export interface DataTableHeader {
+  title: string;
+  dataIndex: string;
+}
+export interface FormattedData {
+  data: DataTableDataType[];
+  headers: DataTableHeader[];
+}
+
+export type DataIndex = keyof DataTableDataType;
 
 export type LinkButtonProps = {
   size?: SizeType;
