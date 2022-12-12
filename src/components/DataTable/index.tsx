@@ -1,7 +1,7 @@
 import { FC, useRef, useState } from 'react';
 import { InputRef } from 'antd';
 import { Table } from 'antd';
-import { formattedData } from './dummyData';
+import { formattedData } from './latestSupplyEntryPointDataFormatter';
 import Columns from './Columns/Columns';
 
 const DataTable: FC = () => {
