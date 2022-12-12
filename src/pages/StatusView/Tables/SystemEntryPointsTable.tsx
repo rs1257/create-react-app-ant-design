@@ -3,10 +3,15 @@ import DataTable from '../../../components/DataTable';
 import { formattedData } from '../../../components/DataTable/latestSupplyEntryPointDataFormatter';
 
 const SystemEntryPointsTable: FC = () => {
-  const { headers, data } = formattedData;
+  const {
+    headers,
+    data,
+    meta: { time },
+  } = formattedData;
+
   return (
     <div>
-      <span>SystemEntryPointsTable</span>
+      <span>{time}</span>
       <DataTable headers={headers} data={data} />
     </div>
   );
