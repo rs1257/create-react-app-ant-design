@@ -10,11 +10,11 @@ import {
   Line,
 } from 'recharts';
 
-interface Props {
-  lines: unknown[];
+interface Props<T> {
+  lines: T[];
 }
 
-const LineGraph = ({ lines }: Props): JSX.Element => {
+const LineGraph = <T,>({ lines }: Props<T>): JSX.Element => {
   const lineColours = ['#8884d8', '#82ca9d'];
 
   return (
