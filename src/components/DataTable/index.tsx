@@ -21,7 +21,7 @@ const DataTable: FC = () => {
     headers,
   });
 
-  return <Table columns={columns} dataSource={data} />;
+  return <Table columns={columns} dataSource={data} rowKey={(record): string => record.name} />;
 };
 
 export default DataTable;
