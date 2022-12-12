@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { DataTableDataType, FormattedData } from '../../types/props';
+import { DataTableDataType, FormattedData } from '../../types/data';
 import latestSupplyEntryPoint from '../../data/latestSupplyEntryPoint.json';
 
 const { data } = latestSupplyEntryPoint;

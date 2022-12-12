@@ -2,7 +2,8 @@ import { FilterOutlined } from '@ant-design/icons';
 import type { ColumnsType, ColumnType } from 'antd/es/table';
 import { ReactNode } from 'react';
 import Highlighter from 'react-highlight-words';
-import { DataTableColumnsProps, DataIndex, DataTableDataType } from '../../../types/props';
+import { DataTableColumnsProps } from '../../../types/props';
+import { DataIndex, DataTableDataType } from '../../../types/data';
 import FilterDropdown from './FilterDropdown';
 
 const Columns = ({

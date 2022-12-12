@@ -11,8 +11,12 @@ const SystemEntryPointsTable: FC = () => {
 
   return (
     <div>
-      <span>{time}</span>
-      <DataTable headers={headers} data={data} />
+      <div>
+        <span>Last Updated{time}</span>
+      </div>
+      <div>
+        <DataTable headers={headers} data={data} />
+      </div>
     </div>
   );
 };
