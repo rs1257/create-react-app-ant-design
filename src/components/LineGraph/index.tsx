@@ -34,7 +34,18 @@ const LineGraph = <T,>({
   xAxisLabel,
   yAxisLabel,
 }: LineGraphProps<T>): JSX.Element => {
-  const lineColours = ['#8884d8', '#82ca9d'];
+  const lineColours = [
+    '#8884d8',
+    '#82ca9d',
+    '#DA70D6',
+    '#191970',
+    '#9932CC',
+    '#FF00FF',
+    '#32CD32',
+    '#00FF7F',
+    '#00CED1',
+    '#87CEFA',
+  ];
 
   return (
     <ResponsiveContainer width="100%" height={500}>
