@@ -1,12 +1,8 @@
-import dayjs from 'dayjs';
 import { DataTableDataType, FormattedData } from '../../types/data';
 import latestSupplyEntryPoint from '../../data/latestSupplyEntryPoint.json';
+import { getDate, getTime } from '../../utils/dateTime';
 
 const { data } = latestSupplyEntryPoint;
-
-const getTime = (): string => dayjs(new Date(data[0].applicableAtUkLocalTime)).format('HH:mm');
-
-const getDate = (): string => dayjs(new Date(data[0].applicableAtUkLocalTime)).format('YYYY-MM-DD');
 
 const formattedRawData: DataTableDataType[] = data.map((row) => {
   return {
@@ -22,7 +18,7 @@ export const formattedData: FormattedData = {
   ],
   data: formattedRawData,
   meta: {
-    date: getDate(),
-    time: getTime(),
+    date: getDate(data[0].applicableAtUkLocalTime),
+    time: getTime(data[0].applicableAtUkLocalTime),
   },
 };
