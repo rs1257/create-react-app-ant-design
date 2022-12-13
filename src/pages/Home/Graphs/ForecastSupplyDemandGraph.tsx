@@ -42,7 +42,7 @@ const ForecastSupplyDemandGraph = (): JSX.Element => {
   return (
     <>
       <h1>Forecast Supply and Demand</h1>
-      <LineGraph lines={[demand, supply]} />
+      <LineGraph lines={[demand, supply]} xDataKey="value" />
     </>
   );
 };

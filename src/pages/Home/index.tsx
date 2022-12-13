@@ -3,6 +3,7 @@ import LinkButton from '../../components/LinkButton';
 import Loader from '../../components/Loader';
 import './Home.scss';
 import ForecastSupplyDemandGraph from './Graphs/ForecastSupplyDemandGraph';
+import WithinDayPclpGraph from './Graphs/WithinDayPclp';
 
 const Home = (): JSX.Element => {
   const onClick = (): void => {
@@ -55,6 +56,7 @@ const Home = (): JSX.Element => {
       </div>
 
       <ForecastSupplyDemandGraph />
+      <WithinDayPclpGraph />
     </>
   );
 };

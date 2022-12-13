@@ -1,0 +1,55 @@
+{
+  "gasDay": {
+    "day": "2022-12-13T00:00:00Z",
+    "startUtc": "2022-12-13T05:00:00Z",
+    "endUtc": "2022-12-14T05:00:00Z",
+    "startUkLocalTime": "2022-12-13T05:00:00+00:00",
+    "endUkLocalTime": "2022-12-14T05:00:00+00:00"
+  },
+  "data": [
+    {
+      "value": 372.5508189773725,
+      "applicableAt": "2022-12-13T05:06:42Z",
+      "applicableAtUkLocalTime": "2022-12-13T05:06:42+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Predicted Closing Linepack (PCLP1)",
+      "applicableFor": "2022-12-13T00:00:00Z",
+      "generatedTimeStamp": "2022-12-13T05:06:44Z",
+      "generatedTimeStampUkLocalTime": "2022-12-13T05:06:44+00:00",
+      "rawDisplayValue": "372.5508189773725"
+    },
+    {
+      "value": 372.39275467728453,
+      "applicableAt": "2022-12-13T06:02:22Z",
+      "applicableAtUkLocalTime": "2022-12-13T06:02:22+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Predicted Closing Linepack (PCLP1)",
+      "applicableFor": "2022-12-13T00:00:00Z",
+      "generatedTimeStamp": "2022-12-13T06:03:04Z",
+      "generatedTimeStampUkLocalTime": "2022-12-13T06:03:04+00:00",
+      "rawDisplayValue": "372.39275467728453"
+    },
+    {
+      "value": 366.59101167728454,
+      "applicableAt": "2022-12-13T07:10:30Z",
+      "applicableAtUkLocalTime": "2022-12-13T07:10:30+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Predicted Closing Linepack (PCLP1)",
+      "applicableFor": "2022-12-13T00:00:00Z",
+      "generatedTimeStamp": "2022-12-13T07:11:35Z",
+      "generatedTimeStampUkLocalTime": "2022-12-13T07:11:35+00:00",
+      "rawDisplayValue": "366.59101167728454"
+    },
+    {
+      "value": 366.9405749171988,
+      "applicableAt": "2022-12-13T08:02:55Z",
+      "applicableAtUkLocalTime": "2022-12-13T08:02:55+00:00",
+      "qualityIndicator": null,
+      "publicationObjectName": "Predicted Closing Linepack (PCLP1)",
+      "applicableFor": "2022-12-13T00:00:00Z",
+      "generatedTimeStamp": "2022-12-13T08:02:57Z",
+      "generatedTimeStampUkLocalTime": "2022-12-13T08:02:57+00:00",
+      "rawDisplayValue": "366.9405749171988"
+    }
+  ]
+}
