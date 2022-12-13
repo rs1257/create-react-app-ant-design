@@ -1,5 +1,4 @@
 import './LineGraph.scss';
-import dayjs from 'dayjs';
 import {
   ResponsiveContainer,
   LineChart,
@@ -9,13 +8,32 @@ import {
   Tooltip,
   Line,
 } from 'recharts';
+import { getTime } from '../../utils/dateTime';
+import { roundNumber } from '../../utils/number';
 
 interface LineGraphProps<T> {
-  lines: T[];
-  xDataKey: string;
+  data: T[];
+  xAxisDataKey: string;
+  yAxisDataKey: string;
+  xAxisLabel?: string;
+  yAxisLabel?: string;
 }
 
-const LineGraph = <T,>({ lines, xDataKey }: LineGraphProps<T>): JSX.Element => {
+const numberFormatter = (value: string): string => {
+  return roundNumber(value);
+};
+
+const timeFormatter = (value: string): string => {
+  return getTime(value);
+};
+
+const LineGraph = <T,>({
+  data,
+  xAxisDataKey,
+  yAxisDataKey,
+  xAxisLabel,
+  yAxisLabel,
+}: LineGraphProps<T>): JSX.Element => {
   const lineColours = ['#8884d8', '#82ca9d'];
 
   return (
@@ -28,49 +46,36 @@ const LineGraph = <T,>({ lines, xDataKey }: LineGraphProps<T>): JSX.Element => {
       >
         <CartesianGrid />
         <XAxis
-          dataKey="applicableAtUkLocalTime"
+          dataKey={xAxisDataKey}
           type="number"
           domain={['auto', 'auto']}
-          tickFormatter={(value: number): string => {
-            return dayjs(value).format('HH:mm');
-          }}
+          tickFormatter={timeFormatter}
           label={{
-            value: 'Time',
+            value: xAxisLabel ?? 'Time',
             dy: 20,
           }}
         />
         <YAxis
           domain={['auto', 'auto']}
-          tickFormatter={(value): string => {
-            return parseFloat(String(value)).toFixed(2);
-          }}
+          tickFormatter={numberFormatter}
           label={{
-            value: 'Value',
+            value: yAxisLabel ?? 'Value',
             angle: -90,
             dx: -40,
           }}
         />
-        <Tooltip
-          formatter={(value: string): string => {
-            return parseFloat(String(value)).toFixed(2);
-          }}
-          labelFormatter={(value: string): string => {
-            return 'Time: ' + dayjs(value).format('HH:mm');
-          }}
-        />
-        {lines.map((line, index) => {
-          return (
-            <Line
-              key={index}
-              type="monotone"
-              data={line}
-              dataKey={xDataKey}
-              stroke={lineColours[index]}
-              strokeWidth={2}
-              isAnimationActive={false}
-            />
-          );
-        })}
+        <Tooltip formatter={numberFormatter} labelFormatter={timeFormatter} />
+        {data.map((line, index) => (
+          <Line
+            key={index}
+            type="monotone"
+            data={line}
+            dataKey={yAxisDataKey}
+            stroke={lineColours[index]}
+            strokeWidth={2}
+            isAnimationActive={false}
+          />
+        ))}
       </LineChart>
     </ResponsiveContainer>
   );

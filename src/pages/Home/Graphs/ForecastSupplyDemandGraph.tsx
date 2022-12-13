@@ -1,39 +1,32 @@
 import forecastSupplyDemandData from '../../../data/forecastSupplyDemand.json';
-import dayjs from 'dayjs';
 import LineGraph from '../../../components/LineGraph';
-
-interface Datum {
-  value: number;
-  applicableAt: string;
-  applicableAtUkLocalTime: string | number;
-  qualityIndicator: null;
-  publicationObjectName: string;
-  applicableFor: string;
-  generatedTimeStamp: string;
-  generatedTimeStampUkLocalTime: string;
-  rawDisplayValue: string;
-}
+import { convertToEpochTime, trimDate } from '../../../utils/dateTime';
 
 interface SupplyDemandData {
-  supply: Datum[];
-  demand: Datum[];
+  supply: Record<string, unknown>[];
+  demand: Record<string, unknown>[];
+}
+
+enum PublicationObjectName {
+  supply = 'Supply',
+  demand = 'Demand',
 }
 
 const ForecastSupplyDemandGraph = (): JSX.Element => {
-  const { data } = forecastSupplyDemandData;
+  const { data: supplyDemandData } = forecastSupplyDemandData;
 
   const initialSupplyDemandData: SupplyDemandData = { supply: [], demand: [] };
-  const { demand, supply } = data.reduce((acc, datum) => {
-    const { applicableAtUkLocalTime } = datum;
-    const epochTime = +dayjs(applicableAtUkLocalTime).startOf('hour');
+  const { demand, supply } = supplyDemandData.reduce((acc, dataItem) => {
+    const { applicableAtUkLocalTime, publicationObjectName } = dataItem;
+    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime, 'hour'));
 
-    const dataItem = { ...datum, applicableAtUkLocalTime: epochTime };
-    if (datum.publicationObjectName === 'Supply') {
-      acc.supply.push(dataItem);
+    const transformedDataItem = { ...dataItem, applicableAtUkLocalTime: epochTime };
+    if (publicationObjectName === PublicationObjectName.supply) {
+      acc.supply.push(transformedDataItem);
     }
 
-    if (datum.publicationObjectName === 'Demand') {
-      acc.demand.push(dataItem);
+    if (publicationObjectName === PublicationObjectName.demand) {
+      acc.demand.push(transformedDataItem);
     }
 
     return acc;
@@ -42,7 +35,11 @@ const ForecastSupplyDemandGraph = (): JSX.Element => {
   return (
     <>
       <h1>Forecast Supply and Demand</h1>
-      <LineGraph lines={[demand, supply]} xDataKey="value" />
+      <LineGraph
+        data={[demand, supply]}
+        yAxisDataKey="value"
+        xAxisDataKey="applicableAtUkLocalTime"
+      />
     </>
   );
 };
