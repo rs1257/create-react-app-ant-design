@@ -10,22 +10,23 @@ import {
   Line,
 } from 'recharts';
 
-interface Props<T> {
+interface LineGraphProps<T> {
   lines: T[];
+  xDataKey: string;
 }
 
-const LineGraph = <T,>({ lines }: Props<T>): JSX.Element => {
+const LineGraph = <T,>({ lines, xDataKey }: LineGraphProps<T>): JSX.Element => {
   const lineColours = ['#8884d8', '#82ca9d'];
 
   return (
     <ResponsiveContainer width="100%" height={500}>
       <LineChart
         className="line-graph"
-        width={730}
-        height={250}
+        width={700}
+        height={500}
         margin={{ top: 20, right: 20, left: 20, bottom: 20 }}
       >
-        <CartesianGrid strokeDasharray="5" />
+        <CartesianGrid />
         <XAxis
           dataKey="applicableAtUkLocalTime"
           type="number"
@@ -63,7 +64,7 @@ const LineGraph = <T,>({ lines }: Props<T>): JSX.Element => {
               key={index}
               type="monotone"
               data={line}
-              dataKey="value"
+              dataKey={xDataKey}
               stroke={lineColours[index]}
               strokeWidth={2}
               isAnimationActive={false}
