@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import DataTable from '../../../components/DataTable';
 import { formattedData } from '../../../components/DataTable/latestSupplyEntryPointDataFormatter';
+import './SystemEntryPointsTable.scss';
 
 const SystemEntryPointsTable: FC = () => {
   const {
@@ -10,11 +11,11 @@ const SystemEntryPointsTable: FC = () => {
   } = formattedData;
 
   return (
-    <div>
-      <div>
-        <span>Last Updated{time}</span>
+    <div className="system-entry-points">
+      <div className="system-entry-points__header">
+        <h2>Last Updated: {time}</h2>
       </div>
-      <div>
+      <div className="system-entry-points__table">
         <DataTable headers={headers} data={data} />
       </div>
     </div>

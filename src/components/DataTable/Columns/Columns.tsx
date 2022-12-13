@@ -64,6 +64,13 @@ const Columns = ({
     return String(a[column]).localeCompare(String(b[column]));
   };
 
+  const getColumnWidth = (dataIndex: string): string => {
+    if (dataIndex === 'value') {
+      return '150px';
+    }
+    return '250px';
+  };
+
   const columns: ColumnsType<DataTableDataType> = headers.map(({ title, dataIndex }) => {
     return {
       title,
@@ -72,6 +79,7 @@ const Columns = ({
       ...getColumnSearchProps(dataIndex as keyof DataTableDataType),
       sorter: (a, b) => sortColumn(a, b, dataIndex as keyof DataTableDataType),
       sortDirections: ['descend', 'ascend'],
+      width: getColumnWidth(dataIndex),
     };
   });
 
