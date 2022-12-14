@@ -13,6 +13,7 @@ const ForecastSupplyDemandGraph = (): JSX.Element => {
         data={[demand, supply]}
         yAxisDataKey="value"
         xAxisDataKey="applicableAtUkLocalTime"
+        labels={['Demand', 'Supply']}
       />
     </>
   );

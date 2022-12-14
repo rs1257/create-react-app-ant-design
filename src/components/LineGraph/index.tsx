@@ -7,9 +7,14 @@ import {
   YAxis,
   Tooltip,
   Line,
+  Legend,
 } from 'recharts';
 import { getTime } from '../../utils/dateTime';
 import { roundNumber } from '../../utils/number';
+import { useState } from 'react';
+import { DataKey } from 'recharts/types/util/types';
+import { Payload } from 'recharts/types/component/DefaultLegendContent';
+import hexToRgba from 'hex-to-rgba';
 
 interface LineGraphProps<T> {
   data: T[];
@@ -17,6 +22,7 @@ interface LineGraphProps<T> {
   yAxisDataKey: string;
   xAxisLabel?: string;
   yAxisLabel?: string;
+  labels: string[];
 }
 
 const numberFormatter = (value: string): string => {
@@ -33,6 +39,7 @@ const LineGraph = <T,>({
   yAxisDataKey,
   xAxisLabel,
   yAxisLabel,
+  labels,
 }: LineGraphProps<T>): JSX.Element => {
   const lineColours = [
     '#8884d8',
@@ -47,6 +54,44 @@ const LineGraph = <T,>({
     '#87CEFA',
   ];
 
+  type LineProps = {
+    [key: string]: boolean;
+  };
+
+  const [lines, toggleLines] = useState<LineProps>(
+    labels.reduce((acc, key) => {
+      return { ...acc, [key]: false };
+    }, {})
+  );
+
+  const selectLine = (data: Payload): void => {
+    if (typeof data?.value === 'string') {
+      toggleLines({
+        ...lines,
+        [data.value]: !lines[data.value],
+      });
+      setHover(undefined);
+    }
+  };
+
+  const [hover, setHover] = useState<string>();
+
+  const handleLegendMouseEnter = (
+    data: Payload & {
+      dataKey?: DataKey<T>;
+    }
+  ): void => {
+    if (typeof data?.value === 'string') {
+      if (!lines[data.value]) {
+        setHover(data.value);
+      }
+    }
+  };
+
+  const handleLegendMouseLeave = (): void => {
+    setHover(undefined);
+  };
+
   return (
     <ResponsiveContainer width="100%" height={500}>
       <LineChart
@@ -56,6 +101,13 @@ const LineGraph = <T,>({
         margin={{ top: 20, right: 20, left: 20, bottom: 20 }}
       >
         <CartesianGrid />
+        <Legend
+          verticalAlign="top"
+          height={36}
+          onClick={selectLine}
+          onMouseOver={handleLegendMouseEnter}
+          onMouseOut={handleLegendMouseLeave}
+        />
         <XAxis
           dataKey={xAxisDataKey}
           type="number"
@@ -79,12 +131,18 @@ const LineGraph = <T,>({
         {data.map((line, index) => (
           <Line
             key={index}
+            name={labels[index]}
             type="monotone"
             data={line}
             dataKey={yAxisDataKey}
-            stroke={lineColours[index]}
+            stroke={
+              hover && hover !== labels[index]
+                ? hexToRgba(lineColours[index], 0.5)
+                : lineColours[index]
+            }
             strokeWidth={2}
             isAnimationActive={false}
+            hide={lines[labels[index]] === true}
           />
         ))}
       </LineChart>

@@ -13,6 +13,7 @@ const WithinDayPclpGraph = (): JSX.Element => {
         data={[transformedData]}
         yAxisDataKey="value"
         xAxisDataKey="applicableAtUkLocalTime"
+        labels={['Within Day PCLP']}
       />
     </>
   );
