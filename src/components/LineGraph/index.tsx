@@ -11,10 +11,8 @@ import {
 } from 'recharts';
 import { getTime } from '../../utils/dateTime';
 import { roundNumber } from '../../utils/number';
-import { useState } from 'react';
-import { DataKey } from 'recharts/types/util/types';
-import { Payload } from 'recharts/types/component/DefaultLegendContent';
 import hexToRgba from 'hex-to-rgba';
+import useInteractiveLegend from '../../hooks/useToggleLines';
 
 interface LineGraphProps<T> {
   data: T[];
@@ -54,43 +52,8 @@ const LineGraph = <T,>({
     '#87CEFA',
   ];
 
-  type LineProps = {
-    [key: string]: boolean;
-  };
-
-  const [lines, toggleLines] = useState<LineProps>(
-    labels.reduce((acc, key) => {
-      return { ...acc, [key]: false };
-    }, {})
-  );
-
-  const selectLine = (data: Payload): void => {
-    if (typeof data?.value === 'string') {
-      toggleLines({
-        ...lines,
-        [data.value]: !lines[data.value],
-      });
-      setHover(undefined);
-    }
-  };
-
-  const [hover, setHover] = useState<string>();
-
-  const handleLegendMouseEnter = (
-    data: Payload & {
-      dataKey?: DataKey<T>;
-    }
-  ): void => {
-    if (typeof data?.value === 'string') {
-      if (!lines[data.value]) {
-        setHover(data.value);
-      }
-    }
-  };
-
-  const handleLegendMouseLeave = (): void => {
-    setHover(undefined);
-  };
+  const { lines, hover, selectLine, handleLegendMouseEnter, handleLegendMouseLeave } =
+    useInteractiveLegend(labels);
 
   return (
     <ResponsiveContainer width="100%" height={500}>
