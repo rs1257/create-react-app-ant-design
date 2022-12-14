@@ -70,6 +70,7 @@ const LineGraph = <T,>({
           onClick={selectLine}
           onMouseOver={handleLegendMouseEnter}
           onMouseOut={handleLegendMouseLeave}
+          iconType="circle"
         />
         <XAxis
           dataKey={xAxisDataKey}
@@ -80,6 +81,7 @@ const LineGraph = <T,>({
             value: xAxisLabel ?? 'Time',
             dy: 20,
           }}
+          allowDuplicatedCategory={false}
         />
         <YAxis
           domain={['auto', 'auto']}
