@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
 import { Layout, Menu, MenuProps } from 'antd';
-import './Navbar.scss';
 import navRoutes from '../../config/nav-routes';
 import { useNavigate } from 'react-router-dom';
+import './Navbar.scss';
 
 const { Header } = Layout;
 

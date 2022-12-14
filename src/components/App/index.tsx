@@ -8,13 +8,16 @@ import Loader from '../Loader';
 import Navbar from '../Navbar';
 import PageFooter from '../Footer';
 import { ConfigProvider } from 'antd';
+import { ColourPalette } from '../../types/styles';
 
 const App = (): JSX.Element => {
   return (
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: '#0079c1',
+          colorPrimary: ColourPalette.ngtMidBlue,
+          colorBgTextHover: ColourPalette.ngtLightBlue,
+          colorBgTextActive: ColourPalette.ngtLightBlue,
         },
       }}
     >

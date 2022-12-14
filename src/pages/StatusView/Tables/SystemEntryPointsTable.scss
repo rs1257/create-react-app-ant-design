@@ -1,3 +1,5 @@
+@use '../../../assets/global.scss' as g;
+
 .system-entry-points {
   width: 50vw;
   padding: 2rem;
@@ -5,7 +7,7 @@
   &__header {
     display: flex;
     justify-content: flex-end;
-    color: #78a22f;
+    color: g.$ngt-teal;
     margin-right: 1rem;
   }
 }
