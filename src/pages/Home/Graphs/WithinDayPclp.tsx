@@ -1,21 +1,20 @@
 import withinDayPclp from '../../../data/withinDayPclp.json';
-import dayjs from 'dayjs';
 import LineGraph from '../../../components/LineGraph';
+import { withinDayPclpDataFormatter } from '../Formatters/withinDayPclpDataFormatter';
 
 const WithinDayPclpGraph = (): JSX.Element => {
-  const { data } = withinDayPclp;
-
-  const transformedData = data.map((datum) => {
-    const { applicableAtUkLocalTime } = datum;
-    const epochTime = +dayjs(applicableAtUkLocalTime).startOf('hour');
-
-    return { ...datum, applicableAtUkLocalTime: epochTime };
-  });
+  const { data: withinDayPclpData } = withinDayPclp;
+  const transformedData = withinDayPclpDataFormatter(withinDayPclpData);
 
   return (
     <>
       <h1>Within Day PCLP</h1>
-      <LineGraph lines={[transformedData]} xDataKey="value" />
+      <LineGraph
+        data={[transformedData]}
+        yAxisDataKey="value"
+        xAxisDataKey="applicableAtUkLocalTime"
+        labels={['Within Day PCLP']}
+      />
     </>
   );
 };
