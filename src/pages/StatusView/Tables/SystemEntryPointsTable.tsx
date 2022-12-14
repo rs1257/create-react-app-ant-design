@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import DataTable from '../../../components/DataTable';
-import { formattedData } from '../../../components/DataTable/latestSupplyEntryPointDataFormatter';
+import { formattedData } from '../../../components/DataTable/Formatters/latestSupplyEntryPointDataFormatter';
 import './SystemEntryPointsTable.scss';
 
 const SystemEntryPointsTable: FC = () => {
