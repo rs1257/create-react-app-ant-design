@@ -4,6 +4,13 @@ import { CheckOutlined, UndoOutlined } from '@ant-design/icons';
 import CustomButton from '../../CustomButton';
 import { DataTableFilterProps } from '../../../types/props';
 
+export const handleOnFilterTextChange = (
+  value: string,
+  setSelectedKeys: (value: string[]) => void
+): void => {
+  setSelectedKeys(value ? [value.toString()] : []);
+};
+
 const FilterDropdown: FC<DataTableFilterProps> = ({
   filterDropdownProps,
   searchInput,
@@ -31,7 +38,7 @@ const FilterDropdown: FC<DataTableFilterProps> = ({
         placeholder={`Search ${dataIndex}`}
         value={selectedKeys[0]}
         onPressEnter={(): void => confirm()}
-        onChange={(e): void => setSelectedKeys(e.target.value ? [e.target.value.toString()] : [])}
+        onChange={(e): void => handleOnFilterTextChange(e.target.value, setSelectedKeys)}
         style={{ marginBottom: 8, display: 'block' }}
       />
       <Space>

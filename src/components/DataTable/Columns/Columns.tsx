@@ -6,6 +6,21 @@ import { DataTableColumnsProps } from '../../../types/props';
 import { DataIndex, DataTableDataType } from '../../../types/data';
 import FilterDropdown from './FilterDropdown';
 
+export const columnSorter = (
+  a: DataTableDataType,
+  b: DataTableDataType,
+  column: keyof DataTableDataType
+): number => {
+  if (typeof a[column] === 'number' && typeof b[column] === 'number') {
+    return +a[column] - +b[column];
+  }
+  return String(a[column]).localeCompare(String(b[column]));
+};
+
+export const getTextToHighlight = (value: string): string => {
+  return value ? value : '';
+};
+
 const Columns = ({
   searchInput,
   searchText,
@@ -45,24 +60,13 @@ const Columns = ({
           highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
           searchWords={[searchText]}
           autoEscape
-          textToHighlight={value ? value : ''}
+          textToHighlight={getTextToHighlight(value)}
         />
       ) : (
         value
       );
     },
   });
-
-  const sortColumn = (
-    a: DataTableDataType,
-    b: DataTableDataType,
-    column: keyof DataTableDataType
-  ): number => {
-    if (typeof a[column] === 'number' && typeof b[column] === 'number') {
-      return +a[column] - +b[column];
-    }
-    return String(a[column]).localeCompare(String(b[column]));
-  };
 
   const getColumnWidth = (dataIndex: string): string => {
     if (dataIndex === 'value') {
@@ -77,7 +81,7 @@ const Columns = ({
       dataIndex,
       key: dataIndex,
       ...getColumnSearchProps(dataIndex as keyof DataTableDataType),
-      sorter: (a, b) => sortColumn(a, b, dataIndex as keyof DataTableDataType),
+      sorter: (a, b) => columnSorter(a, b, dataIndex as keyof DataTableDataType),
       sortDirections: ['descend', 'ascend'],
       width: getColumnWidth(dataIndex),
     };
