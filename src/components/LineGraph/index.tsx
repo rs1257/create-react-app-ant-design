@@ -21,6 +21,9 @@ interface LineGraphProps<T> {
   xAxisLabel?: string;
   yAxisLabel?: string;
   labels: string[];
+  xAxisTickFormatter?: (value: string) => string;
+  tooltipLabelFormatter?: (value: string) => string;
+  dot?: boolean;
 }
 
 const numberFormatter = (value: string): string => {
@@ -38,6 +41,9 @@ const LineGraph = <T,>({
   xAxisLabel,
   yAxisLabel,
   labels,
+  xAxisTickFormatter,
+  tooltipLabelFormatter,
+  dot = true,
 }: LineGraphProps<T>): JSX.Element => {
   const lineColours = [
     '#8884d8',
@@ -70,16 +76,18 @@ const LineGraph = <T,>({
           onClick={selectLine}
           onMouseOver={handleLegendMouseEnter}
           onMouseOut={handleLegendMouseLeave}
+          iconType="circle"
         />
         <XAxis
           dataKey={xAxisDataKey}
           type="number"
           domain={['auto', 'auto']}
-          tickFormatter={timeFormatter}
+          tickFormatter={xAxisTickFormatter ? xAxisTickFormatter : timeFormatter}
           label={{
             value: xAxisLabel ?? 'Time',
             dy: 20,
           }}
+          allowDuplicatedCategory={false}
         />
         <YAxis
           domain={['auto', 'auto']}
@@ -90,9 +98,13 @@ const LineGraph = <T,>({
             dx: -40,
           }}
         />
-        <Tooltip formatter={numberFormatter} labelFormatter={timeFormatter} />
+        <Tooltip
+          formatter={numberFormatter}
+          labelFormatter={tooltipLabelFormatter ? tooltipLabelFormatter : timeFormatter}
+        />
         {data.map((line, index) => (
           <Line
+            dot={dot}
             key={index}
             name={labels[index]}
             type="monotone"

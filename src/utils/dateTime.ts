@@ -5,6 +5,9 @@ export const getTime = (timeString: string): string => dayjs(new Date(timeString
 export const getDate = (dateString: string): string =>
   dayjs(new Date(dateString)).format('YYYY-MM-DD');
 
+export const getFullMonth = (dateString: string): string =>
+  dayjs(new Date(dateString)).format('MMMM');
+
 export const trimDate = (
   dateString: string | number | null,
   trimDateTo: dayjs.OpUnitType
