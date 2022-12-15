@@ -1,5 +1,5 @@
 import forecastMargins from '../../../data/forecastMargins.json';
-import { DataTableDataTypeMultiColumn, DataTableHeader, FormattedData } from '../../../types/data';
+import { DataTableDataType, DataTableHeader, FormattedData } from '../../../types/data';
 import { getDate, getTime } from '../../../utils/dateTime';
 
 const {
@@ -14,21 +14,15 @@ const headers: DataTableHeader[] = header.map((cell, index) => {
   };
 });
 
-const rowOne = mnData.reduce(
-  (result: DataTableDataTypeMultiColumn, item, index): DataTableDataTypeMultiColumn => {
-    result[String(index + 1) as keyof DataTableDataTypeMultiColumn] = item;
-    return result;
-  },
-  {}
-);
+const rowOne = mnData.reduce((result: DataTableDataType, item, index): DataTableDataType => {
+  result[String(index + 1) as keyof DataTableDataType] = item;
+  return result;
+}, {});
 
-const rowTwo = demandData.reduce(
-  (result: DataTableDataTypeMultiColumn, item, index): DataTableDataTypeMultiColumn => {
-    result[String(index + 1) as keyof DataTableDataTypeMultiColumn] = item;
-    return result;
-  },
-  {}
-);
+const rowTwo = demandData.reduce((result: DataTableDataType, item, index): DataTableDataType => {
+  result[String(index + 1) as keyof DataTableDataType] = item;
+  return result;
+}, {});
 
 export const formattedData: FormattedData = {
   headers,

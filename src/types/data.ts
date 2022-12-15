@@ -1,15 +1,5 @@
 export interface DataTableDataType {
-  name: string;
-  value: number;
-}
-
-export interface DataTableDataTypeMultiColumn {
-  valueOne?: number | string;
-  valueTwo?: number | string;
-  valueThree?: number | string;
-  valueFour?: number | string;
-  valueFive?: number | string;
-  valueSix?: number | string;
+  [key: string]: string | number;
 }
 
 export interface DataTableHeader {
@@ -23,7 +13,7 @@ export interface DataTableMetaData {
 }
 
 export interface FormattedData {
-  data: DataTableDataType[] | DataTableDataTypeMultiColumn[];
+  data: DataTableDataType[];
   headers: DataTableHeader[];
   meta: DataTableMetaData;
 }

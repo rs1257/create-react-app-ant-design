@@ -147,7 +147,7 @@ describe('table should render correct data', () => {
       userEvent.click(nameColumnSorter);
     });
     const tRows = await findAllByRole('row');
-    expect(tRows[1]).toHaveTextContent(mockData[mockData.length - 1].name);
+    expect(tRows[1]).toHaveTextContent(String(mockData[mockData.length - 1].name));
   });
 
   it('should correctly sort columns with strings alphabetically', () => {
@@ -162,8 +162,8 @@ describe('table should render correct data', () => {
     const valueKey: keyof DataTableDataType = 'value';
     const sortedByValueLowToHigh = columnSorter(mockData[0], mockData[1], valueKey);
     const sortedByValueHighToLow = columnSorter(mockData[1], mockData[0], valueKey);
-    expect(sortedByValueLowToHigh).toEqual(mockData[0].value - mockData[1].value);
-    expect(sortedByValueHighToLow).toEqual(mockData[1].value - mockData[0].value);
+    expect(sortedByValueLowToHigh).toEqual(+mockData[0].value - +mockData[1].value);
+    expect(sortedByValueHighToLow).toEqual(+mockData[1].value - +mockData[0].value);
   });
 });
 

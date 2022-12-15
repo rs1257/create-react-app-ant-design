@@ -28,7 +28,7 @@ const FilterDropdown: FC<DataTableFilterProps> = ({
   useEffect(() => {
     const keys = selectedKeys as string[];
     setSearchText(keys[0]);
-    setSearchedColumn(dataIndex);
+    setSearchedColumn(String(dataIndex));
     confirm({ closeDropdown: false });
   }, [selectedKeys, dataIndex, confirm, setSearchText, setSearchedColumn]);
   return (

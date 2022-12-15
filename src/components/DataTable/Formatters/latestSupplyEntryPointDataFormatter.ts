@@ -1,4 +1,4 @@
-import { DataTableDataType, FormattedData } from '../../../types/data';
+import { DataTableDataType } from '../../../types/data';
 import latestSupplyEntryPoint from '../../../data/latestSupplyEntryPoint.json';
 import { getDate, getTime } from '../../../utils/dateTime';
 
@@ -11,7 +11,7 @@ const formattedRawData: DataTableDataType[] = data.map((row) => {
   };
 });
 
-export const formattedData: FormattedData = {
+export const formattedData = {
   headers: [
     { title: 'System Entry Name', dataIndex: 'name' },
     { title: 'Flow Rate (mcm/d)', dataIndex: 'value' },

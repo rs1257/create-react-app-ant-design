@@ -19,7 +19,9 @@ const DataTable: FC<DataTableProps> = ({ data, headers }) => {
     headers,
   });
 
-  return <Table columns={columns} dataSource={data} rowKey={(record): string => record.name} />;
+  return (
+    <Table columns={columns} dataSource={data} rowKey={(record): string => String(record.name)} />
+  );
 };
 
 export default DataTable;
