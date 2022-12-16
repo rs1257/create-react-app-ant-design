@@ -27,19 +27,18 @@ export function useRequest({ url, method, data, onSuccess }: RequestProps): Requ
     url,
     method,
     data,
-    headers: {
-      //   'Content-Type': 'application/x-www-form-urlencoded',
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Headers': '*',
-      'Access-Control-Allow-Credentials': '*',
-    },
     // headers: {
-    //
-    //   'Content-Type': 'application/x-www-form-urlencoded',
+    //   //   'Content-Type': 'application/x-www-form-urlencoded',
+    //   'Access-Control-Allow-Origin': '*',
     //   'Access-Control-Allow-Headers': '*',
     //   'Access-Control-Allow-Credentials': '*',
-    //   'Access-Control-Allow-Methods': '*',
     // },
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Access-Control-Allow-Headers': '*',
+      'Access-Control-Allow-Credentials': '*',
+      'Access-Control-Allow-Methods': '*',
+    },
   };
 
   // eslint-disable-next-line no-console
