@@ -12,7 +12,7 @@ import {
 import { getTime } from '../../utils/dateTime';
 import { roundNumber } from '../../utils/number';
 import hexToRgba from 'hex-to-rgba';
-import useInteractiveLegend from '../../hooks/useToggleLines';
+import useInteractiveLegend from '../../hooks/useInteractiveLegend';
 
 interface LineGraphProps<T> {
   data: T[];
