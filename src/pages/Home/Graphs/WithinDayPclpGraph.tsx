@@ -6,7 +6,7 @@ import Loader from '../../../components/Loader';
 const WithinDayPclpGraph = (): JSX.Element => {
   const { isLoading, error, data } = useGetGraphData(
     'https://mip-prd-web.azurewebsites.net/api/WithinDayPclp',
-    ['withinDayPclp']
+    ['withinDayPclpGraph']
   );
 
   if (isLoading) return <Loader />;

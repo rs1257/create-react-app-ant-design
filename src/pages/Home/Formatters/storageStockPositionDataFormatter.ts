@@ -12,17 +12,21 @@ enum PublicationObjectName {
 }
 
 export const storageStockPositionGraphDataFormatter = (
-  forecastSupplyDemandData: Record<string, string | number | null>[]
+  forecastSupplyDemandData?: Record<string, unknown>[]
 ): StorageStockData => {
+  if (!forecastSupplyDemandData) {
+    return { current: [], previous: [] };
+  }
   const initialSupplyDemandData: StorageStockData = { current: [], previous: [] };
 
   const sortedData = forecastSupplyDemandData.sort(
-    (a, b) => +dayjs(a.applicableAtUkLocalTime) - +dayjs(b.applicableAtUkLocalTime)
+    (a, b) =>
+      +dayjs(a.applicableAtUkLocalTime as string) - +dayjs(b.applicableAtUkLocalTime as string)
   );
 
   const transformedData = sortedData.reduce((acc, dataItem) => {
     const { applicableAtUkLocalTime, publicationObjectName } = dataItem;
-    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime, 'day'));
+    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime as string, 'day'));
 
     const transformedDataItem = { ...dataItem, applicableAtUkLocalTime: epochTime };
     if (publicationObjectName === PublicationObjectName.current) {

@@ -1,6 +1,7 @@
 import { rest } from 'msw';
 import forecastSupplyDemandData from '../data/forecastSupplyDemand.json';
 import withinDayPclp from '../data/withinDayPclp.json';
+import storageStockPosition from '../data/storageStockPosition.json';
 
 export const handlers = [
   rest.get(
@@ -19,6 +20,14 @@ export const handlers = [
       // Respond with a 200 status code
       ctx.status(200),
       ctx.json(withinDayPclp)
+    );
+  }),
+
+  rest.get('https://mip-prd-web.azurewebsites.net/api/AnnualStorageStockLevel', (req, res, ctx) => {
+    return res(
+      // Respond with a 200 status code
+      ctx.status(200),
+      ctx.json(storageStockPosition)
     );
   }),
 
