@@ -1,12 +1,21 @@
-import storageStockPosition from '../../../data/storageStockPosition.json';
 import LineGraph from '../../../components/LineGraph';
 import { storageStockPositionGraphDataFormatter } from '../Formatters/storageStockPositionDataFormatter';
 import { getFullMonth } from '../../../utils/dateTime';
 import dayjs from 'dayjs';
+import Loader from '../../../components/Loader';
+import useGetGraphData from '../../../api/useGetGraphData';
 
 const StorageStockPositionGraph = (): JSX.Element => {
-  const { data: storageStockData } = storageStockPosition;
-  const { current, previous } = storageStockPositionGraphDataFormatter(storageStockData);
+  const { isLoading, error, data } = useGetGraphData(
+    'https://mip-prd-web.azurewebsites.net/api/AnnualStorageStockLevel',
+    ['stockPositionGraph']
+  );
+
+  if (isLoading) return <Loader />;
+
+  if (error) return <>{'An error has occurred: ' + (error as Error).message}</>;
+
+  const { current, previous } = storageStockPositionGraphDataFormatter(data?.data);
 
   return (
     <>

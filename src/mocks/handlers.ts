@@ -1,32 +1,41 @@
 import { rest } from 'msw';
+import forecastSupplyDemandData from '../data/forecastSupplyDemand.json';
+import withinDayPclp from '../data/withinDayPclp.json';
+import storageStockPosition from '../data/storageStockPosition.json';
 
 export const handlers = [
-  rest.post('/login', (req, res, ctx) => {
-    // Persist user's authentication in the session
-    sessionStorage.setItem('is-authenticated', 'true');
-    return res(
-      // Respond with a 200 status code
-      ctx.status(200)
-    );
-  }),
-  rest.get('/user', (req, res, ctx) => {
-    // Check if the user is authenticated in this session
-    const isAuthenticated = sessionStorage.getItem('is-authenticated');
-    if (!isAuthenticated) {
-      // If not authenticated, respond with a 403 error
+  rest.get(
+    'https://mip-prd-web.azurewebsites.net/api/WithinDayForecastSupplyAndDemand',
+    (req, res, ctx) => {
       return res(
-        ctx.status(403),
-        ctx.json({
-          errorMessage: 'Not authorized',
-        })
+        // Respond with a 200 status code
+        ctx.status(200),
+        ctx.json(forecastSupplyDemandData)
       );
     }
-    // If authenticated, return a mocked user details
+  ),
+
+  rest.get('https://mip-prd-web.azurewebsites.net/api/WithinDayPclp', (req, res, ctx) => {
     return res(
+      // Respond with a 200 status code
       ctx.status(200),
-      ctx.json({
-        username: 'admin',
-      })
+      ctx.json(withinDayPclp)
     );
+  }),
+
+  rest.get('https://mip-prd-web.azurewebsites.net/api/AnnualStorageStockLevel', (req, res, ctx) => {
+    return res(
+      // Respond with a 200 status code
+      ctx.status(200),
+      ctx.json(storageStockPosition)
+    );
+  }),
+
+  // Passthrough all static assets
+  rest.get('/static/*', (req) => {
+    return req.passthrough();
+  }),
+  rest.get('/logo192.png', (req) => {
+    return req.passthrough();
   }),
 ];

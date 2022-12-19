@@ -3,7 +3,7 @@ import LinkButton from '../../components/LinkButton';
 import Loader from '../../components/Loader';
 import './Home.scss';
 import ForecastSupplyDemandGraph from './Graphs/ForecastSupplyDemandGraph';
-import WithinDayPclpGraph from './Graphs/WithinDayPclp';
+import WithinDayPclpGraph from './Graphs/WithinDayPclpGraph';
 import StorageStockPositionGraph from './Graphs/StorageStockPositionGraph';
 import dataItemExplorerTree from '../../data/dataItemExplorerTree';
 import soapResponse from '../../data/soapResponse';

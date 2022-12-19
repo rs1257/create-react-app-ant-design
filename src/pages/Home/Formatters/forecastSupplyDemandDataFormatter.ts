@@ -1,6 +1,6 @@
 import { convertToEpochTime, trimDate } from '../../../utils/dateTime';
 
-interface SupplyDemandData {
+export interface SupplyDemandData {
   supply: Record<string, unknown>[];
   demand: Record<string, unknown>[];
 }
@@ -11,12 +11,16 @@ enum PublicationObjectName {
 }
 
 export const forecastSupplyDemandDataFormatter = (
-  forecastSupplyDemandData: Record<string, string | number | null>[]
+  forecastSupplyDemandData?: Record<string, unknown>[]
 ): SupplyDemandData => {
+  if (!forecastSupplyDemandData) {
+    return { supply: [], demand: [] };
+  }
+
   const initialSupplyDemandData: SupplyDemandData = { supply: [], demand: [] };
   const transformedData = forecastSupplyDemandData.reduce((acc, dataItem) => {
     const { applicableAtUkLocalTime, publicationObjectName } = dataItem;
-    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime, 'hour'));
+    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime as string, 'hour'));
 
     const transformedDataItem = { ...dataItem, applicableAtUkLocalTime: epochTime };
     if (publicationObjectName === PublicationObjectName.supply) {
