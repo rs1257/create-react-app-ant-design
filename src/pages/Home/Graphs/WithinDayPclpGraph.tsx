@@ -1,10 +1,19 @@
-import withinDayPclp from '../../../data/withinDayPclp.json';
 import LineGraph from '../../../components/LineGraph';
 import { withinDayPclpDataFormatter } from '../Formatters/withinDayPclpDataFormatter';
+import useGetGraphData from '../../../api/useGetGraphData';
+import Loader from '../../../components/Loader';
 
 const WithinDayPclpGraph = (): JSX.Element => {
-  const { data: withinDayPclpData } = withinDayPclp;
-  const transformedData = withinDayPclpDataFormatter(withinDayPclpData);
+  const { isLoading, error, data } = useGetGraphData(
+    'https://mip-prd-web.azurewebsites.net/api/WithinDayPclp',
+    ['withinDayPclpGraph']
+  );
+
+  if (isLoading) return <Loader />;
+
+  if (error) return <>{'An error has occurred: ' + (error as Error).message}</>;
+
+  const transformedData = withinDayPclpDataFormatter(data?.data);
 
   return (
     <>
