@@ -57,7 +57,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 TODO
 
-- Merge statusView and Home folders, delete statusView - Jake
 - Write unit tests to increase coverage - Jake & Ryan
 - Mock api calls for json files (two data tables) - Jake
 - Move data formatters to appropriate folders - Jake & Ryan

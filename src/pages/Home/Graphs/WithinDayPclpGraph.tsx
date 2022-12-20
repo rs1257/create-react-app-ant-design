@@ -1,6 +1,6 @@
 import LineGraph from '../../../components/LineGraph';
 import { withinDayPclpDataFormatter } from '../Formatters/withinDayPclpDataFormatter';
-import useGetGraphData from '../../../api/useGetGraphData';
+import useGetRequest from '../../../api/useGetRequest';
 import Loader from '../../../components/Loader';
 import { GraphApiResponse } from './StorageStockPositionGraph';
 
@@ -9,7 +9,7 @@ const WithinDayPclpGraph = (): JSX.Element => {
     isLoading,
     error,
     data: withinDayPclpData,
-  } = useGetGraphData<GraphApiResponse>('https://mip-prd-web.azurewebsites.net/api/WithinDayPclp', [
+  } = useGetRequest<GraphApiResponse>('https://mip-prd-web.azurewebsites.net/api/WithinDayPclp', [
     'withinDayPclpGraph',
   ]);
 

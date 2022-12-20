@@ -3,7 +3,7 @@ import { storageStockPositionGraphDataFormatter } from '../Formatters/storageSto
 import { getFullMonth } from '../../../utils/dateTime';
 import dayjs from 'dayjs';
 import Loader from '../../../components/Loader';
-import useGetGraphData from '../../../api/useGetGraphData';
+import useGetRequest from '../../../api/useGetRequest';
 
 export interface GraphApiResponse {
   gasDay: GasDay;
@@ -35,7 +35,7 @@ const StorageStockPositionGraph = (): JSX.Element => {
     isLoading,
     error,
     data: storageStockPositionData,
-  } = useGetGraphData<GraphApiResponse>(
+  } = useGetRequest<GraphApiResponse>(
     'https://mip-prd-web.azurewebsites.net/api/AnnualStorageStockLevel',
     ['stockPositionGraph']
   );
