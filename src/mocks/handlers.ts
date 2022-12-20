@@ -2,6 +2,7 @@ import { rest } from 'msw';
 import forecastSupplyDemandData from '../data/forecastSupplyDemand.json';
 import withinDayPclp from '../data/withinDayPclp.json';
 import storageStockPosition from '../data/storageStockPosition.json';
+import soapResponse from '../data/soapResponse';
 
 export const handlers = [
   rest.get(
@@ -30,6 +31,17 @@ export const handlers = [
       ctx.json(storageStockPosition)
     );
   }),
+
+  rest.post(
+    'http://mip-prdpull-api.azurewebsites.net/MIPIws-public/public/publicwebservice.asmx',
+    (req, res, ctx) => {
+      return res(
+        // Respond with a 200 status code
+        ctx.status(200),
+        ctx.xml(soapResponse)
+      );
+    }
+  ),
 
   // Passthrough all static assets
   rest.get('/static/*', (req) => {

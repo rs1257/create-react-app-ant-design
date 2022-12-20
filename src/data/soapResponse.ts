@@ -1,155 +1,569 @@
 export default `<?xml version="1.0" encoding="utf-8"?>
-
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-
     <soap:Body>
-
         <GetPublicationDataWMResponse xmlns="http://www.NationalGrid.com/MIPI/">
-
             <GetPublicationDataWMResult>
-
                 <CLSMIPIPublicationObjectBE>
-
+                    <PublicationObjectName>Calorific Value, ApachePSBlackstart, Industrial Offtake</PublicationObjectName>
+                    <PublicationObjectData>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-01T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-01T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-02T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-02T12:01:14Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-02T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-02T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-03T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-03T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-03T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-03T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-04T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-04T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-04T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-04T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-05T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-05T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-05T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-05T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-06T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-06T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-06T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-06T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-07T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-07T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-07T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-07T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-08T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-08T12:01:18Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-08T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-08T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-09T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-09T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-09T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-09T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-10T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-10T12:01:26Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-10T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-10T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-11T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-11T12:01:25Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-11T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-11T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-12T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-12T12:01:26Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-12T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-12T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-13T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-13T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-13T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-13T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-14T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-14T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-14T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-14T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-15T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-15T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-15T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-15T00:00:00Z</ApplicableFor>
+                            <Value>39</Value>
+                            <GeneratedTimeStamp>2022-12-16T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-16T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                    </PublicationObjectData>
+                </CLSMIPIPublicationObjectBE>
+                <CLSMIPIPublicationObjectBE>
                     <PublicationObjectName>NTS Energy Offtaken, Saltholme, NTS Power Station</PublicationObjectName>
-
                     <PublicationObjectData>
-
                         <CLSPublicationObjectDataBE>
-
-                            <ApplicableAt>2022-07-15T00:00:00Z</ApplicableAt>
-
-                            <ApplicableFor>2022-07-15T00:00:00Z</ApplicableFor>
-
-                            <Value>2158889</Value>
-
-                            <GeneratedTimeStamp>2022-07-21T13:02:00Z</GeneratedTimeStamp>
-
+                            <ApplicableAt>2022-12-01T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-01T00:00:00Z</ApplicableFor>
+                            <Value>2784444</Value>
+                            <GeneratedTimeStamp>2022-12-02T12:01:01Z</GeneratedTimeStamp>
                             <QualityIndicator>L</QualityIndicator>
-
                             <Substituted>N</Substituted>
-
-                            <CreatedDate>2022-07-21T13:02:11Z</CreatedDate>
-
+                            <CreatedDate>2022-12-02T12:01:14Z</CreatedDate>
                         </CLSPublicationObjectDataBE>
-
                         <CLSPublicationObjectDataBE>
-
-                            <ApplicableAt>2022-07-18T00:00:00Z</ApplicableAt>
-
-                            <ApplicableFor>2022-07-18T00:00:00Z</ApplicableFor>
-
-                            <Value>2910000</Value>
-
-                            <GeneratedTimeStamp>2022-07-20T12:00:01Z</GeneratedTimeStamp>
-
+                            <ApplicableAt>2022-12-02T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-02T00:00:00Z</ApplicableFor>
+                            <Value>1210000</Value>
+                            <GeneratedTimeStamp>2022-12-03T12:01:00Z</GeneratedTimeStamp>
                             <QualityIndicator>L</QualityIndicator>
-
                             <Substituted>N</Substituted>
-
-                            <CreatedDate>2022-07-20T12:00:09Z</CreatedDate>
-
+                            <CreatedDate>2022-12-03T12:01:12Z</CreatedDate>
                         </CLSPublicationObjectDataBE>
-
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-03T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-03T00:00:00Z</ApplicableFor>
+                            <Value>1256667</Value>
+                            <GeneratedTimeStamp>2022-12-04T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-04T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-04T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-04T00:00:00Z</ApplicableFor>
+                            <Value>985556</Value>
+                            <GeneratedTimeStamp>2022-12-05T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-05T12:01:14Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-05T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-05T00:00:00Z</ApplicableFor>
+                            <Value>726667</Value>
+                            <GeneratedTimeStamp>2022-12-06T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-06T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-06T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-06T00:00:00Z</ApplicableFor>
+                            <Value>2800000</Value>
+                            <GeneratedTimeStamp>2022-12-07T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-07T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-07T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-07T00:00:00Z</ApplicableFor>
+                            <Value>2176667</Value>
+                            <GeneratedTimeStamp>2022-12-08T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-08T12:01:17Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-08T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-08T00:00:00Z</ApplicableFor>
+                            <Value>2302222</Value>
+                            <GeneratedTimeStamp>2022-12-09T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-09T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-09T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-09T00:00:00Z</ApplicableFor>
+                            <Value>2415556</Value>
+                            <GeneratedTimeStamp>2022-12-10T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-10T12:01:25Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-10T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-10T00:00:00Z</ApplicableFor>
+                            <Value>1784444</Value>
+                            <GeneratedTimeStamp>2022-12-11T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-11T12:01:24Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-11T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-11T00:00:00Z</ApplicableFor>
+                            <Value>2493333</Value>
+                            <GeneratedTimeStamp>2022-12-12T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-12T12:01:25Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-12T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-12T00:00:00Z</ApplicableFor>
+                            <Value>2681111</Value>
+                            <GeneratedTimeStamp>2022-12-13T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-13T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-13T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-13T00:00:00Z</ApplicableFor>
+                            <Value>2504444</Value>
+                            <GeneratedTimeStamp>2022-12-14T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-14T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-14T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-14T00:00:00Z</ApplicableFor>
+                            <Value>2596667</Value>
+                            <GeneratedTimeStamp>2022-12-15T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-15T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-15T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-15T00:00:00Z</ApplicableFor>
+                            <Value>2795556</Value>
+                            <GeneratedTimeStamp>2022-12-16T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-16T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
                     </PublicationObjectData>
-
                 </CLSMIPIPublicationObjectBE>
-
                 <CLSMIPIPublicationObjectBE>
-
                     <PublicationObjectName>NTS Physical Flows, Saltholme, NTS Power Station</PublicationObjectName>
-
                     <PublicationObjectData>
-
                         <CLSPublicationObjectDataBE>
-
-                            <ApplicableAt>2022-07-15T00:00:00Z</ApplicableAt>
-
-                            <ApplicableFor>2022-07-15T00:00:00Z</ApplicableFor>
-
-                            <Value>.1891</Value>
-
-                            <GeneratedTimeStamp>2022-07-21T13:02:00Z</GeneratedTimeStamp>
-
+                            <ApplicableAt>2022-12-01T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-01T00:00:00Z</ApplicableFor>
+                            <Value>.2435</Value>
+                            <GeneratedTimeStamp>2022-12-02T12:01:01Z</GeneratedTimeStamp>
                             <QualityIndicator>L</QualityIndicator>
-
                             <Substituted>N</Substituted>
-
-                            <CreatedDate>2022-07-21T13:02:09Z</CreatedDate>
-
+                            <CreatedDate>2022-12-02T12:01:13Z</CreatedDate>
                         </CLSPublicationObjectDataBE>
-
                         <CLSPublicationObjectDataBE>
-
-                            <ApplicableAt>2022-07-18T00:00:00Z</ApplicableAt>
-
-                            <ApplicableFor>2022-07-18T00:00:00Z</ApplicableFor>
-
-                            <Value>.255</Value>
-
-                            <GeneratedTimeStamp>2022-07-20T12:00:01Z</GeneratedTimeStamp>
-
+                            <ApplicableAt>2022-12-02T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-02T00:00:00Z</ApplicableFor>
+                            <Value>.106</Value>
+                            <GeneratedTimeStamp>2022-12-03T12:01:00Z</GeneratedTimeStamp>
                             <QualityIndicator>L</QualityIndicator>
-
                             <Substituted>N</Substituted>
-
-                            <CreatedDate>2022-07-20T12:00:09Z</CreatedDate>
-
+                            <CreatedDate>2022-12-03T12:01:12Z</CreatedDate>
                         </CLSPublicationObjectDataBE>
-
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-03T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-03T00:00:00Z</ApplicableFor>
+                            <Value>.1102</Value>
+                            <GeneratedTimeStamp>2022-12-04T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-04T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-04T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-04T00:00:00Z</ApplicableFor>
+                            <Value>.0863</Value>
+                            <GeneratedTimeStamp>2022-12-05T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-05T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-05T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-05T00:00:00Z</ApplicableFor>
+                            <Value>.0638</Value>
+                            <GeneratedTimeStamp>2022-12-06T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-06T12:01:11Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-06T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-06T00:00:00Z</ApplicableFor>
+                            <Value>.2454</Value>
+                            <GeneratedTimeStamp>2022-12-07T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-07T12:01:11Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-07T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-07T00:00:00Z</ApplicableFor>
+                            <Value>.1904</Value>
+                            <GeneratedTimeStamp>2022-12-08T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-08T12:01:17Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-08T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-08T00:00:00Z</ApplicableFor>
+                            <Value>.2017</Value>
+                            <GeneratedTimeStamp>2022-12-09T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-09T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-09T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-09T00:00:00Z</ApplicableFor>
+                            <Value>.2115</Value>
+                            <GeneratedTimeStamp>2022-12-10T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-10T12:01:25Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-10T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-10T00:00:00Z</ApplicableFor>
+                            <Value>.1561</Value>
+                            <GeneratedTimeStamp>2022-12-11T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-11T12:01:24Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-11T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-11T00:00:00Z</ApplicableFor>
+                            <Value>.218</Value>
+                            <GeneratedTimeStamp>2022-12-12T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-12T12:01:25Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-12T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-12T00:00:00Z</ApplicableFor>
+                            <Value>.2347</Value>
+                            <GeneratedTimeStamp>2022-12-13T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-13T12:01:11Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-13T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-13T00:00:00Z</ApplicableFor>
+                            <Value>.2188</Value>
+                            <GeneratedTimeStamp>2022-12-14T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-14T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-14T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-14T00:00:00Z</ApplicableFor>
+                            <Value>.2272</Value>
+                            <GeneratedTimeStamp>2022-12-15T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-15T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-15T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-15T00:00:00Z</ApplicableFor>
+                            <Value>.2444</Value>
+                            <GeneratedTimeStamp>2022-12-16T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-16T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
                     </PublicationObjectData>
-
                 </CLSMIPIPublicationObjectBE>
-
                 <CLSMIPIPublicationObjectBE>
-
                     <PublicationObjectName>Calorific Value, Saltholme, NTS Power Station</PublicationObjectName>
-
                     <PublicationObjectData>
-
                         <CLSPublicationObjectDataBE>
-
-                            <ApplicableAt>2022-07-15T00:00:00Z</ApplicableAt>
-
-                            <ApplicableFor>2022-07-15T00:00:00Z</ApplicableFor>
-
-                            <Value>41.09</Value>
-
-                            <GeneratedTimeStamp>2022-07-21T13:02:00Z</GeneratedTimeStamp>
-
+                            <ApplicableAt>2022-12-01T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-01T00:00:00Z</ApplicableFor>
+                            <Value>41.15</Value>
+                            <GeneratedTimeStamp>2022-12-02T12:01:01Z</GeneratedTimeStamp>
                             <QualityIndicator>L</QualityIndicator>
-
                             <Substituted>N</Substituted>
-
-                            <CreatedDate>2022-07-21T13:02:13Z</CreatedDate>
-
+                            <CreatedDate>2022-12-02T12:01:14Z</CreatedDate>
                         </CLSPublicationObjectDataBE>
-
                         <CLSPublicationObjectDataBE>
-
-                            <ApplicableAt>2022-07-18T00:00:00Z</ApplicableAt>
-
-                            <ApplicableFor>2022-07-18T00:00:00Z</ApplicableFor>
-
-                            <Value>41.09</Value>
-
-                            <GeneratedTimeStamp>2022-07-20T12:00:01Z</GeneratedTimeStamp>
-
+                            <ApplicableAt>2022-12-02T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-02T00:00:00Z</ApplicableFor>
+                            <Value>41.13</Value>
+                            <GeneratedTimeStamp>2022-12-03T12:01:00Z</GeneratedTimeStamp>
                             <QualityIndicator>L</QualityIndicator>
-
                             <Substituted>N</Substituted>
-
-                            <CreatedDate>2022-07-20T12:00:09Z</CreatedDate>
-
+                            <CreatedDate>2022-12-03T12:01:13Z</CreatedDate>
                         </CLSPublicationObjectDataBE>
-
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-03T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-03T00:00:00Z</ApplicableFor>
+                            <Value>41.08</Value>
+                            <GeneratedTimeStamp>2022-12-04T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-04T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-04T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-04T00:00:00Z</ApplicableFor>
+                            <Value>41.07</Value>
+                            <GeneratedTimeStamp>2022-12-05T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-05T12:01:14Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-05T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-05T00:00:00Z</ApplicableFor>
+                            <Value>41.08</Value>
+                            <GeneratedTimeStamp>2022-12-06T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-06T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-06T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-06T00:00:00Z</ApplicableFor>
+                            <Value>41.07</Value>
+                            <GeneratedTimeStamp>2022-12-07T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-07T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-07T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-07T00:00:00Z</ApplicableFor>
+                            <Value>41.14</Value>
+                            <GeneratedTimeStamp>2022-12-08T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-08T12:01:18Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-08T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-08T00:00:00Z</ApplicableFor>
+                            <Value>41.09</Value>
+                            <GeneratedTimeStamp>2022-12-09T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-09T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-09T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-09T00:00:00Z</ApplicableFor>
+                            <Value>41.12</Value>
+                            <GeneratedTimeStamp>2022-12-10T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-10T12:01:26Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-10T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-10T00:00:00Z</ApplicableFor>
+                            <Value>41.17</Value>
+                            <GeneratedTimeStamp>2022-12-11T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-11T12:01:25Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-11T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-11T00:00:00Z</ApplicableFor>
+                            <Value>41.16</Value>
+                            <GeneratedTimeStamp>2022-12-12T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-12T12:01:26Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-12T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-12T00:00:00Z</ApplicableFor>
+                            <Value>41.13</Value>
+                            <GeneratedTimeStamp>2022-12-13T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-13T12:01:12Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-13T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-13T00:00:00Z</ApplicableFor>
+                            <Value>41.21</Value>
+                            <GeneratedTimeStamp>2022-12-14T12:01:00Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-14T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-14T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-14T00:00:00Z</ApplicableFor>
+                            <Value>41.12</Value>
+                            <GeneratedTimeStamp>2022-12-15T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-15T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
+                        <CLSPublicationObjectDataBE>
+                            <ApplicableAt>2022-12-15T00:00:00Z</ApplicableAt>
+                            <ApplicableFor>2022-12-15T00:00:00Z</ApplicableFor>
+                            <Value>41.18</Value>
+                            <GeneratedTimeStamp>2022-12-16T12:01:01Z</GeneratedTimeStamp>
+                            <QualityIndicator>L</QualityIndicator>
+                            <Substituted>N</Substituted>
+                            <CreatedDate>2022-12-16T12:01:13Z</CreatedDate>
+                        </CLSPublicationObjectDataBE>
                     </PublicationObjectData>
-
                 </CLSMIPIPublicationObjectBE>
-
             </GetPublicationDataWMResult>
-
         </GetPublicationDataWMResponse>
-
     </soap:Body>
-
 </soap:Envelope>`;

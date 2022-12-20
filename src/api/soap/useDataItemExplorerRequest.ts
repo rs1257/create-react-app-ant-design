@@ -1,5 +1,5 @@
-import axios, { AxiosRequestConfig, AxiosError } from 'axios';
-import { useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import axios, { AxiosRequestConfig } from 'axios';
 
 interface RequestProps {
   latestFlag: boolean;
@@ -8,18 +8,12 @@ interface RequestProps {
   dateFrom: string;
   dateType: SoapRequestDateType;
   names: string[];
-  onSuccess: (response: unknown) => void;
 }
 
 type RequestResponse = {
-  doRequest: (data?: unknown) => Promise<void>;
-  errors: string[];
-};
-
-type RequestError = {
-  errors: {
-    message: string;
-  }[];
+  isLoading: boolean;
+  error: unknown;
+  data?: string;
 };
 
 export enum SoapRequestDateType {
@@ -68,10 +62,7 @@ export function useDataItemExplorerRequest({
   dateFrom,
   dateType,
   names,
-  onSuccess,
 }: RequestProps): RequestResponse {
-  const [errors, setErrors] = useState<string[]>([]);
-
   const url = 'http://mip-prdpull-api.azurewebsites.net/MIPIws-public/public/publicwebservice.asmx';
 
   const config: AxiosRequestConfig = {
@@ -82,26 +73,10 @@ export function useDataItemExplorerRequest({
     headers: headers,
   };
 
-  const doRequest = async (): Promise<void> => {
-    try {
-      setErrors([]);
-      const response = await axios.request(config);
-      if (onSuccess) {
-        onSuccess(response.data as unknown);
-      }
-    } catch (err) {
-      if (axios.isAxiosError(err)) {
-        const error = err as AxiosError<RequestError>;
-        if (error && error.response) {
-          const errors: string[] = [];
-          error.response?.data?.errors?.forEach((item) => errors.push(item.message));
-          setErrors(errors);
-        }
-      } else {
-        setErrors(['Unknown Error']);
-      }
-    }
-  };
+  const { isLoading, error, data } = useQuery<string>({
+    queryKey: ['dataItemExplorerRequest'],
+    queryFn: () => axios.request(config).then((response) => response.data as string),
+  });
 
-  return { doRequest, errors };
+  return { isLoading, error, data };
 }

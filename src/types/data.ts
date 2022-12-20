@@ -8,8 +8,9 @@ export interface DataTableHeader {
 }
 
 export interface DataTableMetaData {
-  date: string;
-  time: string;
+  date?: string | string[];
+  time?: string | string[];
+  name?: string;
 }
 
 export interface FormattedData {
@@ -19,3 +20,17 @@ export interface FormattedData {
 }
 
 export type DataIndex = keyof DataTableDataType;
+
+export interface CLSPublicationObjectDataItem {
+  ApplicableAt: string;
+  ApplicableFor: string;
+  Value: number;
+  GeneratedTimeStamp: string;
+  QualityIndicator: string;
+  Substituted: string;
+  CreatedDate: string;
+}
+export interface DataItemExplorerDataItem {
+  PublicationObjectName: string;
+  PublicationObjectData: { CLSPublicationObjectDataBE: CLSPublicationObjectDataItem[] };
+}
