@@ -1,13 +1,19 @@
 {
   "gasDay": {
-    "day": "2022-12-14T00:00:00Z",
-    "startUtc": "2022-12-14T05:00:00Z",
-    "endUtc": "2022-12-15T05:00:00Z",
-    "startUkLocalTime": "2022-12-14T05:00:00+00:00",
-    "endUkLocalTime": "2022-12-15T05:00:00+00:00"
+    "day": "2022-12-20T00:00:00Z",
+    "startUtc": "2022-12-20T05:00:00Z",
+    "endUtc": "2022-12-21T05:00:00Z",
+    "startUkLocalTime": "2022-12-20T05:00:00+00:00",
+    "endUkLocalTime": "2022-12-21T05:00:00+00:00"
   },
   "ansMessages": {
-    "ansMessages": []
+    "ansMessages": [
+      {
+        "qualityIndicator": null,
+        "applicableAtTime": "2022-12-20T09:11:00Z",
+        "displayValue": "Due to conditions on the network, the quantity of capacity being made available in the WDDSEC auction at location MH (Milford Haven) will be restricted until further notice."
+      }
+    ]
   },
   "systemMessages": {
     "systemMessages": []
@@ -26,63 +32,63 @@
     },
     "gbnTomorrow": {
       "value": null,
-      "applicableAt": "2022-12-14T14:41:26Z",
-      "applicableAtUkLocalTime": "2022-12-14T14:41:26+00:00",
+      "applicableAt": null,
+      "applicableAtUkLocalTime": null,
       "qualityIndicator": null,
-      "publicationObjectName": "Gas Balancing Notification - Tomorrow",
-      "applicableFor": "2022-12-15T00:00:00Z",
-      "generatedTimeStamp": "2022-12-14T14:41:27Z",
-      "generatedTimeStampUkLocalTime": "2022-12-14T14:41:27+00:00",
-      "rawDisplayValue": "NONE"
+      "publicationObjectName": null,
+      "applicableFor": null,
+      "generatedTimeStamp": "0001-01-01T00:00:00Z",
+      "generatedTimeStampUkLocalTime": null,
+      "rawDisplayValue": null
     },
     "mnTriggerToday": {
-      "value": 533.0,
-      "applicableAt": "2022-12-14T04:55:00Z",
-      "applicableAtUkLocalTime": "2022-12-14T04:55:00+00:00",
+      "value": 542.0,
+      "applicableAt": "2022-12-20T04:55:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T04:55:00+00:00",
       "qualityIndicator": null,
       "publicationObjectName": "MN Trigger - Today",
-      "applicableFor": "2022-12-14T00:00:00Z",
-      "generatedTimeStamp": "2022-12-14T04:58:10Z",
-      "generatedTimeStampUkLocalTime": "2022-12-14T04:58:10+00:00",
-      "rawDisplayValue": "533"
+      "applicableFor": "2022-12-20T00:00:00Z",
+      "generatedTimeStamp": "2022-12-20T04:58:10Z",
+      "generatedTimeStampUkLocalTime": "2022-12-20T04:58:10+00:00",
+      "rawDisplayValue": "542"
     },
     "mnTriggerTomorrow": {
-      "value": 536.0,
-      "applicableAt": "2022-12-14T14:41:26Z",
-      "applicableAtUkLocalTime": "2022-12-14T14:41:26+00:00",
+      "value": null,
+      "applicableAt": null,
+      "applicableAtUkLocalTime": null,
       "qualityIndicator": null,
-      "publicationObjectName": "MN Trigger - Tomorrow",
-      "applicableFor": "2022-12-15T00:00:00Z",
-      "generatedTimeStamp": "2022-12-14T14:41:27Z",
-      "generatedTimeStampUkLocalTime": "2022-12-14T14:41:27+00:00",
-      "rawDisplayValue": "536"
+      "publicationObjectName": null,
+      "applicableFor": null,
+      "generatedTimeStamp": "0001-01-01T00:00:00Z",
+      "generatedTimeStampUkLocalTime": null,
+      "rawDisplayValue": null
     }
   },
   "demandForecastToday": {
-    "value": 395.44546203291691,
-    "applicableAt": "2022-12-14T20:01:45Z",
-    "applicableAtUkLocalTime": "2022-12-14T20:01:45+00:00",
+    "value": 287.9135053517212,
+    "applicableAt": "2022-12-20T12:08:38Z",
+    "applicableAtUkLocalTime": "2022-12-20T12:08:38+00:00",
     "qualityIndicator": null,
     "publicationObjectName": "Demand Forecast, NTS, hourly update",
-    "applicableFor": "2022-12-14T00:00:00Z",
-    "generatedTimeStamp": "2022-12-14T20:01:47Z",
-    "generatedTimeStampUkLocalTime": "2022-12-14T20:01:47+00:00",
-    "rawDisplayValue": "395.4454620329169"
+    "applicableFor": "2022-12-20T00:00:00Z",
+    "generatedTimeStamp": "2022-12-20T12:08:40Z",
+    "generatedTimeStampUkLocalTime": "2022-12-20T12:08:40+00:00",
+    "rawDisplayValue": "287.9135053517212"
   },
   "demandForecastTomorrow": {
-    "value": 395.0,
-    "applicableAt": "2022-12-14T16:01:17Z",
-    "applicableAtUkLocalTime": "2022-12-14T16:01:17+00:00",
+    "value": null,
+    "applicableAt": null,
+    "applicableAtUkLocalTime": null,
     "qualityIndicator": null,
-    "publicationObjectName": "Demand Forecast, NTS, hourly update",
-    "applicableFor": "2022-12-15T00:00:00Z",
-    "generatedTimeStamp": "2022-12-14T16:01:19Z",
-    "generatedTimeStampUkLocalTime": "2022-12-14T16:01:19+00:00",
-    "rawDisplayValue": "395"
+    "publicationObjectName": null,
+    "applicableFor": null,
+    "generatedTimeStamp": "0001-01-01T00:00:00Z",
+    "generatedTimeStampUkLocalTime": null,
+    "rawDisplayValue": null
   },
   "mntriggerdemandforecastweekly": {
-    "header": ["Date", "16/12", "17/12", "18/12", "19/12", "20/12", "21/12"],
-    "mnData": ["Margins Notice", "533", "525", "515", "535", "", ""],
-    "demandData": ["Demand Forecast", "382", "345", "330", "330", "", ""]
+    "header": ["Date", "22/12", "23/12", "24/12", "25/12", "26/12", "27/12"],
+    "mnData": ["Margins Notice", "538", "538", "530", "", "", ""],
+    "demandData": ["Demand Forecast", "300", "298", "290", "", "", ""]
   }
 }

@@ -1,36 +1,49 @@
-import forecastMargins from '../../../data/forecastMargins.json';
+import { forecastMarginsNoticeAndDemandResponseData } from '../../../types/api';
 import { DataTableDataType, DataTableHeader, FormattedData } from '../../../types/tables';
 import { getDate, getTime } from '../../../utils/dateTime';
 
-const {
-  mntriggerdemandforecastweekly: { header, mnData, demandData },
-  gasDay,
-} = forecastMargins;
+const getHeaders = (header: string[]): DataTableHeader[] =>
+  header.map((cell, index) => {
+    return {
+      title: cell,
+      dataIndex: String(index + 1),
+    };
+  });
 
-const headers: DataTableHeader[] = header.map((cell, index) => {
+const getMarginsNoticeData = (mnData: string[]): DataTableDataType => {
+  return mnData.reduce((result: DataTableDataType, item, index): DataTableDataType => {
+    result[String(index + 1) as keyof DataTableDataType] = item;
+    result.name = `mn${index}`;
+    return result;
+  }, {});
+};
+
+const getDemandForecastData = (demandData: string[]): DataTableDataType => {
+  return demandData.reduce((result: DataTableDataType, item, index): DataTableDataType => {
+    result[String(index + 1) as keyof DataTableDataType] = item;
+    result.name = `demand${index}`;
+    return result;
+  }, {});
+};
+
+export const getFormattedForecastMarginsData = (
+  rawData: forecastMarginsNoticeAndDemandResponseData
+): FormattedData => {
+  // eslint-disable-next-line no-console
+  console.log(rawData);
+  const {
+    mntriggerdemandforecastweekly: { header, mnData, demandData },
+    gasDay,
+  } = rawData;
+  const marginsNotice = getMarginsNoticeData(mnData);
+  const demandForecastData = getDemandForecastData(demandData);
+  const headers = getHeaders(header);
   return {
-    title: cell,
-    dataIndex: String(index + 1),
+    headers,
+    data: [marginsNotice, demandForecastData],
+    meta: {
+      date: getDate(gasDay.day),
+      time: getTime(gasDay.day),
+    },
   };
-});
-
-const rowOne = mnData.reduce((result: DataTableDataType, item, index): DataTableDataType => {
-  result[String(index + 1) as keyof DataTableDataType] = item;
-  result.name = `mn${index}`;
-  return result;
-}, {});
-
-const rowTwo = demandData.reduce((result: DataTableDataType, item, index): DataTableDataType => {
-  result[String(index + 1) as keyof DataTableDataType] = item;
-  result.name = `demand${index}`;
-  return result;
-}, {});
-
-export const formattedData: FormattedData = {
-  headers,
-  data: [rowOne, rowTwo],
-  meta: {
-    date: getDate(gasDay.day),
-    time: getTime(gasDay.day),
-  },
 };
