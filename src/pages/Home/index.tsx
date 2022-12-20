@@ -5,45 +5,14 @@ import './Home.scss';
 import ForecastSupplyDemandGraph from './Graphs/ForecastSupplyDemandGraph';
 import WithinDayPclpGraph from './Graphs/WithinDayPclpGraph';
 import StorageStockPositionGraph from './Graphs/StorageStockPositionGraph';
-import dataItemExplorerTree from '../../data/dataItemExplorerTree';
-import soapResponse from '../../data/soapResponse';
-import { convertXmlToJson } from '../../utils/xmlToJson';
 import ForecastMarginsTable from './Tables/ForecastMarginsTable';
 import SystemEntryPointsTable from './Tables/SystemEntryPointsTable';
-
-interface SoapResponse {
-  'soap:Envelope': {
-    'soap:Body': {
-      GetPublicationDataWMResponse: {
-        GetPublicationDataWMResult: {
-          CLSMIPIPublicationObjectBE: string[];
-        };
-      };
-    };
-  };
-}
 
 const Home = (): JSX.Element => {
   const onClick = (): void => {
     // eslint-disable-next-line no-console
     console.log('click');
   };
-
-  const {
-    'soap:Envelope': {
-      'soap:Body': {
-        GetPublicationDataWMResponse: {
-          GetPublicationDataWMResult: { CLSMIPIPublicationObjectBE },
-        },
-      },
-    },
-  } = convertXmlToJson<SoapResponse>(soapResponse);
-
-  // eslint-disable-next-line no-console
-  console.log(CLSMIPIPublicationObjectBE);
-
-  // eslint-disable-next-line no-console
-  console.log(convertXmlToJson<string>(dataItemExplorerTree));
 
   return (
     <>
