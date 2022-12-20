@@ -50,8 +50,6 @@ REACT_APP_ENV="development"
 ### TODO
 
 - Write unit tests to increase coverage - Jake & Ryan
-- Mock api calls for json files (two data tables) - Jake
-- Move data formatters to appropriate folders - Jake & Ryan
 - Remove as many typecasts as possible - Jake & Ryan
 - Define concrete types where possible - Jake & Ryan
 - Move everything to types files - Jake & Ryan
@@ -60,3 +58,4 @@ REACT_APP_ENV="development"
 - Graph placeholder - Ryan
 - DIE & RE filters - Jake (can be done next year)
 - Tidy up existing components - Jake and Ryan
+- DIE columns component - Jake
