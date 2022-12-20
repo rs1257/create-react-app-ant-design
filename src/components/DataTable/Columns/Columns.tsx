@@ -3,7 +3,7 @@ import type { ColumnsType, ColumnType } from 'antd/es/table';
 import { ReactNode } from 'react';
 import Highlighter from 'react-highlight-words';
 import { DataTableColumnsProps } from '../../../types/props';
-import { DataIndex, DataTableDataType } from '../../../types/data';
+import { DataIndex, DataTableDataType } from '../../../types/tables';
 import FilterDropdown from './FilterDropdown';
 
 export const columnSorter = (

@@ -1,8 +1,18 @@
-import { DataTableDataType } from '../../../types/data';
+import { DataTableDataType } from '../../../types/tables';
 import latestSupplyEntryPoint from '../../../data/latestSupplyEntryPoint.json';
 import { getDate, getTime } from '../../../utils/dateTime';
 
 const { data } = latestSupplyEntryPoint;
+
+export interface RawLatestSupplyEntryPointData {
+  value: number;
+  applicableAt: string;
+  applicableAtUkLocalTime: string;
+  name: string;
+}
+
+export const getDateTimeFromData = (data: RawLatestSupplyEntryPointData[]): string =>
+  data[0].applicableAtUkLocalTime;
 
 const formattedRawData: DataTableDataType[] = data.map((row) => {
   return {
@@ -18,7 +28,7 @@ export const formattedData = {
   ],
   data: formattedRawData,
   meta: {
-    date: getDate(data[0].applicableAtUkLocalTime),
-    time: getTime(data[0].applicableAtUkLocalTime),
+    date: getDate(getDateTimeFromData(data)),
+    time: getTime(getDateTimeFromData(data)),
   },
 };

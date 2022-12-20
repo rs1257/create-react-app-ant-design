@@ -1,5 +1,5 @@
-import { CLSPublicationObjectDataItem, DataItemExplorerDataItem } from '../../../types/data';
-import { DataTableDataType, DataTableHeader, FormattedData } from '../../../types/data';
+import { CLSPublicationObjectDataItem, DataItemExplorerDataItem } from '../../../types/tables';
+import { DataTableDataType, DataTableHeader, FormattedData } from '../../../types/tables';
 
 const getHeaders = (dataItem: CLSPublicationObjectDataItem): DataTableHeader[] => {
   const headers = [];

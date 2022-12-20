@@ -15,7 +15,7 @@ const WithinDayPclpGraph = (): JSX.Element => {
 
   if (isLoading) return <Loader />;
 
-  if (error) return <>{'An error has occurred: ' + (error as Error).message}</>;
+  if (error) return <>{'An error has occurred: ' + error.message}</>;
 
   const transformedData = withinDayPclpDataFormatter(withinDayPclpData?.data);
 

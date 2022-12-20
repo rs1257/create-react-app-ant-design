@@ -7,7 +7,7 @@ import DataTable from '../../components/DataTable';
 import { getDataItemExplorerData } from '../../components/DataTable/Formatters/dataItemExplorerDataFormatter';
 import EmailSubmissionForm, { submitRequest } from '../../components/EmailSubmissionForm';
 import Loader from '../../components/Loader';
-import { DataItemExplorerDataItem } from '../../types/data';
+import { DataItemExplorerDataItem } from '../../types/tables';
 import { convertXmlToJson } from '../../utils/xmlToJson';
 import './Links.scss';
 
@@ -27,7 +27,7 @@ const Links = (): JSX.Element => {
   const [responseData, setResponseData] = useState<DataItemExplorerDataItem[] | undefined>();
   const [pageContent, setPageContent] = useState<JSX.Element | JSX.Element[]>();
 
-  const { isLoading, error, data } = useDataItemExplorerRequest({
+  const { isLoading, error, data } = useDataItemExplorerRequest<string>({
     latestFlag: true,
     applicableFor: true,
     dateTo: '2022-12-15T00:00:00',
@@ -40,7 +40,7 @@ const Links = (): JSX.Element => {
       setPageContent(<Loader />);
     }
     if (error) {
-      setPageContent(<>{'An error has occurred: ' + (error as Error).message}</>);
+      setPageContent(<>{'An error has occurred: ' + error.message}</>);
     }
     if (data) {
       const {

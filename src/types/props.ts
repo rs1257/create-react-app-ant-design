@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 import { Dispatch, RefObject, SetStateAction } from 'react';
 import { InputRef } from 'antd';
 import { FilterDropdownProps } from 'antd/es/table/interface';
-import { DataIndex, DataTableDataType, DataTableHeader } from './data';
+import { DataIndex, DataTableDataType, DataTableHeader } from './tables';
 
 //** Components
 

@@ -57,6 +57,15 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 TODO
 
-- mock api
-- style lint - BEM rules & remove ignore array
-- Add tests to components that will stay
+- Merge statusView and Home folders, delete statusView - Jake
+- Write unit tests to increase coverage - Jake & Ryan
+- Mock api calls for json files (two data tables) - Jake
+- Move data formatters to appropriate folders - Jake & Ryan
+- Remove as many typecasts as possible - Jake & Ryan
+- Define concrete types where possible - Jake & Ryan
+- Move everything to types files - Jake & Ryan
+- Navbar to sidebar - Jake
+- Mock SOAP RE and create table - Jake
+- Graph placeholder - Ryan
+- DIE & RE filters - Jake (can be done next year)
+- Tidy up existing components - Jake and Ryan
