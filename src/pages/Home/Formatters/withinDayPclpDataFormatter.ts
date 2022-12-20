@@ -1,7 +1,8 @@
 import { convertToEpochTime, trimDate } from '../../../utils/dateTime';
+import { GraphApiResponseData } from '../Graphs/StorageStockPositionGraph';
 
 export const withinDayPclpDataFormatter = (
-  withinDayPclpData?: Record<string, unknown>[]
+  withinDayPclpData?: GraphApiResponseData[]
 ): Record<string, unknown>[] => {
   if (!withinDayPclpData) {
     return [];
@@ -9,7 +10,7 @@ export const withinDayPclpDataFormatter = (
 
   const transformedData = withinDayPclpData.map((dataItem) => {
     const { applicableAtUkLocalTime } = dataItem;
-    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime as string, 'hour'));
+    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime, 'hour'));
 
     return { ...dataItem, applicableAtUkLocalTime: epochTime };
   });

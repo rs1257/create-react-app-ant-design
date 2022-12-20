@@ -5,8 +5,37 @@ import dayjs from 'dayjs';
 import Loader from '../../../components/Loader';
 import useGetGraphData from '../../../api/useGetGraphData';
 
+export interface GraphApiResponse {
+  gasDay: GasDay;
+  data: GraphApiResponseData[];
+}
+
+interface GasDay {
+  day: string;
+  startUtc: string;
+  endUtc: string;
+  startUkLocalTime: string;
+  endUkLocalTime: string;
+}
+
+export interface GraphApiResponseData {
+  value: number;
+  applicableAt: string;
+  applicableAtUkLocalTime: string;
+  qualityIndicator: null;
+  publicationObjectName: string;
+  applicableFor: string;
+  generatedTimeStamp: string;
+  generatedTimeStampUkLocalTime: string;
+  rawDisplayValue: string;
+}
+
 const StorageStockPositionGraph = (): JSX.Element => {
-  const { isLoading, error, data } = useGetGraphData(
+  const {
+    isLoading,
+    error,
+    data: storageStockPositionData,
+  } = useGetGraphData<GraphApiResponse>(
     'https://mip-prd-web.azurewebsites.net/api/AnnualStorageStockLevel',
     ['stockPositionGraph']
   );
@@ -15,7 +44,9 @@ const StorageStockPositionGraph = (): JSX.Element => {
 
   if (error) return <>{'An error has occurred: ' + (error as Error).message}</>;
 
-  const { current, previous } = storageStockPositionGraphDataFormatter(data?.data);
+  const { current, previous } = storageStockPositionGraphDataFormatter(
+    storageStockPositionData?.data
+  );
 
   return (
     <>

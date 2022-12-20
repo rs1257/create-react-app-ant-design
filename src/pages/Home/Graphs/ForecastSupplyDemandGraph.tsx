@@ -2,9 +2,14 @@ import LineGraph from '../../../components/LineGraph';
 import { forecastSupplyDemandDataFormatter } from '../Formatters/forecastSupplyDemandDataFormatter';
 import Loader from '../../../components/Loader';
 import useGetGraphData from '../../../api/useGetGraphData';
+import { GraphApiResponse } from './StorageStockPositionGraph';
 
 const ForecastSupplyDemandGraph = (): JSX.Element => {
-  const { isLoading, error, data } = useGetGraphData(
+  const {
+    isLoading,
+    error,
+    data: forecastSupplyDemandData,
+  } = useGetGraphData<GraphApiResponse>(
     'https://mip-prd-web.azurewebsites.net/api/WithinDayForecastSupplyAndDemand',
     ['demandSupplyGraph']
   );
@@ -13,7 +18,7 @@ const ForecastSupplyDemandGraph = (): JSX.Element => {
 
   if (error) return <>{'An error has occurred: ' + (error as Error).message}</>;
 
-  const { supply, demand } = forecastSupplyDemandDataFormatter(data?.data);
+  const { supply, demand } = forecastSupplyDemandDataFormatter(forecastSupplyDemandData?.data);
 
   return (
     <>
