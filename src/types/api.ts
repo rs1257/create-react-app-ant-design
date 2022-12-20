@@ -43,7 +43,7 @@ export interface ForecastMarginsTableRawData {
   demandData: string[];
 }
 
-export interface forecastMarginsNoticeAndDemandResponseData {
+export interface ForecastMarginsNoticeAndDemandResponseData {
   gasDay: GasDay;
   ansMessages: {
     ansMessages: Message[];
@@ -55,4 +55,16 @@ export interface forecastMarginsNoticeAndDemandResponseData {
   demandForecastToday: StatusData;
   demandForecastTomorrow: StatusData;
   mntriggerdemandforecastweekly: ForecastMarginsTableRawData;
+}
+
+export interface SystemEntryPointData {
+  value: number;
+  applicableAt: string;
+  applicableAtUkLocalTime: string;
+  name: string;
+}
+
+export interface LatestSupplyEntryPointResponseData {
+  gasDay: GasDay;
+  data: SystemEntryPointData[];
 }

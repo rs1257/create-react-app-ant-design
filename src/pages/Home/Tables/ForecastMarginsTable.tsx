@@ -2,7 +2,7 @@ import { FC } from 'react';
 import useGetRequest from '../../../api/useGetRequest';
 import DataTable from '../../../components/DataTable';
 import Loader from '../../../components/Loader';
-import { forecastMarginsNoticeAndDemandResponseData } from '../../../types/api';
+import { ForecastMarginsNoticeAndDemandResponseData } from '../../../types/api';
 import { getFormattedForecastMarginsData } from '../Formatters/forecastMarginsDataFormatter';
 
 const ForecastMarginsTable: FC = () => {
@@ -10,7 +10,7 @@ const ForecastMarginsTable: FC = () => {
     isLoading,
     error,
     data: rawData,
-  } = useGetRequest<forecastMarginsNoticeAndDemandResponseData>(
+  } = useGetRequest<ForecastMarginsNoticeAndDemandResponseData>(
     'https://mip-prd-web.azurewebsites.net/api/StatusHeader?currentUtcDateTimeOverride',
     ['forecastMarginsTable']
   );

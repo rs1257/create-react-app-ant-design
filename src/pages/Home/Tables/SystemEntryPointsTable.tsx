@@ -1,14 +1,33 @@
 import { FC } from 'react';
+import useGetRequest from '../../../api/useGetRequest';
 import DataTable from '../../../components/DataTable';
-import { formattedData } from '../Formatters/latestSupplyEntryPointDataFormatter';
+import Loader from '../../../components/Loader';
+import { LatestSupplyEntryPointResponseData } from '../../../types/api';
+import { getFormattedSystemEntryPointsData } from '../Formatters/latestSupplyEntryPointDataFormatter';
 import './SystemEntryPointsTable.scss';
 
 const SystemEntryPointsTable: FC = () => {
   const {
+    isLoading,
+    error,
+    data: rawData,
+  } = useGetRequest<LatestSupplyEntryPointResponseData>(
+    'https://mip-prd-web.azurewebsites.net/api/LatestSupplyEntryPoint?currentUtcDateTimeOverride',
+    ['systemEntryPointsTable']
+  );
+
+  if (isLoading) return <Loader />;
+
+  if (error) return <>{'An error has occurred: ' + error.message}</>;
+
+  if (!rawData) {
+    return <></>;
+  }
+  const {
     headers,
     data,
     meta: { time },
-  } = formattedData;
+  } = getFormattedSystemEntryPointsData(rawData);
 
   return (
     <div className="system-entry-points">

@@ -3,6 +3,7 @@ import forecastSupplyDemandData from '../data/forecastSupplyDemand.json';
 import withinDayPclp from '../data/withinDayPclp.json';
 import storageStockPosition from '../data/storageStockPosition.json';
 import forecastMargins from '../data/forecastMargins.json';
+import latestSupplyEntryPoint from '../data/latestSupplyEntryPoint.json';
 import soapResponse from '../data/soapResponse';
 
 export const handlers = [
@@ -25,6 +26,13 @@ export const handlers = [
     'https://mip-prd-web.azurewebsites.net/api/StatusHeader?currentUtcDateTimeOverride',
     (_, res, ctx) => {
       return res(ctx.status(200), ctx.json(forecastMargins));
+    }
+  ),
+
+  rest.get(
+    'https://mip-prd-web.azurewebsites.net/api/LatestSupplyEntryPoint?currentUtcDateTimeOverride',
+    (_, res, ctx) => {
+      return res(ctx.status(200), ctx.json(latestSupplyEntryPoint));
     }
   ),
 

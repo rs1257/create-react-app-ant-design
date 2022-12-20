@@ -1,154 +1,154 @@
 {
   "gasDay": {
-    "day": "2022-12-12T00:00:00Z",
-    "startUtc": "2022-12-12T05:00:00Z",
-    "endUtc": "2022-12-13T05:00:00Z",
-    "startUkLocalTime": "2022-12-12T05:00:00+00:00",
-    "endUkLocalTime": "2022-12-13T05:00:00+00:00"
+    "day": "2022-12-20T00:00:00Z",
+    "startUtc": "2022-12-20T05:00:00Z",
+    "endUtc": "2022-12-21T05:00:00Z",
+    "startUkLocalTime": "2022-12-20T05:00:00+00:00",
+    "endUkLocalTime": "2022-12-21T05:00:00+00:00"
   },
   "data": [
     {
-      "value": 17.4330883026123,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 0.0,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "ALDBROUGH"
     },
     {
-      "value": 2.94163513183594,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 0.0,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "BACTON BBL"
     },
     {
       "value": 0.0,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "BACTON IC"
     },
     {
-      "value": 3.89059257507324,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 11.3463039398193,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "BACTON PERENCO"
     },
     {
-      "value": 6.50529623031616,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 6.38570404052734,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "BACTON SEAL"
     },
     {
-      "value": 5.68027210235596,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 3.8711040019989,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "BACTON SHELL"
     },
     {
-      "value": 4.61318379491875,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 4.69672693980316,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "EASINGTON DIMLINGTON"
     },
     {
-      "value": 73.4280155642024,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 49.3463035019455,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "EASINGTON LANGELED"
     },
     {
-      "value": 11.4351110093843,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 6.36987869077592,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "EASINGTON ROUGH ST"
     },
     {
-      "value": 7.84325885772705,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 7.47631072998047,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "GRAIN NTS 1"
     },
     {
-      "value": 50.9788055419922,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 26.5272598266602,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "GRAIN NTS 2"
     },
     {
       "value": 0.0,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "HILLTOP"
     },
     {
       "value": 0.0,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "HOLE HOUSE FARM"
     },
     {
-      "value": 16.2135677337646,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 0.0,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "HOLFORD"
     },
     {
-      "value": 5.29640674591064,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 0.0,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "HORNSEA"
     },
     {
-      "value": 26.8920555114746,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 24.7892093658447,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "MILFORD HAVEN - DRAGON"
     },
     {
-      "value": 50.5825996398926,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 49.4985809326172,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "MILFORD HAVEN - SOUTH HOOK"
     },
     {
-      "value": 13.2524605172808,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 13.3458457312886,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "ST FERGUS MOBIL"
     },
     {
-      "value": 17.2883497367819,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 19.8635843442435,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "ST FERGUS NSMP"
     },
     {
-      "value": 33.5549553673609,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 33.5901121538109,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "ST FERGUS SHELL"
     },
     {
-      "value": 29.1489906311035,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 0.0,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "STUBLACH"
     },
     {
-      "value": 21.1000804901123,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 21.5200805664062,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "TEESSIDE CATS"
     },
     {
-      "value": 7.39610894941634,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "value": 5.84042114900435,
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "TEESSIDE PX"
     },
     {
       "value": 0.0,
-      "applicableAt": "2022-12-12T15:22:00Z",
-      "applicableAtUkLocalTime": "2022-12-12T15:22:00+00:00",
+      "applicableAt": "2022-12-20T15:22:00Z",
+      "applicableAtUkLocalTime": "2022-12-20T15:22:00+00:00",
       "name": "THEDDLETHORPE"
     }
   ]

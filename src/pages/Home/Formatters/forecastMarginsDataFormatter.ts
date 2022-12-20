@@ -1,4 +1,4 @@
-import { forecastMarginsNoticeAndDemandResponseData } from '../../../types/api';
+import { ForecastMarginsNoticeAndDemandResponseData } from '../../../types/api';
 import { DataTableDataType, DataTableHeader, FormattedData } from '../../../types/tables';
 import { getDate, getTime } from '../../../utils/dateTime';
 
@@ -27,10 +27,8 @@ const getDemandForecastData = (demandData: string[]): DataTableDataType => {
 };
 
 export const getFormattedForecastMarginsData = (
-  rawData: forecastMarginsNoticeAndDemandResponseData
+  rawData: ForecastMarginsNoticeAndDemandResponseData
 ): FormattedData => {
-  // eslint-disable-next-line no-console
-  console.log(rawData);
   const {
     mntriggerdemandforecastweekly: { header, mnData, demandData },
     gasDay,

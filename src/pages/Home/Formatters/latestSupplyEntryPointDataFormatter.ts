@@ -1,34 +1,31 @@
-import { DataTableDataType } from '../../../types/tables';
-import latestSupplyEntryPoint from '../../../data/latestSupplyEntryPoint.json';
+import { DataTableDataType, FormattedData } from '../../../types/tables';
 import { getDate, getTime } from '../../../utils/dateTime';
+import { LatestSupplyEntryPointResponseData, SystemEntryPointData } from '../../../types/api';
 
-const { data } = latestSupplyEntryPoint;
-
-export interface RawLatestSupplyEntryPointData {
-  value: number;
-  applicableAt: string;
-  applicableAtUkLocalTime: string;
-  name: string;
-}
-
-export const getDateTimeFromData = (data: RawLatestSupplyEntryPointData[]): string =>
+export const getDateTimeFromData = (data: SystemEntryPointData[]): string =>
   data[0].applicableAtUkLocalTime;
 
-const formattedRawData: DataTableDataType[] = data.map((row) => {
-  return {
-    name: row.name,
-    value: row.value,
-  };
-});
+const getFormattedData = (data: SystemEntryPointData[]): DataTableDataType[] =>
+  data.map((row) => {
+    return {
+      name: row.name,
+      value: row.value,
+    };
+  });
 
-export const formattedData = {
-  headers: [
-    { title: 'System Entry Name', dataIndex: 'name' },
-    { title: 'Flow Rate (mcm/d)', dataIndex: 'value' },
-  ],
-  data: formattedRawData,
-  meta: {
-    date: getDate(getDateTimeFromData(data)),
-    time: getTime(getDateTimeFromData(data)),
-  },
+export const getFormattedSystemEntryPointsData = (
+  rawData: LatestSupplyEntryPointResponseData
+): FormattedData => {
+  const { data } = rawData;
+  return {
+    headers: [
+      { title: 'System Entry Name', dataIndex: 'name' },
+      { title: 'Flow Rate (mcm/d)', dataIndex: 'value' },
+    ],
+    data: getFormattedData(data),
+    meta: {
+      date: getDate(getDateTimeFromData(data)),
+      time: getTime(getDateTimeFromData(data)),
+    },
+  };
 };
