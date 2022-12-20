@@ -52,7 +52,10 @@
   "jest": {
     "moduleNameMapper": {
       "axios": "axios/dist/node/axios.cjs"
-    }
+    },
+    "coveragePathIgnorePatterns": [
+      "src/mocks/"
+    ]
   },
   "browserslist": {
     "production": [
