@@ -54,7 +54,10 @@
       "axios": "axios/dist/node/axios.cjs"
     },
     "coveragePathIgnorePatterns": [
-      "src/mocks/"
+      "src/mocks/",
+      "src/types",
+      "src/data",
+      "src/index.tsx"
     ]
   },
   "browserslist": {
