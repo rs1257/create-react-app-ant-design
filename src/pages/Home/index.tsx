@@ -8,6 +8,8 @@ import StorageStockPositionGraph from './Graphs/StorageStockPositionGraph';
 import dataItemExplorerTree from '../../data/dataItemExplorerTree';
 import soapResponse from '../../data/soapResponse';
 import { convertXmlToJson } from '../../utils/xmlToJson';
+import ForecastMarginsTable from './Tables/ForecastMarginsTable';
+import SystemEntryPointsTable from './Tables/SystemEntryPointsTable';
 
 interface SoapResponse {
   'soap:Envelope': {
@@ -90,6 +92,8 @@ const Home = (): JSX.Element => {
       <ForecastSupplyDemandGraph />
       <WithinDayPclpGraph />
       <StorageStockPositionGraph />
+      <SystemEntryPointsTable />
+      <ForecastMarginsTable />
     </>
   );
 };

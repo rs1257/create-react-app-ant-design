@@ -4,7 +4,7 @@ import {
   useDataItemExplorerRequest,
 } from '../../api/soap/useDataItemExplorerRequest';
 import DataTable from '../../components/DataTable';
-import { getDataItemExplorerData } from '../../components/DataTable/Formatters/dataItemExplorerDataFormatter';
+import { getDataItemExplorerData } from '../DataItemExplorer/Formatters/dataItemExplorerDataFormatter';
 import EmailSubmissionForm, { submitRequest } from '../../components/EmailSubmissionForm';
 import Loader from '../../components/Loader';
 import { DataItemExplorerDataItem } from '../../types/tables';

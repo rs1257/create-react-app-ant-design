@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import DataTable from '../../../components/DataTable';
-import { formattedData } from '../../../components/DataTable/Formatters/forecastMarginsDataFormatter';
+import { formattedData } from '../Formatters/forecastMarginsDataFormatter';
 
 const ForecastMarginsTable: FC = () => {
   const { headers, data } = formattedData;

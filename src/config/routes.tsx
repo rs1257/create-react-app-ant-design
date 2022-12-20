@@ -2,7 +2,6 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const Home = lazy(() => import('../pages/Home'));
-const StatusView = lazy(() => import('../pages/StatusView'));
 const InstantaneousView = lazy(() => import('../pages/InstantaneousView'));
 const UserDefinedDownload = lazy(() => import('../pages/UserDefinedDownload'));
 const DataItemExplorer = lazy(() => import('../pages/DataItemExplorer'));
@@ -22,11 +21,6 @@ const routes: CustomRouteObject[] = [
     path: '/',
     name: 'home',
     element: <Home />,
-  },
-  {
-    path: '/StatusView',
-    name: 'statusView',
-    element: <StatusView />,
   },
   {
     path: '/InstantaneousView',
