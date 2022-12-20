@@ -1,4 +1,5 @@
 import { convertToEpochTime, trimDate } from '../../../utils/dateTime';
+import { GraphApiResponseData } from '../Graphs/StorageStockPositionGraph';
 
 export interface SupplyDemandData {
   supply: Record<string, unknown>[];
@@ -11,7 +12,7 @@ enum PublicationObjectName {
 }
 
 export const forecastSupplyDemandDataFormatter = (
-  forecastSupplyDemandData?: Record<string, unknown>[]
+  forecastSupplyDemandData?: GraphApiResponseData[]
 ): SupplyDemandData => {
   if (!forecastSupplyDemandData) {
     return { supply: [], demand: [] };
@@ -20,7 +21,7 @@ export const forecastSupplyDemandDataFormatter = (
   const initialSupplyDemandData: SupplyDemandData = { supply: [], demand: [] };
   const transformedData = forecastSupplyDemandData.reduce((acc, dataItem) => {
     const { applicableAtUkLocalTime, publicationObjectName } = dataItem;
-    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime as string, 'hour'));
+    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime, 'hour'));
 
     const transformedDataItem = { ...dataItem, applicableAtUkLocalTime: epochTime };
     if (publicationObjectName === PublicationObjectName.supply) {

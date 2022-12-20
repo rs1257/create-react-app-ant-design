@@ -1,5 +1,6 @@
 import { convertToEpochTime, trimDate } from '../../../utils/dateTime';
 import dayjs from 'dayjs';
+import { GraphApiResponseData } from '../Graphs/StorageStockPositionGraph';
 
 interface StorageStockData {
   current: Record<string, unknown>[];
@@ -12,7 +13,7 @@ enum PublicationObjectName {
 }
 
 export const storageStockPositionGraphDataFormatter = (
-  forecastSupplyDemandData?: Record<string, unknown>[]
+  forecastSupplyDemandData?: GraphApiResponseData[]
 ): StorageStockData => {
   if (!forecastSupplyDemandData) {
     return { current: [], previous: [] };
@@ -20,13 +21,12 @@ export const storageStockPositionGraphDataFormatter = (
   const initialSupplyDemandData: StorageStockData = { current: [], previous: [] };
 
   const sortedData = forecastSupplyDemandData.sort(
-    (a, b) =>
-      +dayjs(a.applicableAtUkLocalTime as string) - +dayjs(b.applicableAtUkLocalTime as string)
+    (a, b) => +dayjs(a.applicableAtUkLocalTime) - +dayjs(b.applicableAtUkLocalTime)
   );
 
   const transformedData = sortedData.reduce((acc, dataItem) => {
     const { applicableAtUkLocalTime, publicationObjectName } = dataItem;
-    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime as string, 'day'));
+    const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime, 'day'));
 
     const transformedDataItem = { ...dataItem, applicableAtUkLocalTime: epochTime };
     if (publicationObjectName === PublicationObjectName.current) {
