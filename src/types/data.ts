@@ -21,7 +21,7 @@ export interface FormattedData {
 
 export type DataIndex = keyof DataTableDataType;
 
-export interface CLSPublicationObjectDataItem {
+export interface PublicationObjectDataItem {
   ApplicableAt: string;
   ApplicableFor: string;
   Value: number;
@@ -32,5 +32,5 @@ export interface CLSPublicationObjectDataItem {
 }
 export interface DataItemExplorerDataItem {
   PublicationObjectName: string;
-  PublicationObjectData: { CLSPublicationObjectDataBE: CLSPublicationObjectDataItem[] };
+  PublicationObjectData: { CLSPublicationObjectDataBE: PublicationObjectDataItem[] };
 }

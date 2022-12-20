@@ -1,7 +1,7 @@
-import { CLSPublicationObjectDataItem, DataItemExplorerDataItem } from '../../../types/data';
+import { PublicationObjectDataItem, DataItemExplorerDataItem } from '../../../types/data';
 import { DataTableDataType, DataTableHeader, FormattedData } from '../../../types/data';
 
-const getHeaders = (dataItem: CLSPublicationObjectDataItem): DataTableHeader[] => {
+const getHeaders = (dataItem: PublicationObjectDataItem): DataTableHeader[] => {
   const headers = [];
   for (const column in dataItem) {
     const header = {
@@ -13,7 +13,7 @@ const getHeaders = (dataItem: CLSPublicationObjectDataItem): DataTableHeader[] =
   return headers;
 };
 
-const getData = (rawData: CLSPublicationObjectDataItem[]): DataTableDataType[] => {
+const getData = (rawData: PublicationObjectDataItem[]): DataTableDataType[] => {
   return rawData.map((row, index) => {
     return { ...row, name: String(index + 1) } as DataTableDataType;
   });
