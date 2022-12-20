@@ -1,5 +1,10 @@
-import { PublicationObjectDataItem, DataItemExplorerDataItem } from '../../../types/data';
-import { DataTableDataType, DataTableHeader, FormattedData } from '../../../types/data';
+import {
+  DataTableDataType,
+  DataTableHeader,
+  FormattedData,
+  DataItemExplorerDataItem,
+  PublicationObjectDataItem,
+} from '../../../types/tables';
 
 const getHeaders = (dataItem: PublicationObjectDataItem): DataTableHeader[] => {
   const headers = [];

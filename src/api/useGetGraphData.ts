@@ -1,16 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
+import { ApiResponse } from '../types/api';
 
-interface GetGraphData<T> {
-  isLoading: boolean;
-  error: unknown;
-  data?: T;
-}
-
-const useGetGraphData = <T>(url: string, queryKey: string[]): GetGraphData<T> => {
-  const { isLoading, error, data } = useQuery<T>({
+const useGetGraphData = <T>(url: string, queryKey: string[]): ApiResponse<T> => {
+  const { isLoading, error, data } = useQuery<T, Error>({
     queryKey,
-    queryFn: () => axios.get<T>(url).then((response) => response.data),
+    queryFn: () => axios.get<T>(url).then(({ data }) => data),
   });
 
   return { isLoading, error, data };

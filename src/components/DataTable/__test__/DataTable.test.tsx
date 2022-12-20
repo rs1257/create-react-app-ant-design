@@ -1,7 +1,7 @@
 import { act, render, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import DataTable from '..';
-import { DataTableDataType, DataTableHeader } from '../../../types/data';
+import { DataTableDataType, DataTableHeader } from '../../../types/tables';
 import { columnSorter, getTextToHighlight } from '../Columns/Columns';
 import { handleOnFilterTextChange } from '../Columns/FilterDropdown';
 

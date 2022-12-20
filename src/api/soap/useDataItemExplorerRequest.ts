@@ -1,7 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
 import axios, { AxiosRequestConfig } from 'axios';
+import { ApiResponse } from '../../types/api';
 
-interface RequestProps {
+export interface DataItemExplorerRequestProps {
   latestFlag: boolean;
   applicableFor: boolean;
   dateTo: string;
@@ -9,12 +10,6 @@ interface RequestProps {
   dateType: SoapRequestDateType;
   names: string[];
 }
-
-type RequestResponse = {
-  isLoading: boolean;
-  error: unknown;
-  data?: string;
-};
 
 export enum SoapRequestDateType {
   gas = 'GASDAY',
@@ -55,14 +50,14 @@ export const headers = {
   'Content-Type': 'text/xml; charset=utf-8',
 };
 
-export function useDataItemExplorerRequest({
+export const useDataItemExplorerRequest = <T>({
   latestFlag,
   applicableFor,
   dateTo,
   dateFrom,
   dateType,
   names,
-}: RequestProps): RequestResponse {
+}: DataItemExplorerRequestProps): ApiResponse<T> => {
   const url = 'http://mip-prdpull-api.azurewebsites.net/MIPIws-public/public/publicwebservice.asmx';
 
   const config: AxiosRequestConfig = {
@@ -73,10 +68,10 @@ export function useDataItemExplorerRequest({
     headers: headers,
   };
 
-  const { isLoading, error, data } = useQuery<string>({
+  const { isLoading, error, data } = useQuery<T, Error>({
     queryKey: ['dataItemExplorerRequest'],
-    queryFn: () => axios.request(config).then((response) => response.data as string),
+    queryFn: () => axios.request<T>(config).then(({ data }) => data),
   });
 
   return { isLoading, error, data };
-}
+};
