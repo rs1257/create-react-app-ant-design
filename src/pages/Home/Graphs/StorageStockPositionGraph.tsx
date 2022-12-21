@@ -2,9 +2,9 @@ import LineGraph from '../../../components/LineGraph';
 import { storageStockPositionGraphDataFormatter } from '../Formatters/storageStockPositionDataFormatter';
 import { getFullMonth } from '../../../utils/dateTime';
 import dayjs from 'dayjs';
-import Loader from '../../../components/Loader';
 import useGetRequest from '../../../api/useGetRequest';
 import { GraphResponseData } from '../../../types/api';
+import GraphCard from '../../../components/GraphCard';
 
 const StorageStockPositionGraph = (): JSX.Element => {
   const {
@@ -16,17 +16,12 @@ const StorageStockPositionGraph = (): JSX.Element => {
     ['stockPositionGraph']
   );
 
-  if (isLoading) return <Loader />;
-
-  if (error) return <>{'An error has occurred: ' + error.message}</>;
-
   const { current, previous } = storageStockPositionGraphDataFormatter(
     storageStockPositionData?.data
   );
 
   return (
-    <>
-      <h1>Storage Stock Position</h1>
+    <GraphCard title="Storage Stock Position" isLoading={isLoading} error={error}>
       <LineGraph
         data={[current, previous]}
         yAxisDataKey="value"
@@ -40,7 +35,7 @@ const StorageStockPositionGraph = (): JSX.Element => {
         }}
         dot={false}
       />
-    </>
+    </GraphCard>
   );
 };
 

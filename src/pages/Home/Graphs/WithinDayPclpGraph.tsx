@@ -1,8 +1,8 @@
 import LineGraph from '../../../components/LineGraph';
 import { withinDayPclpDataFormatter } from '../Formatters/withinDayPclpDataFormatter';
 import useGetRequest from '../../../api/useGetRequest';
-import Loader from '../../../components/Loader';
 import { GraphResponseData } from '../../../types/api';
+import GraphCard from '../../../components/GraphCard';
 
 const WithinDayPclpGraph = (): JSX.Element => {
   const {
@@ -13,22 +13,17 @@ const WithinDayPclpGraph = (): JSX.Element => {
     'withinDayPclpGraph',
   ]);
 
-  if (isLoading) return <Loader />;
-
-  if (error) return <>{'An error has occurred: ' + error.message}</>;
-
   const transformedData = withinDayPclpDataFormatter(withinDayPclpData?.data);
 
   return (
-    <>
-      <h1>Within Day PCLP</h1>
+    <GraphCard title="Within Day PCLP" isLoading={isLoading} error={error}>
       <LineGraph
         data={[transformedData]}
         yAxisDataKey="value"
         xAxisDataKey="applicableAtUkLocalTime"
         labels={['Within Day PCLP']}
       />
-    </>
+    </GraphCard>
   );
 };
 
