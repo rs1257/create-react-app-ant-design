@@ -58,7 +58,8 @@
       "src/mocks/",
       "src/types",
       "src/data",
-      "src/index.tsx"
+      "src/index.tsx",
+      "src/mockQueryClient"
     ],
     "coverageThreshold": {
       "global": {

@@ -1,5 +1,5 @@
 import { convertToEpochTime, trimDate } from '../../../utils/dateTime';
-import { GraphApiResponseData } from '../Graphs/StorageStockPositionGraph';
+import { GraphApiResponseData } from '../../../types/api';
 
 export const withinDayPclpDataFormatter = (
   withinDayPclpData?: GraphApiResponseData[]

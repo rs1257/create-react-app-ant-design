@@ -24,12 +24,9 @@ export const handlers = [
     return res(ctx.status(200), ctx.json(storageStockPosition));
   }),
 
-  rest.get(
-    'https://mip-prd-web.azurewebsites.net/api/StatusHeader?currentUtcDateTimeOverride',
-    (_, res, ctx) => {
-      return res(ctx.status(200), ctx.json(forecastMargins));
-    }
-  ),
+  rest.get('https://mip-prd-web.azurewebsites.net/api/StatusHeader', (_, res, ctx) => {
+    return res(ctx.status(200), ctx.json(forecastMargins));
+  }),
 
   //TODO - remove 'initial' from end of this url when actually calling the API
   rest.get(
@@ -43,12 +40,9 @@ export const handlers = [
     return res(ctx.status(200), ctx.json(dataItemExplorerCategoryTree));
   }),
 
-  rest.get(
-    'https://mip-prd-web.azurewebsites.net/api/LatestSupplyEntryPoint?currentUtcDateTimeOverride',
-    (_, res, ctx) => {
-      return res(ctx.status(200), ctx.json(latestSupplyEntryPoint));
-    }
-  ),
+  rest.get('https://mip-prd-web.azurewebsites.net/api/LatestSupplyEntryPoint', (_, res, ctx) => {
+    return res(ctx.status(200), ctx.json(latestSupplyEntryPoint));
+  }),
 
   rest.post(
     'http://mip-prdpull-api.azurewebsites.net/MIPIws-public/public/publicwebservice.asmx',

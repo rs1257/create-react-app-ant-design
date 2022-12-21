@@ -50,7 +50,6 @@ REACT_APP_ENV="development"
 ### TODO
 
 - Write unit tests to increase coverage - Jake & Ryan
-- Remove as many typecasts as possible - Jake & Ryan
 - Define concrete types where possible - Jake & Ryan
 - Move everything to types files - Jake & Ryan
 - Navbar to sidebar - Jake
