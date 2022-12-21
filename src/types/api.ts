@@ -68,3 +68,20 @@ export interface LatestSupplyEntryPointResponseData {
   gasDay: GasDay;
   data: SystemEntryPointData[];
 }
+
+export enum DataItemExplorerNodeType {
+  data = 'DataType',
+  folder = 'Folder',
+}
+
+export interface DataItemExplorerItem {
+  dataItemCategoryTreeNodeId: string;
+  name: string;
+  uniqueId: string | null;
+  stagingId: string | null;
+  children: DataItemExplorerItem[] | null;
+  nodeType: DataItemExplorerNodeType;
+  description: string | null;
+  publicationObjectCount: number;
+  selected?: boolean;
+}

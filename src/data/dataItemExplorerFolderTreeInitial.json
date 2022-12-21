@@ -1,0 +1,182 @@
+[
+  {
+    "dataItemCategoryTreeNodeId": "30001",
+    "name": "Balancing",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 580
+  },
+  {
+    "dataItemCategoryTreeNodeId": "408",
+    "name": "Calorific Value",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 19
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30002",
+    "name": "Demand",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 871
+  },
+  {
+    "dataItemCategoryTreeNodeId": "394",
+    "name": "Entry Capacity",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 1906
+  },
+  {
+    "dataItemCategoryTreeNodeId": "395",
+    "name": "Entry Capacity Trading Analysis",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 4
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30003",
+    "name": "Exit Capacity",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 8118
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30004",
+    "name": "Exit Capacity (prior to October 2012)",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 528
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30005",
+    "name": "Interruption",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 253
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30006",
+    "name": "Linepack",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 31
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30007",
+    "name": "LNG",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 5
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30008",
+    "name": "Notices",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 17
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30009",
+    "name": "Operating Margins",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 1
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30010",
+    "name": "Price",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 11
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30011",
+    "name": "Reports",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 12128
+  },
+  {
+    "dataItemCategoryTreeNodeId": "376",
+    "name": "Shrinkage",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 70
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30012",
+    "name": "Storage",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 38
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30013",
+    "name": "Supplies",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 496
+  },
+  {
+    "dataItemCategoryTreeNodeId": "30014",
+    "name": "Weather",
+    "uniqueId": null,
+    "stagingId": null,
+    "children": null,
+    "nodeType": "Folder",
+    "description": null,
+    "publicationObjectCount": 45
+  }
+]

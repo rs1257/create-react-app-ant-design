@@ -1,0 +1,91 @@
+{
+  "dataItemCategoryTreeNodeId": "30001",
+  "name": "Balancing",
+  "uniqueId": null,
+  "stagingId": null,
+  "children": [
+    {
+      "dataItemCategoryTreeNodeId": "40",
+      "name": "Allocations",
+      "uniqueId": null,
+      "stagingId": null,
+      "children": null,
+      "nodeType": "Folder",
+      "description": null,
+      "publicationObjectCount": 36
+    },
+    {
+      "dataItemCategoryTreeNodeId": "44",
+      "name": "Balancing Actions",
+      "uniqueId": null,
+      "stagingId": null,
+      "children": null,
+      "nodeType": "Folder",
+      "description": null,
+      "publicationObjectCount": 404
+    },
+    {
+      "dataItemCategoryTreeNodeId": "352",
+      "name": "Balancing Tools",
+      "uniqueId": null,
+      "stagingId": null,
+      "children": null,
+      "nodeType": "Folder",
+      "description": null,
+      "publicationObjectCount": 2
+    },
+    {
+      "dataItemCategoryTreeNodeId": "353",
+      "name": "Financial Balancing",
+      "uniqueId": null,
+      "stagingId": null,
+      "children": null,
+      "nodeType": "Folder",
+      "description": null,
+      "publicationObjectCount": 8
+    },
+    {
+      "dataItemCategoryTreeNodeId": "42",
+      "name": "Input Balance",
+      "uniqueId": null,
+      "stagingId": null,
+      "children": null,
+      "nodeType": "Folder",
+      "description": null,
+      "publicationObjectCount": 2
+    },
+    {
+      "dataItemCategoryTreeNodeId": "41",
+      "name": "Nominations",
+      "uniqueId": null,
+      "stagingId": null,
+      "children": null,
+      "nodeType": "Folder",
+      "description": null,
+      "publicationObjectCount": 109
+    },
+    {
+      "dataItemCategoryTreeNodeId": "43",
+      "name": "Output Balance",
+      "uniqueId": null,
+      "stagingId": null,
+      "children": null,
+      "nodeType": "Folder",
+      "description": null,
+      "publicationObjectCount": 2
+    },
+    {
+      "dataItemCategoryTreeNodeId": "66",
+      "name": "Trades",
+      "uniqueId": null,
+      "stagingId": null,
+      "children": null,
+      "nodeType": "Folder",
+      "description": null,
+      "publicationObjectCount": 17
+    }
+  ],
+  "nodeType": "Folder",
+  "description": null,
+  "publicationObjectCount": 580
+}
