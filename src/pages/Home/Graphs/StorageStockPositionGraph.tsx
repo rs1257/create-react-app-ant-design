@@ -4,38 +4,14 @@ import { getFullMonth } from '../../../utils/dateTime';
 import dayjs from 'dayjs';
 import Loader from '../../../components/Loader';
 import useGetRequest from '../../../api/useGetRequest';
-
-export interface GraphApiResponse {
-  gasDay: GasDay;
-  data: GraphApiResponseData[];
-}
-
-interface GasDay {
-  day: string;
-  startUtc: string;
-  endUtc: string;
-  startUkLocalTime: string;
-  endUkLocalTime: string;
-}
-
-export interface GraphApiResponseData {
-  value: number;
-  applicableAt: string;
-  applicableAtUkLocalTime: string;
-  qualityIndicator: null;
-  publicationObjectName: string;
-  applicableFor: string;
-  generatedTimeStamp: string;
-  generatedTimeStampUkLocalTime: string;
-  rawDisplayValue: string;
-}
+import { GraphResponseData } from '../../../types/api';
 
 const StorageStockPositionGraph = (): JSX.Element => {
   const {
     isLoading,
     error,
     data: storageStockPositionData,
-  } = useGetRequest<GraphApiResponse>(
+  } = useGetRequest<GraphResponseData>(
     'https://mip-prd-web.azurewebsites.net/api/AnnualStorageStockLevel',
     ['stockPositionGraph']
   );

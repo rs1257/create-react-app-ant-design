@@ -1,6 +1,6 @@
 import { convertToEpochTime, trimDate } from '../../../utils/dateTime';
 import dayjs from 'dayjs';
-import { GraphApiResponseData } from '../Graphs/StorageStockPositionGraph';
+import { GraphApiResponseData } from '../../../types/api';
 
 interface StorageStockData {
   current: Record<string, unknown>[];

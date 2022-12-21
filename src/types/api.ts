@@ -64,7 +64,22 @@ export interface SystemEntryPointData {
   name: string;
 }
 
-export interface LatestSupplyEntryPointResponseData {
+export interface DataApiResponse<T> {
   gasDay: GasDay;
-  data: SystemEntryPointData[];
+  data: T[];
 }
+
+export interface GraphApiResponseData {
+  value: number;
+  applicableAt: string;
+  applicableAtUkLocalTime: string;
+  qualityIndicator: null;
+  publicationObjectName: string;
+  applicableFor: string;
+  generatedTimeStamp: string;
+  generatedTimeStampUkLocalTime: string;
+  rawDisplayValue: string;
+}
+
+export type GraphResponseData = DataApiResponse<GraphApiResponseData>;
+export type LatestSupplyEntryPointResponseData = DataApiResponse<SystemEntryPointData>;
