@@ -1,9 +1,20 @@
-import { MenuItemType } from 'antd/es/menu/hooks/useItems';
+interface MenuItem {
+  label: string;
+  key: string;
+}
 
-const navRoutes: MenuItemType[] = [
+interface NavRoute extends MenuItem {
+  children?: MenuItem[];
+}
+
+const navRoutes: NavRoute[] = [
   {
     label: 'Gas Prevailing View',
     key: '/',
+    children: [
+      { label: 'Gas Prevailing View child 1', key: '/inner-1' },
+      { label: 'Gas Prevailing View child 2', key: '/inner-2' },
+    ],
   },
   {
     label: 'Report Explorer',
