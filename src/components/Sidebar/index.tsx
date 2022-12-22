@@ -3,7 +3,6 @@ import { Layout, Menu, MenuProps } from 'antd';
 import navRoutes from '../../config/nav-routes';
 import { useNavigate } from 'react-router-dom';
 import './Sidebar.scss';
-
 const { Sider } = Layout;
 
 interface SidebarProps {
@@ -45,7 +44,8 @@ const Sidebar = ({ collapsed, setCollapsed }: SidebarProps): ReactElement => {
         defaultSelectedKeys={['/']}
         defaultOpenKeys={['/']}
         onClick={handleNavigation}
-        items={navRoutes?.map(({ key, label, children }) => ({
+        items={navRoutes?.map(({ key, label, children, icon }) => ({
+          icon,
           key,
           label,
           children,
