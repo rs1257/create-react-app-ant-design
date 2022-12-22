@@ -13,6 +13,7 @@ const PageNotFound = lazy(() => import('../pages/Error/PageNotFound'));
 type CustomRouteObject = RouteObject & {
   hideHeader?: boolean;
   hideFooter?: boolean;
+  hideSidebar?: boolean;
   name: string;
 };
 
