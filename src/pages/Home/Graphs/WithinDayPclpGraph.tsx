@@ -9,7 +9,7 @@ const WithinDayPclpGraph = (): JSX.Element => {
     isLoading,
     error,
     data: withinDayPclpData,
-  } = useGetRequest<GraphResponseData>('https://mip-prd-web.azurewebsites.net/api/WithinDayPclp', [
+  } = useGetRequest<GraphResponseData>(`${process.env.REACT_APP_API || ''}/api/WithinDayPclp`, [
     'withinDayPclpGraph',
   ]);
 

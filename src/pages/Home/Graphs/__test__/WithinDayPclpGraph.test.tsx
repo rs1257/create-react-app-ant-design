@@ -23,10 +23,7 @@ describe('Within Day Pclp Graph component', () => {
   it('should display Within Day Pclp Graph component error message when rendered', async () => {
     const statusCode = 404;
     server.use(
-      setupFailedNetworkRequest(
-        'https://mip-prd-web.azurewebsites.net/api/WithinDayPclp',
-        statusCode
-      )
+      setupFailedNetworkRequest(`${process.env.REACT_APP_API || ''}/api/WithinDayPclp`, statusCode)
     );
 
     const { queryByText, container } = render(

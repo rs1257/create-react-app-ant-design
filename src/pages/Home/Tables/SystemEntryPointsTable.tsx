@@ -12,7 +12,7 @@ const SystemEntryPointsTable: FC = () => {
     error,
     data: rawData,
   } = useGetRequest<LatestSupplyEntryPointResponseData>(
-    'https://mip-prd-web.azurewebsites.net/api/LatestSupplyEntryPoint?currentUtcDateTimeOverride',
+    `${process.env.REACT_APP_API || ''}/api/LatestSupplyEntryPoint?currentUtcDateTimeOverride`,
     ['systemEntryPointsTable']
   );
 

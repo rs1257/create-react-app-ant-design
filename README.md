@@ -41,10 +41,15 @@ Your app is ready to be deployed!
 
 ### Running mock server
 
-Add the following to your .env file
+Add REACT_APP_ENV to your .env file to enable the mock server. Once the mock server is enabled it does not matter
+what the value of REACT_APP_MIP_PULL_API_URL and REACT_APP_API are as both the mock server and the web app use these
+environment variables. When the mock server is disabled you will need to configure the api environment variables to
+thee relevant values based on the environment you are using.
 
 ```
 REACT_APP_ENV="development"
+REACT_APP_MIP_PULL_API_URL='http://localhost:6290/'
+REACT_APP_API='http://localhost:6289'
 ```
 
 ### TODO

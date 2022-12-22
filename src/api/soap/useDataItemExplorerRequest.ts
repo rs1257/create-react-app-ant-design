@@ -58,7 +58,9 @@ export const useDataItemExplorerRequest = <T>({
   dateType,
   names,
 }: DataItemExplorerRequestProps): ApiResponse<T> => {
-  const url = 'http://mip-prdpull-api.azurewebsites.net/MIPIws-public/public/publicwebservice.asmx';
+  const url = `${
+    process.env.REACT_APP_MIP_PULL_API_URL || ''
+  }/MIPIws-public/public/publicwebservice.asmx`;
 
   const config: AxiosRequestConfig = {
     baseURL: '',

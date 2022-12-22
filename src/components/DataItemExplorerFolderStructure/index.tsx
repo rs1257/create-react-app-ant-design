@@ -29,14 +29,15 @@ export const setFolderStatus = (
 };
 
 const FolderStructure = (): JSX.Element => {
-  const url = 'https://mip-prd-web.azurewebsites.net/api/v2/DataItemCategoryTree';
+  const apiUrl = process.env.REACT_APP_API || '';
+  const url = `${apiUrl}/api/v2/DataItemCategoryTree`;
   const [selectedId, setSelectedId] = useState<string>('');
   const [treeLevel, setTreeLevel] = useState<number>(0);
   const [treeStructure, setTreeStructure] = useState<DataItemExplorerFolderList[]>([]);
 
   //TODO - remove 'initial' from end of this url when actually calling the API
   const { isLoading, error, data } = useGetRequest<DataItemExplorerItem[]>(
-    'https://mip-prd-web.azurewebsites.net/api/v2/DataItemCategoryTreeInitial',
+    `${apiUrl}/api/v2/DataItemCategoryTreeInitial`,
     ['forecastMarginsTable']
   );
 
@@ -66,7 +67,7 @@ const FolderStructure = (): JSX.Element => {
         console.log(error);
       }
     );
-  }, [selectedId, treeLevel]);
+  }, [selectedId, treeLevel, url]);
 
   return (
     <div className="folder-structure">

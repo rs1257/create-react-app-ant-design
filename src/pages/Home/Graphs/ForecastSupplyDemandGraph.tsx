@@ -10,7 +10,7 @@ const ForecastSupplyDemandGraph = (): JSX.Element => {
     error,
     data: forecastSupplyDemandData,
   } = useGetRequest<GraphResponseData>(
-    'https://mip-prd-web.azurewebsites.net/api/WithinDayForecastSupplyAndDemand',
+    `${process.env.REACT_APP_API || ''}/api/WithinDayForecastSupplyAndDemand`,
     ['demandSupplyGraph']
   );
 

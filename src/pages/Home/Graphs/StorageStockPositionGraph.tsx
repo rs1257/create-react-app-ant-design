@@ -12,7 +12,7 @@ const StorageStockPositionGraph = (): JSX.Element => {
     error,
     data: storageStockPositionData,
   } = useGetRequest<GraphResponseData>(
-    'https://mip-prd-web.azurewebsites.net/api/AnnualStorageStockLevel',
+    `${process.env.REACT_APP_API || ''}/api/AnnualStorageStockLevel`,
     ['stockPositionGraph']
   );
 

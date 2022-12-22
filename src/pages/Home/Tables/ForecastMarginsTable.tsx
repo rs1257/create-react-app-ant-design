@@ -11,7 +11,7 @@ const ForecastMarginsTable: FC = () => {
     error,
     data: rawData,
   } = useGetRequest<ForecastMarginsNoticeAndDemandResponseData>(
-    'https://mip-prd-web.azurewebsites.net/api/StatusHeader?currentUtcDateTimeOverride',
+    `${process.env.REACT_APP_API || ''}/api/StatusHeader?currentUtcDateTimeOverride`,
     ['forecastMarginsTable']
   );
 

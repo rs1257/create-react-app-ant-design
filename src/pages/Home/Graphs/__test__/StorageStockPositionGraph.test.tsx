@@ -24,7 +24,7 @@ describe('Storage Stock Position Graph component', () => {
     const statusCode = 404;
     server.use(
       setupFailedNetworkRequest(
-        'https://mip-prd-web.azurewebsites.net/api/AnnualStorageStockLevel',
+        `${process.env.REACT_APP_API || ''}/api/AnnualStorageStockLevel`,
         statusCode
       )
     );

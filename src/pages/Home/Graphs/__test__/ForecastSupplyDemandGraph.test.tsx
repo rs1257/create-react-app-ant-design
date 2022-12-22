@@ -24,7 +24,7 @@ describe('Forecast Supply Demand Graph component', () => {
     const statusCode = 404;
     server.use(
       setupFailedNetworkRequest(
-        'https://mip-prd-web.azurewebsites.net/api/WithinDayForecastSupplyAndDemand',
+        `${process.env.REACT_APP_API || ''}/api/WithinDayForecastSupplyAndDemand`,
         statusCode
       )
     );
