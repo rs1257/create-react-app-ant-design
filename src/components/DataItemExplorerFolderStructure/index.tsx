@@ -4,6 +4,7 @@ import getRequestHandler from '../../api/getRequestHandler';
 import { DataItemExplorerItem } from '../../types/api';
 import { DataItemExplorerFolderList } from '../../types/data';
 import FolderList from './FolderList';
+import './DataItemExplorerFolderStructure.scss';
 
 const FolderStructure = (): JSX.Element => {
   const url = 'https://mip-prd-web.azurewebsites.net/api/v2/DataItemCategoryTree';
@@ -59,16 +60,7 @@ const FolderStructure = (): JSX.Element => {
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        width: '90vw',
-        overflow: 'auto',
-        marginBottom: '50px',
-        backgroundColor: '#fff',
-        border: '1px solid, #000',
-      }}
-    >
+    <div className="folder-structure">
       {treeStructure.map((list, index) => (
         <FolderList key={index} list={list} handleSelect={handleSelect} />
       ))}

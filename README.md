@@ -52,9 +52,6 @@ REACT_APP_ENV="development"
 - Write unit tests to increase coverage - Jake & Ryan
 - Define concrete types where possible - Jake & Ryan
 - Move everything to types files - Jake & Ryan
-- Navbar to sidebar - Jake
-- Mock SOAP RE and create table - Jake
-- Graph placeholder - Ryan
+- Navbar to sidebar - Ryan
+- Mock SOAP RE and create table - Jake (Next Year)
 - DIE & RE filters - Jake (can be done next year)
-- Tidy up existing components - Jake and Ryan
-- DIE columns component - Jake
