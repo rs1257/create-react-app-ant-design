@@ -1,5 +1,7 @@
+import { Alert } from 'antd';
+
 const PageNotFound = (): JSX.Element => {
-  return <div>404: Page not found</div>;
+  return <Alert message="Error" description="404: Page not found" type="error" banner />;
 };
 
 export default PageNotFound;
