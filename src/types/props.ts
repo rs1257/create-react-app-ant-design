@@ -49,6 +49,11 @@ export type LinkButtonProps = {
   children: ReactNode;
 };
 
+export interface DatePickerProps {
+  date?: string | null;
+  setDate: (date: string) => void;
+}
+
 export interface DateRangePickerProps {
   dateRange?: [string, string] | null;
   setDateRange: (date: [string, string]) => void;
