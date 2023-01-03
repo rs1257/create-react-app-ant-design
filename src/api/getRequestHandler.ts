@@ -14,13 +14,9 @@ const getRequestHandler = async <T>(
 ): Promise<void> => {
   try {
     const data = await axios.get<T>(url + queryParams);
-    if (data?.data) {
-      callback(data.data);
-    }
+    callback(data.data);
   } catch (error) {
-    if (axios.isAxiosError(error)) {
-      errorCallback(error as AxiosError<RequestError>);
-    }
+    errorCallback(error as AxiosError<RequestError>);
   }
 };
 
