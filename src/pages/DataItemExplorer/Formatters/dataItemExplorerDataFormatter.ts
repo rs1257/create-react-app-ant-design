@@ -6,7 +6,7 @@ import {
   PublicationObjectDataItem,
 } from '../../../types/tables';
 
-const getHeaders = (dataItem: PublicationObjectDataItem): DataTableHeader[] => {
+export const getHeaders = (dataItem: PublicationObjectDataItem): DataTableHeader[] => {
   const headers = [];
   for (const column in dataItem) {
     const header = {
@@ -18,7 +18,7 @@ const getHeaders = (dataItem: PublicationObjectDataItem): DataTableHeader[] => {
   return headers;
 };
 
-const getData = (rawData: PublicationObjectDataItem[]): DataTableDataType[] => {
+export const getData = (rawData: PublicationObjectDataItem[]): DataTableDataType[] => {
   return rawData.map((row, index) => {
     return { ...row, name: String(index + 1) } as DataTableDataType;
   });
