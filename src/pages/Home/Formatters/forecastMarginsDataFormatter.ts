@@ -31,12 +31,7 @@ export const getFormattedForecastMarginsData = (
 ): FormattedData => {
   if (!rawData) {
     return {
-      headers: [
-        {
-          title: '',
-          dataIndex: '',
-        },
-      ],
+      headers: [],
       data: [],
       meta: {},
     };
