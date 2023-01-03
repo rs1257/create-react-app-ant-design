@@ -58,4 +58,4 @@ REACT_APP_API='http://localhost:6289'
 - Define concrete types where possible - Jake & Ryan
 - Move everything to types files - Jake & Ryan
 - Mock SOAP RE and create table - Jake (Next Year)
-- DIE & RE filters - Jake (can be done next year)
+- DIE & RE filters - Jake (can be done next year) - Alex
