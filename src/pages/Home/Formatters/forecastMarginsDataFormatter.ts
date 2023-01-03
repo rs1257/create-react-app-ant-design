@@ -27,8 +27,20 @@ const getDemandForecastData = (demandData: string[]): DataTableDataType => {
 };
 
 export const getFormattedForecastMarginsData = (
-  rawData: ForecastMarginsNoticeAndDemandResponseData
+  rawData: ForecastMarginsNoticeAndDemandResponseData | undefined
 ): FormattedData => {
+  if (!rawData) {
+    return {
+      headers: [
+        {
+          title: '',
+          dataIndex: '',
+        },
+      ],
+      data: [],
+      meta: {},
+    };
+  }
   const {
     mntriggerdemandforecastweekly: { header, mnData, demandData },
     gasDay,

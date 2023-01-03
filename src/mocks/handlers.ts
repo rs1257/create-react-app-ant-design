@@ -24,7 +24,7 @@ export const handlers = [
     return res(ctx.status(200), ctx.json(storageStockPosition));
   }),
 
-  rest.get(`${apiUrl}/api/StatusHeader`, (_, res, ctx) => {
+  rest.get(`${apiUrl}/api/statusHeader?currentUtcDateTimeOverride`, (_, res, ctx) => {
     return res(ctx.status(200), ctx.json(forecastMargins));
   }),
 
