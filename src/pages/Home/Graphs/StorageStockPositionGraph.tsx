@@ -12,7 +12,7 @@ const StorageStockPositionGraph = (): JSX.Element => {
     error,
     data: storageStockPositionData,
   } = useGetRequest<GraphResponseData>(
-    `${process.env.REACT_APP_API || ''}/api/AnnualStorageStockLevel`,
+    `${process.env.REACT_APP_API || ''}/api/AnnualStorageStockLevel?currentUtcDateTimeOverride`,
     ['stockPositionGraph']
   );
 
