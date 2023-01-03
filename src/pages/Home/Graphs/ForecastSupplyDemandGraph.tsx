@@ -10,7 +10,9 @@ const ForecastSupplyDemandGraph = (): JSX.Element => {
     error,
     data: forecastSupplyDemandData,
   } = useGetRequest<GraphResponseData>(
-    `${process.env.REACT_APP_API || ''}/api/WithinDayForecastSupplyAndDemand`,
+    `${
+      process.env.REACT_APP_API || ''
+    }/api/WithinDayForecastSupplyAndDemand?currentUtcDateTimeOverride`,
     ['demandSupplyGraph']
   );
 

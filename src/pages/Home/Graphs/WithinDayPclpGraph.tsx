@@ -9,9 +9,10 @@ const WithinDayPclpGraph = (): JSX.Element => {
     isLoading,
     error,
     data: withinDayPclpData,
-  } = useGetRequest<GraphResponseData>(`${process.env.REACT_APP_API || ''}/api/WithinDayPclp`, [
-    'withinDayPclpGraph',
-  ]);
+  } = useGetRequest<GraphResponseData>(
+    `${process.env.REACT_APP_API || ''}/api/WithinDayPclp?currentUtcDateTimeOverride`,
+    ['withinDayPclpGraph']
+  );
 
   const transformedData = withinDayPclpDataFormatter(withinDayPclpData?.data);
 
