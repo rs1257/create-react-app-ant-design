@@ -38,7 +38,7 @@ const FolderStructure = (): JSX.Element => {
   //TODO - remove 'initial' from end of this url when actually calling the API
   const { isLoading, error, data } = useGetRequest<DataItemExplorerItem[]>(
     `${apiUrl}/api/v2/DataItemCategoryTreeInitial`,
-    ['forecastMarginsTable']
+    ['dataItemExplorer']
   );
 
   useEffect(() => {
