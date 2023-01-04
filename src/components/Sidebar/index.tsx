@@ -2,7 +2,8 @@ import { Dispatch, ReactElement, SetStateAction } from 'react';
 import { Layout, Menu, MenuProps } from 'antd';
 import navRoutes from '../../config/nav-routes';
 import { useNavigate } from 'react-router-dom';
-import './Sidebar.scss';
+import styles from './Sidebar.module.scss';
+
 const { Sider } = Layout;
 
 interface SidebarProps {
@@ -23,7 +24,7 @@ const Sidebar = ({ collapsed, setCollapsed }: SidebarProps): ReactElement => {
 
   return (
     <Sider
-      className="sidebar"
+      className={styles.sidebar}
       collapsed={collapsed}
       onCollapse={toggleCollapsed}
       width={300}
