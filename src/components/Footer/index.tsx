@@ -1,11 +1,12 @@
 import { ReactElement } from 'react';
 import { Layout } from 'antd';
-import './Footer.scss';
+import styles from './Footer.module.scss';
+
 const { Footer } = Layout;
 
 const PageFooter = (): ReactElement => {
   const year = new Date().getFullYear();
-  return <Footer className="footer">National Grid ©{year}</Footer>;
+  return <Footer className={styles.footer}>National Grid ©{year}</Footer>;
 };
 
 export default PageFooter;
