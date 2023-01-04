@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import CustomButton from '../../components/CustomButton';
 import DatePicker from '../../components/DatePicker';
+import IconButton from '../../components/IconButton';
 import './ReportExplorer.scss';
 
 const ReportExplorer = (): JSX.Element => {
@@ -26,9 +27,9 @@ const ReportExplorer = (): JSX.Element => {
             </CustomButton>
           </div>
           <div className="form-buttons__download-buttons">
-            <button>CSV</button>
-            <button>XML</button>
-            <button>JSON</button>
+            <IconButton name="CSV" />
+            <IconButton name="XML" />
+            <IconButton name="JSON" />
           </div>
         </div>
       </div>
