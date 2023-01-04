@@ -1,7 +1,7 @@
 import CustomButton from '../../components/CustomButton';
 import LinkButton from '../../components/LinkButton';
 import Loader from '../../components/Loader';
-import './Home.scss';
+import styles from './Home.module.scss';
 import ForecastSupplyDemandGraph from './Graphs/ForecastSupplyDemandGraph';
 import WithinDayPclpGraph from './Graphs/WithinDayPclpGraph';
 import StorageStockPositionGraph from './Graphs/StorageStockPositionGraph';
@@ -15,9 +15,8 @@ const Home = (): JSX.Element => {
   };
 
   return (
-    <>
-      <div className="home">Home</div>
-
+    <div className={styles.container}>
+      Home
       <div>
         <h1>Primary</h1>
         <CustomButton type="primary" size="large" onClick={onClick}>
@@ -30,7 +29,6 @@ const Home = (): JSX.Element => {
           Click Me
         </CustomButton>
       </div>
-
       <div>
         <h1>Secondary</h1>
         <CustomButton size="large" onClick={onClick}>
@@ -43,7 +41,6 @@ const Home = (): JSX.Element => {
           Click Me
         </CustomButton>
       </div>
-
       <div>
         <h1>Link</h1>
         <LinkButton size="large" href={'#'} target="_blank">
@@ -57,13 +54,12 @@ const Home = (): JSX.Element => {
         <h1>Loader</h1>
         <Loader />
       </div>
-
       <ForecastSupplyDemandGraph />
       <WithinDayPclpGraph />
       <StorageStockPositionGraph />
       <SystemEntryPointsTable />
       <ForecastMarginsTable />
-    </>
+    </div>
   );
 };
 

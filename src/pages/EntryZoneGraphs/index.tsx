@@ -1,7 +1,7 @@
-import './EntryZoneGraphs.scss';
+import styles from './EntryZoneGraphs.module.scss';
 
 const EntryZoneGraphs = (): JSX.Element => {
-  return <div className="entry-zone-graphs">Entry Zone Graphs</div>;
+  return <div className={styles.container}>Entry Zone Graphs</div>;
 };
 
 export default EntryZoneGraphs;
