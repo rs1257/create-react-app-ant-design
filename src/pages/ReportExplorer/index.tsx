@@ -1,21 +1,21 @@
 import { useState } from 'react';
+import styles from './ReportExplorer.module.scss';
 import CustomButton from '../../components/CustomButton';
 import DatePicker from '../../components/DatePicker';
 import IconButton from '../../components/IconButton';
-import './ReportExplorer.scss';
 
 const ReportExplorer = (): JSX.Element => {
   const [date, setDate] = useState<string | null>();
   return (
-    <div className="report-explorer">
+    <div className={styles.container}>
       Report Explorer
-      <div className="report-explorer-form">
-        <div className="gas-day-date-picker">
+      <div className={styles.form}>
+        <div className={styles.datePicker}>
           <span>Gas Day</span>
           <DatePicker date={date} setDate={setDate} />
         </div>
-        <div className="form-buttons">
-          <div className="form-buttons__view-report-button">
+        <div className={styles.buttonGroup}>
+          <div className={styles.reportButton}>
             <CustomButton
               type="primary"
               size="middle"
@@ -26,7 +26,7 @@ const ReportExplorer = (): JSX.Element => {
               View report
             </CustomButton>
           </div>
-          <div className="form-buttons__download-buttons">
+          <div className={styles.downloadButtons}>
             <IconButton name="CSV" />
             <IconButton name="XML" />
             <IconButton name="JSON" />
