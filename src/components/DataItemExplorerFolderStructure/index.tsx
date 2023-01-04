@@ -55,18 +55,22 @@ const FolderStructure = (): JSX.Element => {
     if (!selectedId) {
       return;
     }
-    getRequestHandler(
-      url,
-      `?id=${selectedId}`,
-      ({ children }: DataItemExplorerItem) => {
-        children &&
-          setTreeStructure((treeStructure) => getTreeStructure(treeStructure, children, treeLevel));
-      },
-      (error: Error): void => {
-        // eslint-disable-next-line no-console
-        console.log(error);
-      }
-    );
+    async (): Promise<void> => {
+      await getRequestHandler(
+        url,
+        `?id=${selectedId}`,
+        ({ children }: DataItemExplorerItem) => {
+          children &&
+            setTreeStructure((treeStructure) =>
+              getTreeStructure(treeStructure, children, treeLevel)
+            );
+        },
+        (error: Error): void => {
+          // eslint-disable-next-line no-console
+          console.log(error);
+        }
+      );
+    };
   }, [selectedId, treeLevel, url]);
 
   return (

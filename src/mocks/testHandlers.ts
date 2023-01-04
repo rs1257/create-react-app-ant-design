@@ -8,3 +8,12 @@ export const setupFailedNetworkRequest = (
     return res(ctx.status(statusCode));
   });
 };
+
+export const setupFailedNetworkPostRequest = (
+  url: string,
+  statusCode: number
+): RestHandler<MockedRequest<DefaultBodyType>> => {
+  return rest.post(url, (req, res, ctx) => {
+    return res(ctx.status(statusCode));
+  });
+};

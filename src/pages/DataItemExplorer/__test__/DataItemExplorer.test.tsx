@@ -1,8 +1,7 @@
 import { render } from '@testing-library/react';
-import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { client } from '../../../mockQueryClient';
 import DataItemExplorer from '..';
-
-const client = new QueryClient();
 
 describe('DataItemExplorer component', () => {
   it('should display DataItemExplorer component when rendered', () => {

@@ -20,9 +20,6 @@ const SystemEntryPointsTable: FC = () => {
 
   if (error) return <>{'An error has occurred: ' + error.message}</>;
 
-  if (!rawData) {
-    return <></>;
-  }
   const {
     headers,
     data,
