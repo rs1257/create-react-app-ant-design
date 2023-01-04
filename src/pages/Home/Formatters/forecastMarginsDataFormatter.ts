@@ -27,7 +27,7 @@ const getDemandForecastData = (demandData: string[]): DataTableDataType => {
 };
 
 export const getFormattedForecastMarginsData = (
-  rawData: ForecastMarginsNoticeAndDemandResponseData | undefined
+  rawData?: ForecastMarginsNoticeAndDemandResponseData
 ): FormattedData => {
   if (!rawData) {
     return {

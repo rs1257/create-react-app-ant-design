@@ -1,9 +1,9 @@
 import EmailSubmissionForm, { submitRequest } from '../../components/EmailSubmissionForm';
-import './Links.scss';
+import styles from './Links.module.scss';
 
 const Links = (): JSX.Element => {
   return (
-    <div className="links">
+    <div className={styles.container}>
       <span>Links</span>
       <EmailSubmissionForm submitRequest={submitRequest} />
     </div>

@@ -1,10 +1,10 @@
 import EmailSubmissionForm, { submitRequest } from '../../components/EmailSubmissionForm';
-import './UserDefinedDownload.scss';
+import styles from './UserDefinedDownload.module.scss';
 
 const UserDefinedDownload = (): JSX.Element => {
   return (
-    <div>
-      <div className="user-defined-download">User Defined Download</div>
+    <div className={styles.container}>
+      User Defined Download
       <EmailSubmissionForm submitRequest={submitRequest} />
     </div>
   );

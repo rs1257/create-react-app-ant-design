@@ -24,7 +24,7 @@ describe('should correctly render table component', () => {
     const statusCode = 404;
     server.use(
       setupFailedNetworkRequest(
-        `${process.env.REACT_APP_API || ''}/api/LatestSupplyEntryPoint?currentUtcDateTimeOverride`,
+        `${process.env.REACT_APP_API || ''}/api/LatestSupplyEntryPoint`,
         statusCode
       )
     );

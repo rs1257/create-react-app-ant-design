@@ -14,8 +14,8 @@ export interface DataTableMetaData {
 }
 
 export interface FormattedData {
-  data: DataTableDataType[] | [];
-  headers: DataTableHeader[] | [];
+  data: DataTableDataType[];
+  headers: DataTableHeader[];
   meta: DataTableMetaData;
 }
 

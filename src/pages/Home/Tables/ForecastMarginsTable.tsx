@@ -11,7 +11,7 @@ const ForecastMarginsTable: FC = () => {
     error,
     data: rawData,
   } = useGetRequest<ForecastMarginsNoticeAndDemandResponseData>(
-    `${process.env.REACT_APP_API || ''}/api/StatusHeader?currentUtcDateTimeOverride`,
+    `${process.env.REACT_APP_API || ''}/api/statusHeader?currentUtcDateTimeOverride`,
     ['forecastMarginsTable']
   );
 
