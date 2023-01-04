@@ -3,3 +3,22 @@
   height: 5rem;
   font-family: arial, sans-serif;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.datePicker {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+}

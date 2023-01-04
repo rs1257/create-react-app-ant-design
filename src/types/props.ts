@@ -18,6 +18,10 @@ export interface CustomButtonProps {
   children: ReactNode;
 }
 
+export interface IconButtonProps {
+  name: 'XML' | 'CSV' | 'JSON';
+}
+
 export interface DataTableProps {
   data: DataTableDataType[];
   headers: DataTableHeader[];

@@ -2,7 +2,6 @@ import { FC, ReactElement, useState } from 'react';
 import { DatePicker as AntDatePicker } from 'antd';
 import dayjs, { Dayjs } from 'dayjs';
 import { EventValue } from 'rc-picker/lib/interface';
-import './DatePicker.scss';
 import { DatePickerProps } from '../../types/props';
 
 export const handleChange = (
