@@ -23,10 +23,7 @@ describe('should correctly render table component', () => {
   it('should display Forecast Margins table component error message when rendered', async () => {
     const statusCode = 404;
     server.use(
-      setupFailedNetworkRequest(
-        `${process.env.REACT_APP_API || ''}/api/StatusHeader?currentUtcDateTimeOverride`,
-        statusCode
-      )
+      setupFailedNetworkRequest(`${process.env.REACT_APP_API || ''}/api/statusHeader`, statusCode)
     );
 
     const { queryByText, container } = render(
