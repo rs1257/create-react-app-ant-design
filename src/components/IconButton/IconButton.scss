@@ -1,8 +1,11 @@
-.download-link {
+.download-button {
   cursor: pointer;
-}
+  padding: 0;
+  background-color: transparent;
+  border: none;
 
-.download-icon {
-  margin: 4px;
-  height: 24px;
+  &__icon {
+    margin: 4px;
+    height: 24px;
+  }
 }
