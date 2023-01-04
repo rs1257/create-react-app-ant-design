@@ -1,6 +1,5 @@
 import { Button } from 'antd';
 import { CustomButtonProps } from '../../types/props';
-import './CustomButton.scss';
 
 const CustomButton = ({
   type = 'default',
@@ -13,7 +12,6 @@ const CustomButton = ({
 }: CustomButtonProps): JSX.Element => {
   return (
     <Button
-      className="custom-button"
       icon={icon}
       type={type}
       size={size}
