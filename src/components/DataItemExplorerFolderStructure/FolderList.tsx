@@ -35,6 +35,7 @@ const FolderList: FC<FolderListProps> = ({ handleSelect, list }) => {
         />
       );
     }
+    return <></>;
   };
   return (
     <div className="folder-structure__list">

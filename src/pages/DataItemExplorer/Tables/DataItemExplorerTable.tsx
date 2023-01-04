@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import {
+  SoapRequestBoolean,
   SoapRequestDateType,
   useDataItemExplorerRequest,
 } from '../../../api/soap/useDataItemExplorerRequest';
@@ -26,8 +27,8 @@ const DataItemExplorerTable = (): JSX.Element => {
   const [pageContent, setPageContent] = useState<JSX.Element | JSX.Element[]>();
 
   const { isLoading, error, data } = useDataItemExplorerRequest<string>({
-    latestFlag: true,
-    applicableFor: true,
+    latestFlag: SoapRequestBoolean.true,
+    applicableFor: SoapRequestBoolean.true,
     dateTo: '2022-12-15T00:00:00',
     dateFrom: '2022-12-01T00:00:00',
     dateType: SoapRequestDateType.gas,
