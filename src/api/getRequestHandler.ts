@@ -1,11 +1,5 @@
 import axios, { AxiosError } from 'axios';
 
-type RequestError = {
-  errors: {
-    message: string;
-  }[];
-};
-
 const getRequestHandler = async <T>(
   url: string,
   queryParams: string,
@@ -13,10 +7,10 @@ const getRequestHandler = async <T>(
   errorCallback: (error: Error) => void
 ): Promise<void> => {
   try {
-    const data = await axios.get<T>(url + queryParams);
-    callback(data.data);
+    const { data } = await axios.get<T>(`${url}${queryParams}`);
+    callback(data);
   } catch (error) {
-    errorCallback(error as AxiosError<RequestError>);
+    errorCallback(error as AxiosError);
   }
 };
 
