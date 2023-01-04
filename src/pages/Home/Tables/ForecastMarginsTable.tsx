@@ -19,14 +19,11 @@ const ForecastMarginsTable: FC = () => {
 
   if (error) return <>{'An error has occurred: ' + error.message}</>;
 
-  if (!rawData) {
-    return <></>;
-  }
   const { headers, data } = getFormattedForecastMarginsData(rawData);
 
   return (
     <div>
-      <span>ForecastMargins</span>
+      <span>Forecast Margins</span>
       <div className="system-entry-points__table">
         <DataTable headers={headers} data={data} />
       </div>

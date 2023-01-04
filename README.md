@@ -52,10 +52,19 @@ REACT_APP_MIP_PULL_API_URL='http://localhost:6290/'
 REACT_APP_API='http://localhost:6289'
 ```
 
+### Working with the jumpbox
+
+Ensure that you have the latest Web.config for MipWebSite project. Add the following lines to E:\Capgemini\MiP_WebTier\Source\NationalGrid.MipWebTier\NationalGrid.MipWebSite\App_Start\ApiConfig.cs and ensure the cors package is installed and imported. This will allow api requests to be made.
+
+```C#
+var cors = new EnableCorsAttribute("http://localhost:3000", "*", "*");
+configuration.EnableCors(cors);
+```
+
 ### TODO
 
 - Write unit tests to increase coverage - Jake & Ryan
 - Define concrete types where possible - Jake & Ryan
 - Move everything to types files - Jake & Ryan
 - Mock SOAP RE and create table - Jake (Next Year)
-- DIE & RE filters - Jake (can be done next year)
+- DIE & RE filters - Jake (can be done next year) - Alex
