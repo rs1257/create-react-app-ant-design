@@ -1,0 +1,33 @@
+@use '../../assets/global.scss' as g;
+
+.folderStructure {
+  display: flex;
+  width: 90%;
+  overflow: auto;
+  margin: 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.list {
+  width: 400px;
+  min-width: 400px;
+  height: 70vh;
+  overflow: auto;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.selected {
+  background-image: linear-gradient(to right, g.$ngt-light-blue, g.$ngt-teal);
+  color: g.$ngt-white;
+
+  button {
+    color: g.$ngt-white;
+  }
+}

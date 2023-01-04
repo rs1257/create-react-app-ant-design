@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { List } from 'antd';
 import { RightOutlined, DownOutlined, FolderOutlined } from '@ant-design/icons';
 import CustomButton from '../CustomButton';
-import './DataItemExplorerFolderStructure.scss';
+import styles from './DataItemExplorerFolderStructure.module.scss';
 
 export interface FolderItemProps {
   id: string;
@@ -21,9 +21,7 @@ const FolderItem: FC<FolderItemProps> = ({
   handleSelect,
   setItemSelected,
 }) => {
-  const className = selected
-    ? 'folder-structure__list-item--selected'
-    : 'folder-structure__list-item';
+  const className = selected ? `${styles.listItem} ${styles.selected}` : styles.listItem;
   return (
     <List.Item className={className}>
       <FolderOutlined />

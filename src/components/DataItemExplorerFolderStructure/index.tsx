@@ -4,7 +4,7 @@ import getRequestHandler from '../../api/getRequestHandler';
 import { DataItemExplorerItem } from '../../types/api';
 import { DataItemExplorerFolderList } from '../../types/data';
 import FolderList from './FolderList';
-import './DataItemExplorerFolderStructure.scss';
+import styles from './DataItemExplorerFolderStructure.module.scss';
 
 export const getTreeStructure = (
   currentStructure: DataItemExplorerFolderList[],
@@ -74,7 +74,7 @@ const FolderStructure = (): JSX.Element => {
   }, [selectedId, treeLevel, url]);
 
   return (
-    <div className="folder-structure">
+    <div className={styles.folderStructure}>
       {treeStructure.map((list, index) => (
         <FolderList key={index} list={list} handleSelect={handleSelect} />
       ))}
