@@ -2,8 +2,8 @@ import { FC, ReactElement, useState } from 'react';
 import { DatePicker as DatePicker } from 'antd';
 import dayjs, { Dayjs } from 'dayjs';
 import { EventValue, RangeValue } from 'rc-picker/lib/interface';
-import './DateRangePicker.scss';
 import { DateRangePickerProps } from '../../types/props';
+import styles from './DateRangePicker.module.scss';
 
 const { RangePicker } = DatePicker;
 
@@ -34,7 +34,7 @@ const DateRangePicker: FC<DateRangePickerProps> = ({ dateRange, setDateRange }):
   >(defaultValue);
 
   return (
-    <div className="date-picker">
+    <div className={styles.dateRangePicker}>
       <RangePicker
         allowClear
         value={displayValue}
