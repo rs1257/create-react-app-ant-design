@@ -3,3 +3,22 @@
   height: 5rem;
   font-family: arial, sans-serif;
 }
+
+.report-explorer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.gas-day-date-picker {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
