@@ -16,7 +16,8 @@ const Home = (): JSX.Element => {
 
   return (
     <div className={styles.container}>
-      Home
+      <span>Home</span>
+
       <div>
         <h1>Primary</h1>
         <CustomButton type="primary" size="large" onClick={onClick}>
@@ -29,6 +30,7 @@ const Home = (): JSX.Element => {
           Click Me
         </CustomButton>
       </div>
+
       <div>
         <h1>Secondary</h1>
         <CustomButton size="large" onClick={onClick}>
@@ -41,6 +43,7 @@ const Home = (): JSX.Element => {
           Click Me
         </CustomButton>
       </div>
+
       <div>
         <h1>Link</h1>
         <LinkButton size="large" href={'#'} target="_blank">
@@ -50,10 +53,12 @@ const Home = (): JSX.Element => {
           Click Me
         </LinkButton>
       </div>
+
       <div>
         <h1>Loader</h1>
         <Loader />
       </div>
+
       <ForecastSupplyDemandGraph />
       <WithinDayPclpGraph />
       <StorageStockPositionGraph />
