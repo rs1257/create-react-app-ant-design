@@ -8,13 +8,13 @@ const ReportExplorer = (): JSX.Element => {
   return (
     <div className="report-explorer">
       Report Explorer
-      <div className="form">
-        <div className="date-picker">
+      <div className="report-explorer-form">
+        <div className="gas-day-date-picker">
           <span>Gas Day</span>
           <DatePicker date={date} setDate={setDate} />
         </div>
-        <div className="buttons">
-          <div className="view-report-button">
+        <div className="form-buttons">
+          <div className="form-buttons__view-report-button">
             <CustomButton
               type="primary"
               size="middle"
@@ -25,7 +25,7 @@ const ReportExplorer = (): JSX.Element => {
               View report
             </CustomButton>
           </div>
-          <div className="download-buttons">
+          <div className="form-buttons__download-buttons">
             <button>CSV</button>
             <button>XML</button>
             <button>JSON</button>
