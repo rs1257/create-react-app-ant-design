@@ -13,18 +13,7 @@ import { getTime } from '../../utils/dateTime';
 import { roundNumber } from '../../utils/number';
 import hexToRgba from 'hex-to-rgba';
 import useInteractiveLegend from '../../hooks/useInteractiveLegend';
-
-interface LineGraphProps<T> {
-  data: T[];
-  xAxisDataKey: string;
-  yAxisDataKey: string;
-  xAxisLabel?: string;
-  yAxisLabel?: string;
-  labels: string[];
-  xAxisTickFormatter?: (value: string) => string;
-  tooltipLabelFormatter?: (value: string) => string;
-  dot?: boolean;
-}
+import { LineGraphProps } from '../../types/props';
 
 const numberFormatter = (value: string): string => {
   return roundNumber(value);

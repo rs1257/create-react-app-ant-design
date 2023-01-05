@@ -1,10 +1,7 @@
 import { FC, ReactElement } from 'react';
 import { Button, Form, Input } from 'antd';
 import './EmailSubmissionForm.scss';
-
-interface formValues {
-  request: Record<string, string>;
-}
+import { formValues } from '../../types/data';
 
 const layout = {
   labelCol: { lg: { span: 4 }, sm: { span: 6 }, xs: { span: 10 } },

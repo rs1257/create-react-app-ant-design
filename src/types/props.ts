@@ -1,6 +1,6 @@
 import { ButtonType } from 'antd/es/button';
 import { SizeType } from 'antd/es/config-provider/SizeContext';
-import { ReactNode } from 'react';
+import { ErrorInfo, ReactNode } from 'react';
 import { Dispatch, RefObject, SetStateAction } from 'react';
 import { InputRef } from 'antd';
 import { FilterDropdownProps } from 'antd/es/table/interface';
@@ -76,6 +76,48 @@ export interface DatePickerProps {
 export interface DateRangePickerProps {
   dateRange?: [string, string] | null;
   setDateRange: (date: [string, string]) => void;
+}
+
+export interface ErrorBoundaryProps {
+  children?: ReactNode;
+}
+
+export interface ErrorBoundaryState {
+  hasError: boolean;
+  error?: Error;
+  errorInfo?: ErrorInfo;
+}
+
+export interface GraphCardProps {
+  title: string;
+  isLoading: boolean;
+  error: Error | null;
+  children: ReactNode | undefined;
+}
+
+export interface LayoutTypeProps {
+  header?: ReactNode;
+  footer?: ReactNode;
+  sidebar?: ReactNode;
+  collapsed?: boolean;
+  page: ReactNode;
+}
+
+export interface LineGraphProps<T> {
+  data: T[];
+  xAxisDataKey: string;
+  yAxisDataKey: string;
+  xAxisLabel?: string;
+  yAxisLabel?: string;
+  labels: string[];
+  xAxisTickFormatter?: (value: string) => string;
+  tooltipLabelFormatter?: (value: string) => string;
+  dot?: boolean;
+}
+
+export interface SidebarProps {
+  collapsed: boolean;
+  setCollapsed: Dispatch<SetStateAction<boolean>>;
 }
 
 //** Pages
