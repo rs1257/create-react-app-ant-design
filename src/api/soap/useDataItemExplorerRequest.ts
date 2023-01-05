@@ -3,8 +3,8 @@ import axios, { AxiosRequestConfig } from 'axios';
 import { ApiResponse } from '../../types/api';
 
 export interface DataItemExplorerRequestProps {
-  latestFlag: boolean;
-  applicableFor: boolean;
+  latestFlag: SoapRequestBoolean;
+  applicableFor: SoapRequestBoolean;
   dateTo: string;
   dateFrom: string;
   dateType: SoapRequestDateType;
@@ -16,24 +16,27 @@ export enum SoapRequestDateType {
   normal = 'NORMALDAY',
 }
 
+export enum SoapRequestBoolean {
+  true = 'Y',
+  false = 'N',
+}
+
 export const getRequestBody = (
-  latestFlag: boolean,
-  applicableFor: boolean,
+  latestFlag: SoapRequestBoolean,
+  applicableFor: SoapRequestBoolean,
   dateTo: string,
   dateFrom: string,
   dateType: SoapRequestDateType,
   names: string[]
 ): string => {
   const stringParams = names.map((name) => `<string>${name}</string>`);
-  const isLatestFlag = latestFlag ? 'Y' : 'N';
-  const isApplicableFor = applicableFor ? 'Y' : 'N';
   return `<?xml version="1.0" encoding="utf-8"?>
     <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
       <soap:Body>
         <GetPublicationDataWM xmlns="http://www.NationalGrid.com/MIPI/">
           <reqObject>
-            <LatestFlag>${isLatestFlag}</LatestFlag>
-            <ApplicableForFlag>${isApplicableFor}</ApplicableForFlag>
+            <LatestFlag>${latestFlag}</LatestFlag>
+            <ApplicableForFlag>${applicableFor}</ApplicableForFlag>
             <ToDate>${dateTo}</ToDate>
             <FromDate>${dateFrom}</FromDate>
             <DateType>${dateType}</DateType>

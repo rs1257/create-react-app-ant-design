@@ -53,7 +53,14 @@ const routes: CustomRouteObject[] = [
     name: 'entryZoneGraphs',
     element: <EntryZoneGraphs />,
   },
-  { path: '*', name: 'notFound', element: <PageNotFound /> },
+  {
+    path: '*',
+    name: 'notFound',
+    element: <PageNotFound />,
+    hideFooter: true,
+    hideHeader: true,
+    hideSidebar: true,
+  },
 ];
 
 export default routes;

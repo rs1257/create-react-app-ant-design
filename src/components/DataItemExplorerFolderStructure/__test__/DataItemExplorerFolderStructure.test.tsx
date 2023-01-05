@@ -1,9 +1,10 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { act, render, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import axios from 'axios';
 import dataItemExplorerFolderTreeInitial from '../../../data/dataItemExplorerFolderTreeInitial.json';
 import dataItemExplorerCategoryTree from '../../../data/dataItemExplorerCategoryTree.json';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { act, render } from '@testing-library/react';
 import DataItemExplorerFolderStructure, { getTreeStructure, setFolderStatus } from '../index';
-import userEvent from '@testing-library/user-event';
 import FolderItem from '../FolderItem';
 import FolderList from '../FolderList';
 import { DataItemExplorerFolderList } from '../../../types/data';
@@ -13,6 +14,7 @@ const client = new QueryClient();
 
 describe('Components should render correctly', () => {
   const folders = dataItemExplorerFolderTreeInitial;
+
   it('should render folder list with correct props passed', async () => {
     const { findByText } = render(
       <QueryClientProvider client={client}>
@@ -46,7 +48,7 @@ describe('Components should render correctly', () => {
   });
 });
 
-describe('Clicking folder should display desired behaviour', () => {
+describe('Clicking folder', () => {
   it('should call handle select and set selected item on folder click', async () => {
     const handleSelect = jest.fn();
     const setItemSelected = jest.fn();
@@ -70,6 +72,7 @@ describe('Clicking folder should display desired behaviour', () => {
     expect(handleSelect).toHaveBeenCalled();
     expect(setItemSelected).toHaveBeenCalled();
   });
+
   it('should set selected to true on selected folder item, and false on all others', async () => {
     const handleSelect = jest.fn();
     const folders = dataItemExplorerFolderTreeInitial as DataItemExplorerItem[];
@@ -94,6 +97,7 @@ describe('Clicking folder should display desired behaviour', () => {
       }
     });
   });
+
   it('should create new folder structure when a different folder selected', () => {
     const parentFolderList = dataItemExplorerFolderTreeInitial as DataItemExplorerItem[];
     const nestedFolderList = dataItemExplorerCategoryTree.children as DataItemExplorerItem[];
@@ -114,6 +118,7 @@ describe('Clicking folder should display desired behaviour', () => {
     const newStructure = getTreeStructure(list, nestedFolderList, 1);
     expect(newStructure).toHaveLength(2);
   });
+
   it('should set correct folder status', () => {
     const id = '123';
     const level = 2;
@@ -122,5 +127,21 @@ describe('Clicking folder should display desired behaviour', () => {
     setFolderStatus(id, level, setId, setLevel);
     expect(setId).toHaveBeenCalledWith(id);
     expect(setLevel).toHaveBeenCalledWith(level + 1);
+  });
+
+  it('should fire axios request when folder opened', async () => {
+    const axiosSpy = jest.spyOn(axios, 'get');
+    const { findAllByRole } = render(
+      <QueryClientProvider client={client}>
+        <DataItemExplorerFolderStructure />
+      </QueryClientProvider>
+    );
+    const selectButtons = await findAllByRole('button');
+    await act(() => {
+      userEvent.click(selectButtons[0]);
+    });
+    await waitFor(() => {
+      expect(axiosSpy).toBeCalled();
+    });
   });
 });

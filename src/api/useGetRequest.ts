@@ -6,6 +6,8 @@ const useGetRequest = <T>(url: string, queryKey: string[]): ApiResponse<T> => {
   const { isLoading, error, data } = useQuery<T, Error>({
     queryKey,
     queryFn: () => axios.get<T>(url).then(({ data }) => data),
+    refetchOnWindowFocus: false,
+    refetchOnMount: false,
   });
 
   return { isLoading, error, data };
