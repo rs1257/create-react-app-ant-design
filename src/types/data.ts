@@ -18,3 +18,10 @@ export interface FolderTreeLoading {
 export interface formValues {
   request: Record<string, string>;
 }
+
+export type Applicable = 'applicableAt' | 'applicableFor';
+
+export interface DataItemExplorerFormData {
+  latestValues: boolean;
+  applicable: Applicable;
+}

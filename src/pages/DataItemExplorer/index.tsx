@@ -7,20 +7,14 @@ import styles from './DataItemExplorer.module.scss';
 import DateRangePicker from '../../components/DateRangePicker';
 import { SoapRequestBoolean, SoapRequestDateType } from '../../types/api';
 import { getDefaultDateRange } from '../../utils/dateTime';
-
-type TApplicable = 'applicableAt' | 'applicableFor';
-
-interface IFormData {
-  latestValues: boolean;
-  applicable: TApplicable;
-}
+import { Applicable, DataItemExplorerFormData } from '../../types/data';
 
 const DataItemExplorer = (): JSX.Element => {
-  const [applicable, setApplicable] = useState<TApplicable>('applicableAt');
+  const [applicable, setApplicable] = useState<Applicable>('applicableAt');
   const [dateRange, setDateRange] = useState<[string, string]>(getDefaultDateRange());
-  const [form] = Form.useForm<IFormData>();
+  const [form] = Form.useForm<DataItemExplorerFormData>();
 
-  const onFinish = ({ latestValues, applicable }: IFormData): void => {
+  const onFinish = ({ latestValues, applicable }: DataItemExplorerFormData): void => {
     //TODO if gasday (applicableFor) then change fromDate time to 4am and toDate time to 3:59am
     const fromDate = dayjs(dateRange[0]).format('YYYY-MM-DDTHH:mm:ss');
     const toDate = dayjs(dateRange[1]).format('YYYY-MM-DDTHH:mm:ss');
@@ -35,7 +29,7 @@ const DataItemExplorer = (): JSX.Element => {
   };
 
   const applicableOnChange = (values: RadioChangeEvent): void => {
-    setApplicable(values.target.value as TApplicable);
+    setApplicable(values.target.value as Applicable);
   };
 
   return (
