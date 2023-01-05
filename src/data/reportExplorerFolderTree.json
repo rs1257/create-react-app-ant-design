@@ -1,0 +1,714 @@
+{
+  "name": "NationalGrid.MipReports",
+  "type": "Folder",
+  "parent": null,
+  "description": null,
+  "url": null,
+  "childNode": [
+    {
+      "name": "Reports",
+      "type": "Folder",
+      "parent": null,
+      "description": null,
+      "url": null,
+      "childNode": [
+        {
+          "name": "Energy - Daily Reports",
+          "type": "Folder",
+          "parent": "/NationalGrid.MipReports/Report Explorer",
+          "description": null,
+          "url": "/NationalGrid.MipReports/Report Explorer",
+          "childNode": [
+            {
+              "name": "After Day",
+              "type": "Folder",
+              "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports",
+              "description": null,
+              "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports",
+              "childNode": [
+                {
+                  "name": "Actual Composite Weather Variables (SISR02)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This report shows the Local Distribution Zone (LDZ) Actual Composite Weather Variables (CWV). CWV is a weather variable created from 2-hourly temperatures and 4-hourly wind speeds transformed to produce a linear relationship with LDZ demand. The benefits of these are 1. Improves the fit of weather/demand models. 2. Historical weather can be used to estimate what demand would have been at current levels of connected load. 3. Linear relationship with LDZ demand greatly simplifies demand models. Frequency: D+1",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "c25ed466-e75d-4ed6-9577-74ba50c5d5b9"
+                },
+                {
+                  "name": "Actual Demands (SISR04)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This report shows the Actual Commercial Demands for each of the LDZs for a single Gas Day, the sum of all LDZ demand, and the actual throughput for the NTS (this figure includes all LDZs, Storage Injections, Interconnectors and NTS direct feed VLDMC demands). Total NTS demand excludes linepack change and shrinkage.Initial Information updated at D+1 with final closed out data at D+6. All updates are published at approximately 12:00.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "4a0f15b9-e70b-42a4-b417-72c7778586e7"
+                },
+                {
+                  "name": "Actual Offtake Flows (AOF)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This report is for publication of the previous day's total physical flows from the NTS by individual NTS Exit Point. This includes each individual storage site, power station, interconnector, NTS connected industrial load and individual NTS exit points into each LDZ. Total physical output excludes linepack change and shrinkage. This report will be updated at D+1. The volume data is published at 11:00 and the cv and energy published at 12.30.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "9d6eaee0-5de8-4354-b0cf-48cfc8c4f497"
+                },
+                {
+                  "name": "Aggregate Allocation Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "The allocations report shows allocations aggregated by Entry and Exit and also by Site Type at D+2 (initial) and then updated at M+7 for Exit data items and M+15 for Entry data items to show the Final allocation. The report is published at 22:45 hours. ",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "95614310-ee1e-4271-bd34-3f18e02e94e6"
+                },
+                {
+                  "name": "Calorific Value Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This report is for the publication of the previous day's Calorific Value data. This report will be published at D+1 and will display the values for all the LDZ's and SIU's by 11:30. Note: The data item `Calorific Value, Scottish Independents was re-named to `Calorific Value, Oban on 05/07/2015. Thurso, Campbeltown and Wick data items were also added",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "61adad62-c762-4bbe-bcf2-3d28d0390441"
+                },
+                {
+                  "name": "Daily Balance Report (NORD01)",
+                  "type": "Folder",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": null,
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [
+                    {
+                      "name": "Cashout Balancing Prices (NORD01a)",
+                      "type": "Report",
+                      "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day/Daily Balance Report (NORD01)",
+                      "description": null,
+                      "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day/Daily Balance Report (NORD01)",
+                      "childNode": [],
+                      "parameterType": "Day",
+                      "nodeId": "67340446-322f-4f5a-8115-02bd40ced99a"
+                    },
+                    {
+                      "name": "Daily Balance Report (NORD01b)",
+                      "type": "Report",
+                      "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day/Daily Balance Report (NORD01)",
+                      "description": "This Report shows the total Nominated and Actual inputs and outputs to/from the system; a summary of Balancing Actions used, Supply, Demand and Linepack details and a Price Summary. The Nominations balance is updated at D+2, the Allocations balance isupdated at D+7. All other information is updated at D+1. All updates are published at approximately 12:00.",
+                      "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day/Daily Balance Report (NORD01)",
+                      "childNode": [],
+                      "parameterType": "Day",
+                      "nodeId": "227255a8-2143-46f3-9a90-d3f0d6411a09"
+                    },
+                    {
+                      "name": "Daily Operation Information Report (NORD01c)",
+                      "type": "Report",
+                      "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day/Daily Balance Report (NORD01)",
+                      "description": "This Report shows the total Nominated and Actual inputs and outputs to/from the system; a summary of Balancing Actions used, Supply, Demand and Linepack details and a Price Summary. The Nominations balance is updated at D+2, the Allocations balance isupdated at D+7. All other information is updated at D+1. All updates are published at approximately 12:00.",
+                      "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day/Daily Balance Report (NORD01)",
+                      "childNode": [],
+                      "parameterType": "Day",
+                      "nodeId": "6207f0b9-f368-41a5-b57c-527636f1451e"
+                    }
+                  ],
+                  "parameterType": "None",
+                  "nodeId": "0cb7e004-62f9-4b57-b7ff-bf15facd158d"
+                },
+                {
+                  "name": "Demand Analysis LDZ DM and NDM (NORM06)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This report shows the Daily Metered (DM) and Non Daily Metered (NDM) Demand in kWh for each of the 13  Local Distribution Zones (LDZs), published at D+1, pre-closeout and D+6, post closeout.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "de2935d6-5839-42e8-a6c4-beb63d197514"
+                },
+                {
+                  "name": "Gas Trading Report (NORD06)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This Report shows NBP Trades reported to National Grid through ATLink Trade nominations. It shows the no of confirmed trades and the total energy traded. Also provided are details of the average, high and low amounts of gas traded. A summary of Non-Matching trades gives an indication of the overall intended trading position. It is recognised that trade nominations may not reflect all individual trades as netting off may occur. Information updated at D+1. All updates are published at approximately 12:00.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "fe2af34b-cadf-459d-a982-382bc8f64867"
+                },
+                {
+                  "name": "NTS Commercial Entry End Of Day (NTSEOD)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "The Report provides information that indicates that the End of Day (EOD) quantity of gas that has commercially flowed through an NTS system entry point on a specific Gas Day. The Report indicates aggregate entry nominations onto the NTS, it may not reflect the actual physical flow of gas onto the NTS as it does not take into account any Exit Nominations at sites with potential for 2 way flow (storage sites and interconnectors). The report is updated at D+2. The report is published at approximately 12:00.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "431f3c47-ebf0-4a9f-a210-d6efcccd254d"
+                },
+                {
+                  "name": "NTS Exit Flex Utilisation Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "NTS Exit Flex Utilisation Report provides the Zonal Offtake: 06:00 to 22:00 in mscm, End of Day Zonal Offtake in mscm and Zonal Flex Utilization in mscm for Measured at D+1 and Measured at D+6.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "401b12b8-e9c7-4184-86ec-35aa2a0410cb"
+                },
+                {
+                  "name": "NTS Linepack Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": null,
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "80fd1b5f-8bfc-48bd-b5db-da6f83b41cc9"
+                },
+                {
+                  "name": "NTS Physical Entry End Of Day (NTSEOD)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This report provides System Entry Energy in kWh, System Entry Volume in mscm and System Entry Calorific values(CV) in MJ/scm for the corresponding System Entries. Frequency: Daily",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "abc49999-f5db-4923-92d1-795a000ed0c9"
+                },
+                {
+                  "name": "NTS Shrinkage - Gas Procurement and Disposal",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This report details the activity undertaken by National Grid in its role as the NTS Shrinkage Provider to procure and/or dispose of gas in the market(s) in order to meet its License and Network Code obligations in respect of NTS Shrinkage gas requirements.Report is a weekly report (publishing data for Sunday to Saturday) and is updated daily with the latest D+5 data, and published at approximately 11:15am. ",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "ac4bed3c-70f5-48eb-8205-d69d8b97f2c0"
+                },
+                {
+                  "name": "Operational Summary Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This report is for the publication of the previous day's Operational Summary data.This report is published at 16:15.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "215ce0e8-7c80-4657-87b1-a17375993a59"
+                },
+                {
+                  "name": "Price Information History (OC46)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This Report shows the System Average Price (SAP), System Marginal Price (Buy)(SMP Buy) and the System Marginal Price (Sell)(SMP Sell) values at each hour through a given Gas Day. The averages are up to that point in the day.The report is updated at D+1 and published at approximately 12:00.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "aa7667cd-2555-4461-a89a-cbcfdd4787c9"
+                },
+                {
+                  "name": "Storage and LNG Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "The Storage and LNG report shows aggregated storage values and LNG values at D+1. This report is published at 16:00. For detailed definitions please see the supplementary Help file for this report.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "1361d23e-87ee-4d53-9b28-5d7a05ec60fd"
+                },
+                {
+                  "name": "UK Wholesale Gas Market Liquidity Data",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This report shows the total energy of gas trades by shippers on and before the relevant Gas Day, the total number of trades made in respect of each gas day, the number of trading parties, and the level of physical flows into the NTS via total daily input nominations. It is published Daily. Frequency: D+1",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "72a2bd9e-ff52-4411-9d9e-cf2244ee52ce"
+                },
+                {
+                  "name": "Use of Balancing Tools (NORM01)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This report details on a daily basis, the Constrained LNG (the injection and withdrawal of gas at LNG points for balancing purposes) and the change in Linepack in kWh; this figure is calculated for each day using the average NTS Calorific Value (CV) figure. ",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "944a20bc-ee0a-4111-93c9-49a4487620d3"
+                },
+                {
+                  "name": "Weather Correction Factors - Scaling Factors (DA10)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "description": "This Report shows the Weather Correction Factor and Scaling Factor values, (both Forecast and Allocated), in each LDZ (Local Distribution Zone) for the given Gas Day. Report is initially published on D+1 (the day after the gas day), and updated daily up to D+6. The report is published at approximately 12:00.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "ddb0e384-0969-4e8f-a988-bdcf021826f1"
+                }
+              ],
+              "parameterType": "None",
+              "nodeId": "aa490a40-bf3e-44ca-9150-d11cf5a16f0d"
+            },
+            {
+              "name": "Pre Day - Within Day",
+              "type": "Folder",
+              "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports",
+              "description": null,
+              "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports",
+              "childNode": [
+                {
+                  "name": "Aggregate Physical NTS System Entry Flows (NTSAPF)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "description": "This report shows for a single gasday,the forecast end of day aggregated flows into the NTS derived from a straight line extrapolation of the physical metered instantaneous flows entering the network. The report is published hourly from midnight at the day ahead stage through to 0200 on the gas day.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "668fa435-def6-462c-83dc-c330d39c388f"
+                },
+                {
+                  "name": "D-2 to D-5 NTS Demand Forecast Report (NTSDE)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "description": " This report shows the latest NTS Demand Forecast for the period D-2 to D-5. The report also provides an indication of the confidence level that can be associated with the forecast. The forecast is updated on a daily basis and is published at approximately 16:00. ",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "56e3d26b-8813-4f3b-9206-a5f8cbb961cd"
+                },
+                {
+                  "name": "Day Ahead Gas Flow Nominations",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "description": "This report shows the Day Ahead aggregate gas flow nominations at major Aggregate System Entry Points (ASEPs). These are the Input nominations at mono-directional points and net flow nominations at bi-directional sites. Where an input nomination is not submitted, a zero value is displayed in line with MOD 223. Published before D-1 18:00. Frequency: Daily",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "301d33e6-1865-48bd-9cff-153e4855d41f"
+                },
+                {
+                  "name": "End Of Day Aggregate Forecast NTS System Entry Flows (NTSAFF)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "description": "This report shows for a single gasday, the forecast end of day aggregate flows into the NTS calculated as the aggregate of the received DFN - Delivery Flow Notifications.The report is published hourly from midnight at the day ahead stage through to 0200 on the gas day.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "b3ef5c1b-2540-4606-97f2-96fc5894b5e9"
+                },
+                {
+                  "name": "Forecast Composite Weather Variables (SISR01)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "description": "This report shows the Local Distribution Zone (LDZ) Forecast Composite Weather Variables (CWV). CWV is created from 2-hourly temperatures and 4-hourly wind speeds to produce a linear relationship with LDZ demand. Benefits include 1. Improves the fit of weather/demand models. 2. Historical weather can be used to estimate what demand would have been at current levels of connected load. 3. Linear relationship with LDZ demand simplifies demand models. Frequency: multiple times a day in line with demand forecast",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "3e36a95b-63b0-4b40-844f-28223cb2a4d5"
+                },
+                {
+                  "name": "Forecast Demands (SISR03)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "description": "This report shows the latest available approved Forecast Demand for each of the LDZs (Local Distribution Zones) for a single gas day, the sum of all LDZ forecast demand and the forecast of NTS throughput. The report is updated at a number of stages through the gas day in line with UNC requirements for within day and D-1 demand forecasts.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "d5fd0ef2-0805-46d0-934e-e201d2d2bf45"
+                },
+                {
+                  "name": "Nomination Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "description": "This report provides Nomination data at intervals for Day Ahead Nomination at 17:00, Within Day at Re-nominations at 06:00, 12:00, 18:00, 24:00 and EOD Final at 06:00 D+1. Data is provided at Total Aggregate level for Entry and Exit, at aggregated level per site type and for some site types given at site level also. Note: Some points have been excluded at site type level due to the Ofgem Consultation on relevant points. This is subject to review. Frequency: Daily",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "13879e42-e4f8-429f-a242-9bea86e3b7c3"
+                },
+                {
+                  "name": "System Nomination Balance (NB05)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "description": "This report shows the aggregate Shipper Nomination Imbalance for a given gas day. The report is published hourly from midnight at the day ahead through to 02:00 on the gas day.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "0a40fc47-c35a-494f-8642-52a263da6cf0"
+                },
+                {
+                  "name": "System Status Information (NB92)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "description": "This report shows for a single Gas Day the Opening Linepack, two projected Closing Linepack figures (PCLP1 - derived from DFNs and PCLP2 - derived from INS noms), and forecast NTS Demand. The report is published hourly from midnight at the day ahead stage through to 0200 on the gas day.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Energy - Daily Reports/Pre Day - Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "5e2e0a22-658f-4e46-8a5d-68f44c33650f"
+                }
+              ],
+              "parameterType": "None",
+              "nodeId": "540526b7-b643-4c7c-a1d7-8848dfd0247a"
+            }
+          ],
+          "parameterType": "None",
+          "nodeId": "94a3595b-60f8-43a8-a1a7-a793ec3558b4"
+        },
+        {
+          "name": "Energy - Monthly Reports",
+          "type": "Folder",
+          "parent": "/NationalGrid.MipReports/Report Explorer",
+          "description": null,
+          "url": "/NationalGrid.MipReports/Report Explorer",
+          "childNode": [
+            {
+              "name": "Aggregate Financial Position (NORM04)",
+              "type": "Report",
+              "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Monthly Reports",
+              "description": "This report shows on a monthly basis the Imbalance Payment / Charge figures in Â£s, the Scheduling Charge (also in Â£s), split into Entry, Exit and DMA, the net OCM Balancing Costs (also in Â£s), the PRI (Physical Renomination Incentive) Charge (also in Â£s), and the Net Total of all of these (also expressed in Â£s). Frequency: Monthly ",
+              "url": "/NationalGrid.MipReports/Report Explorer/Energy - Monthly Reports",
+              "childNode": [],
+              "parameterType": "Month",
+              "nodeId": "37b0d217-3b38-47bf-90d2-1cbbdbdfb796"
+            },
+            {
+              "name": "Storage Withdrawals And Injections Allocations (NORM12)",
+              "type": "Report",
+              "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Monthly Reports",
+              "description": "This report provides aggregated figures showing the amount of gas injected from the Total System into all Storage Facilities; and the amount of gas withdrawn from Storage Facilities into the NTS in a day excluding  Boil off. It is provided at approximately 16:30, M+30. Frequency: Monthly",
+              "url": "/NationalGrid.MipReports/Report Explorer/Energy - Monthly Reports",
+              "childNode": [],
+              "parameterType": "Month",
+              "nodeId": "006483b5-0159-4697-9f04-f1addb82d634"
+            },
+            {
+              "name": "Total Shrinkage Figures Report (NORM13)",
+              "type": "Report",
+              "parent": "/NationalGrid.MipReports/Report Explorer/Energy - Monthly Reports",
+              "description": "This report shows the daily Forecast Shrinkage, Actual Shrinkage, Assessed Shrinkage, and Assessed NTS Shrinkage values. The report is shown on a monthly basis and is published at M+16. Frequency: Monthly",
+              "url": "/NationalGrid.MipReports/Report Explorer/Energy - Monthly Reports",
+              "childNode": [],
+              "parameterType": "Month",
+              "nodeId": "956a1836-b71a-4fc5-9c1f-67abb968f868"
+            }
+          ],
+          "parameterType": "None",
+          "nodeId": "681a1f68-df82-4c01-8ed2-80517f94c93f"
+        },
+        {
+          "name": "Entry Capacity - Daily Reports",
+          "type": "Folder",
+          "parent": "/NationalGrid.MipReports/Report Explorer",
+          "description": null,
+          "url": "/NationalGrid.MipReports/Report Explorer",
+          "childNode": [
+            {
+              "name": "After Day",
+              "type": "Folder",
+              "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports",
+              "description": null,
+              "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports",
+              "childNode": [
+                {
+                  "name": "Entry Capacity Availability Report (NORD07)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "description": "Entry Capacity is defined in Network Code Section B. This Report gives a tabular indication of the capacity available and capacity booked across all ASEPs (Aggregated System Entry Points). Storage installations have been shown at aggregate level. Also provided are details of the Buy Back and Scale Back volumes. The Report also gives the various prices from the daily capacity auctions in a tabular format. ",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "dd0d2dda-d04c-4e57-a724-ea94b71af08d"
+                },
+                {
+                  "name": "Entry Capacity Trading Analysis (NORM26)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "description": "This report shows the amount of days for which capacity trades were made. This is split by capacity trade type. This report is published at D+2. Frequency: Daily ",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "32767e2f-7dca-4415-9f1f-2d439991d89c"
+                },
+                {
+                  "name": "Entry Capacity Trading Report (NORD03)",
+                  "type": "Folder",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "description": null,
+                  "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "childNode": [
+                    {
+                      "name": "Future Entry Capacity Traded - Capacity (NORD03b)",
+                      "type": "Report",
+                      "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day/Entry Capacity Trading Report (NORD03)",
+                      "description": "This Report gives a tabular indication of entry capacity trading activity at the terminal and aggregate storage entry points. Trading for today is distinguished from trading for the future. Graphs of future capacity traded (Terminal and aggregate Storage) and the levels of Entry Capacity Booked (Terminals and aggregate Storage for the day) are provided for context.For storage installations this report shows only the total system entry capacity booked at the Storage Facilities and not space available or deli",
+                      "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day/Entry Capacity Trading Report (NORD03)",
+                      "childNode": [],
+                      "parameterType": "Day",
+                      "nodeId": "f7e37806-777c-4f76-a585-76e0966298ab"
+                    },
+                    {
+                      "name": "Future Entry Capacity Traded - Transactions (NORD03c)",
+                      "type": "Report",
+                      "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day/Entry Capacity Trading Report (NORD03)",
+                      "description": "This Report gives a tabular indication of entry capacity trading activity at the terminal and aggregate storage entry points. Trading for today is distinguished from trading for the future. Graphs of future capacity traded (Terminal and aggregate Storage) and the levels of Entry Capacity Booked (Terminals and aggregate Storage for the day) are provided for context.For storage installations this report shows only the total system entry capacity booked at the Storage Facilities and not space available or deli",
+                      "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day/Entry Capacity Trading Report (NORD03)",
+                      "childNode": [],
+                      "parameterType": "Day",
+                      "nodeId": "c9f11a2c-b5c0-4a83-9052-f0c76c953257"
+                    },
+                    {
+                      "name": "Future Entry Capacity Traded (NORD03a)",
+                      "type": "Report",
+                      "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day/Entry Capacity Trading Report (NORD03)",
+                      "description": "This report gives a tabular indication of the capacity available and capacity booked across all system exit points.",
+                      "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day/Entry Capacity Trading Report (NORD03)",
+                      "childNode": [],
+                      "parameterType": "Day",
+                      "nodeId": "d86ee35a-0e16-4b7d-b19e-658c999e903c"
+                    },
+                    {
+                      "name": "Within Day Entry Capacity Traded - Capacity (NORD03e)",
+                      "type": "Report",
+                      "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day/Entry Capacity Trading Report (NORD03)",
+                      "description": "This Report gives a tabular indication of entry capacity trading activity at the terminal and aggregate storage entry points. Trading for today is distinguished from trading for the future. Graphs of future capacity traded (Terminal and aggregate Storage) and the levels of Entry Capacity Booked (Terminals and aggregate Storage for the day) are provided for context.For storage installations this report shows only the total system entry capacity booked at the Storage Facilities and not space available or deli",
+                      "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day/Entry Capacity Trading Report (NORD03)",
+                      "childNode": [],
+                      "parameterType": "Day",
+                      "nodeId": "654ce1a0-ca79-420d-be72-36dfe3dea17f"
+                    },
+                    {
+                      "name": "Within Day Entry Capacity Traded - Transactions (NORD03d)",
+                      "type": "Report",
+                      "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day/Entry Capacity Trading Report (NORD03)",
+                      "description": "This Report gives a tabular indication of entry capacity trading activity at the terminal and aggregate storage entry points. Trading for today is distinguished from trading for the future. Graphs of future capacity traded (Terminal and aggregate Storage) and the levels of Entry Capacity Booked (Terminals and aggregate Storage for the day) are provided for context.For storage installations this report shows only the total system entry capacity booked at the Storage Facilities and not space available or deli",
+                      "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day/Entry Capacity Trading Report (NORD03)",
+                      "childNode": [],
+                      "parameterType": "Day",
+                      "nodeId": "014baa17-795e-40a3-a322-894a448b0b0d"
+                    }
+                  ],
+                  "parameterType": "None",
+                  "nodeId": "744517bb-98b0-4f9f-aa21-5db381c2db6b"
+                },
+                {
+                  "name": "Entry Long Term Capacity Sold At Auctions Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "description": "This report shows the Long Term Capacity sold values at an individual method of sale or auction type for each Aggregate System Entry Point (ASEP). This is published with daily values. Frequency: Monthly",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "411710ba-b7c4-4613-a408-47e6181b6d02"
+                },
+                {
+                  "name": "LT IP Entry capacity auction clearing price greater than reserve",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "description": "This report will only display when Long Term Interconnection Point auctions have cleared at a higher price than the reserve price for the specific gas day.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Month",
+                  "nodeId": "f491aff4-1060-4b50-bfa9-8fc717c1f602"
+                },
+                {
+                  "name": "No IP Firm Entry capacity offered at long term auctions",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "description": "This report is published on the last calendar day of each month and will display each auction where IP Entry total offered capacity is equal to zero. ",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Month",
+                  "nodeId": "798d6f6f-04cb-4df5-bbf7-990e8a25f8db"
+                },
+                {
+                  "name": "Total IP Entry capacity made available through CMP mechanisms",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "description": "This report is published on the last calendar day at 12:00 of each month and will display CMP capacity data (Surrenders, LTUIOLI or Oversubscription) for each IP Entry Location.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "43f8abc2-d80f-45d5-9dc6-3b95ba85e1ec"
+                },
+                {
+                  "name": "Firm Entry Capacity Assignment and Transfer Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/After Day",
+                  "description": "Firm Entry Capacity Assignment and Transfer Report",
+                  "url": "http://mip-prd-web.azurewebsites.net/EntryCapacityAuctions",
+                  "childNode": [],
+                  "parameterType": "Month",
+                  "nodeId": "91bd3026-09ca-47a3-82fc-aca8e21489a1"
+                }
+              ],
+              "parameterType": "None",
+              "nodeId": "a975a744-4fe9-419b-b224-fa5b174d2bc0"
+            },
+            {
+              "name": "Within Day",
+              "type": "Folder",
+              "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports",
+              "description": null,
+              "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports",
+              "childNode": [
+                {
+                  "name": "Daily Auctions Summary Report (Within Day)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/Within Day",
+                  "description": "This report provides a summary features of daily capacity auctions including highest and lowest accepted bids, average price, number of bids and total volume of capacity sold. Provided at hourly intervals between 01:00 - 23:00, D. Frequency: Hourly",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Entry Capacity - Daily Reports/Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "371400eb-4417-41ee-8e90-bfac0f3df51e"
+                }
+              ],
+              "parameterType": "None",
+              "nodeId": "6608d11d-e950-4753-831b-a8957a13f07b"
+            }
+          ],
+          "parameterType": "None",
+          "nodeId": "d3c0b95d-0e3f-4af6-9492-02108fcb8355"
+        },
+        {
+          "name": "Exit Capacity - Daily Reports",
+          "type": "Folder",
+          "parent": "/NationalGrid.MipReports/Report Explorer",
+          "description": null,
+          "url": "/NationalGrid.MipReports/Report Explorer",
+          "childNode": [
+            {
+              "name": "After Day",
+              "type": "Folder",
+              "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports",
+              "description": null,
+              "url": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports",
+              "childNode": [
+                {
+                  "name": "LT IP Exit capacity auction clearing price greater than reserve",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/After Day",
+                  "description": " This report will only display when Long Term Interconnection Point auctions have cleared at a higher price than the reserve price for the specific gas day.  ",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Month",
+                  "nodeId": "d1e42d40-31b4-4b16-ae13-d7f40df1a217"
+                },
+                {
+                  "name": "No IP Firm Exit capacity offered at long term auctions",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/After Day",
+                  "description": "This report is published on the last calendar day of each month and will display each auction where IP Exit total offered capacity is equal to zero. ",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Month",
+                  "nodeId": "ecdd208d-349c-4ced-a272-fb70c0f53b8d"
+                },
+                {
+                  "name": "Total IP Exit capacity made available through CMP mechanisms",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/After Day",
+                  "description": "This report is published on the last calendar day at 12:00 of each month and will display CMP capacity data (Surrenders, LTUIOLI or Oversubscription) for each IP Exit Location.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/After Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "8467fe93-2688-4da0-aa4d-bab1442aed85"
+                },
+                {
+                  "name": "Firm Exit Capacity Assignment and Transfer Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/After Day",
+                  "description": "Firm Exit Capacity Assignment and Transfer Report page",
+                  "url": "http://mip-prd-web.azurewebsites.net/ExitCapacityPublication",
+                  "childNode": [],
+                  "parameterType": "Month",
+                  "nodeId": "e88f6af4-a92c-4478-b9bb-9fe8f98a045c"
+                }
+              ],
+              "parameterType": "None",
+              "nodeId": "6aebbb38-5b1b-4ef6-ae92-a2c07fc1eb46"
+            },
+            {
+              "name": "Within Day",
+              "type": "Folder",
+              "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports",
+              "description": null,
+              "url": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports",
+              "childNode": [
+                {
+                  "name": "Exit Capacity Availability Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/Within Day",
+                  "description": "This report gives a tabular indication of the capacity available and capacity booked across all system exit points.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "a73c9b1b-f333-470b-9a85-21409afc7758"
+                },
+                {
+                  "name": "Exit Capacity Constraint Report (Prompt Buyback and Offtake Flow Reduction)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/Within Day",
+                  "description": "Prompt Buyback Table gives a tabular indication of any capacity buyback actions at a system exit point. Offtake Flow Reduction Table contains information relating to offtake flow reductions.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "e7818f28-62c6-4d26-bd2c-ff5d2cdec812"
+                },
+                {
+                  "name": "Exit Capacity Constraint Report (Scaleback and Restoration)",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/Within Day",
+                  "description": "This report gives a tabular indication of the Scaleback/Restoration across all system exit points.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "51865e60-5566-40c0-8a26-180421521bf3"
+                },
+                {
+                  "name": "Exit Capacity Daily Price Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/Within Day",
+                  "description": "This report gives an indication of the various prices paid for exit capacity across all system exit points.",
+                  "url": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/Within Day",
+                  "childNode": [],
+                  "parameterType": "Day",
+                  "nodeId": "97148992-e6b6-4ec6-8bb6-c88c411f60a9"
+                },
+                {
+                  "name": "Firm Exit Capacity Buyback Forwards and Options Report",
+                  "type": "Report",
+                  "parent": "/NationalGrid.MipReports/Report Explorer/Exit Capacity - Daily Reports/Within Day",
+                  "description": "Firm Exit Capacity Buyback Forwards and Options Report page",
+                  "url": "http://mip-prd-web.azurewebsites.net/ExitCapacityPublication",
+                  "childNode": [],
+                  "parameterType": "Month",
+                  "nodeId": "38033937-fdd6-4496-888f-df4294b7da24"
+                }
+              ],
+              "parameterType": "None",
+              "nodeId": "a5d4b274-72e7-4225-b6d0-c75e73853363"
+            }
+          ],
+          "parameterType": "None",
+          "nodeId": "d89a0cae-e70f-41fa-8042-7fd157fb17f3"
+        },
+        {
+          "name": "Daily Summary Report (DSR)",
+          "type": "NewTabUrl",
+          "parent": "/Reports",
+          "description": "This report provides a consolidated view of the latest forecast and actual data available. It is updated continuously throughout the day as information becomes available. The report also contains the Gas Balancing Notification status and Margins Notice Trigger Levels for D and D-1. Users can also navigate to the Data Item Explorer for further clarity on definitions for the data items included in the graphs.",
+          "url": "/DailySummaryReport",
+          "childNode": [],
+          "parameterType": "Month",
+          "nodeId": "52862264-fc2e-44c4-87a3-c0da071d179c"
+        }
+      ],
+      "parameterType": "Month",
+      "nodeId": null
+    }
+  ],
+  "parameterType": "Month",
+  "nodeId": null
+}

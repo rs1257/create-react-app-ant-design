@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+import { RouteObject } from 'react-router-dom';
 import { DataItemExplorerItem } from './api';
 
 export interface DataItemExplorerFolderList {
@@ -15,7 +17,7 @@ export interface FolderTreeLoading {
   loading?: boolean;
 }
 
-export interface formValues {
+export interface FormValues {
   request: Record<string, string>;
 }
 
@@ -25,3 +27,21 @@ export interface DataItemExplorerFormData {
   latestValues: boolean;
   applicable: Applicable;
 }
+
+//* Config
+export interface MenuItem {
+  label: string;
+  key: string;
+  icon?: ReactNode;
+}
+
+export interface NavRoute extends MenuItem {
+  children?: MenuItem[];
+}
+
+export type CustomRouteObject = RouteObject & {
+  hideHeader?: boolean;
+  hideFooter?: boolean;
+  hideSidebar?: boolean;
+  name: string;
+};
