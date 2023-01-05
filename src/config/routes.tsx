@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { RouteObject } from 'react-router-dom';
+import { CustomRouteObject } from '../types/props';
 
 const Home = lazy(() => import('../pages/Home'));
 const InstantaneousView = lazy(() => import('../pages/InstantaneousView'));
@@ -9,13 +9,6 @@ const ReportExplorer = lazy(() => import('../pages/ReportExplorer'));
 const Links = lazy(() => import('../pages/Links'));
 const EntryZoneGraphs = lazy(() => import('../pages/EntryZoneGraphs'));
 const PageNotFound = lazy(() => import('../pages/Error/PageNotFound'));
-
-type CustomRouteObject = RouteObject & {
-  hideHeader?: boolean;
-  hideFooter?: boolean;
-  hideSidebar?: boolean;
-  name: string;
-};
 
 const routes: CustomRouteObject[] = [
   {

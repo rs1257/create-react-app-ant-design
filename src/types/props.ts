@@ -6,8 +6,9 @@ import { InputRef } from 'antd';
 import { FilterDropdownProps } from 'antd/es/table/interface';
 import { DataIndex, DataTableDataType, DataTableHeader } from './tables';
 import { DataItemExplorerFolderList } from './data';
+import { RouteObject } from 'react-router-dom';
 
-//** Components
+//* Components
 
 export interface CustomButtonProps {
   size?: SizeType;
@@ -120,4 +121,23 @@ export interface SidebarProps {
   setCollapsed: Dispatch<SetStateAction<boolean>>;
 }
 
-//** Pages
+//* Config
+
+export interface MenuItem {
+  label: string;
+  key: string;
+  icon?: ReactNode;
+}
+
+export interface NavRoute extends MenuItem {
+  children?: MenuItem[];
+}
+
+export type CustomRouteObject = RouteObject & {
+  hideHeader?: boolean;
+  hideFooter?: boolean;
+  hideSidebar?: boolean;
+  name: string;
+};
+
+//* Pages
