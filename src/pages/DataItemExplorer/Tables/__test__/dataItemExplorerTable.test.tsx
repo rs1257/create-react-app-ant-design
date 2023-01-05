@@ -2,7 +2,7 @@ import { QueryClientProvider } from '@tanstack/react-query';
 import { render, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
 import { client } from '../../../../mockQueryClient';
 import { server } from '../../../../mocks/server';
-import { setupFailedNetworkPostRequest } from '../../../../mocks/testHandlers';
+import { setupFailedNetworkRequest } from '../../../../mocks/testHandlers';
 import DataItemExplorerTable from '../DataItemExplorerTable';
 
 describe('should correctly render table component', () => {
@@ -20,13 +20,14 @@ describe('should correctly render table component', () => {
     });
   });
 
-  it('should display Forecast Margins table component error message when rendered', async () => {
+  it('should display Data Item Explorer table component error message when rendered', async () => {
     const statusCode = 404;
     const mipPullApiUrl = process.env.REACT_APP_MIP_PULL_API_URL || '';
     server.use(
-      setupFailedNetworkPostRequest(
+      setupFailedNetworkRequest(
         `${mipPullApiUrl}/MIPIws-public/public/publicwebservice.asmx`,
-        statusCode
+        statusCode,
+        'POST'
       )
     );
 

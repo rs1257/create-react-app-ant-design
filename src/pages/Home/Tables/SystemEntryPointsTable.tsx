@@ -4,7 +4,7 @@ import DataTable from '../../../components/DataTable';
 import Loader from '../../../components/Loader';
 import { LatestSupplyEntryPointResponseData } from '../../../types/api';
 import { getFormattedSystemEntryPointsData } from '../Formatters/latestSupplyEntryPointDataFormatter';
-import './SystemEntryPointsTable.scss';
+import styles from './SystemEntryPointsTable.module.scss';
 
 const SystemEntryPointsTable: FC = () => {
   const {
@@ -27,11 +27,11 @@ const SystemEntryPointsTable: FC = () => {
   } = getFormattedSystemEntryPointsData(rawData);
 
   return (
-    <div className="system-entry-points">
-      <div className="system-entry-points__header">
+    <div className={styles.container}>
+      <div className={styles.header}>
         <h2>Last Updated: {time}</h2>
       </div>
-      <div className="system-entry-points__table">
+      <div className={styles.table}>
         <DataTable headers={headers} data={data} />
       </div>
     </div>

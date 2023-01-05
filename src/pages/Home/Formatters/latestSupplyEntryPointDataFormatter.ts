@@ -14,7 +14,7 @@ const getFormattedData = (data: SystemEntryPointData[]): DataTableDataType[] =>
   });
 
 export const getFormattedSystemEntryPointsData = (
-  rawData: LatestSupplyEntryPointResponseData | undefined
+  rawData?: LatestSupplyEntryPointResponseData
 ): FormattedData => {
   if (!rawData) {
     return {

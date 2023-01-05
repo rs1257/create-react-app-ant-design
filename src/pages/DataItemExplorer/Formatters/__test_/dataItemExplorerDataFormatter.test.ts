@@ -36,6 +36,7 @@ describe('formats data correctly for data item explorer', () => {
       PublicationObjectData: { CLSPublicationObjectDataBE: publicationObjectDataItems },
     },
   ];
+
   it('should return data correctly formatted for data tables', () => {
     const formattedData = getDataItemExplorerData(DataItemExplorerDataItem);
     expect(formattedData[0].headers[0]).toHaveProperty('title');

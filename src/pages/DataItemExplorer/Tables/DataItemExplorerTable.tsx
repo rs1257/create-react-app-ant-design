@@ -62,8 +62,8 @@ const DataItemExplorerTable = (): JSX.Element => {
     setPageContent(
       <>
         <h2>Data Item Explorer</h2>
-        {formattedData.map((table, index) => (
-          <DataTable data={table.data} headers={table.headers} key={index} />
+        {formattedData.map(({ data, headers }, index) => (
+          <DataTable data={data} headers={headers} key={index} />
         ))}
       </>
     );

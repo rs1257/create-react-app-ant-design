@@ -19,9 +19,7 @@ export const getHeaders = (dataItem: PublicationObjectDataItem): DataTableHeader
 };
 
 export const getData = (rawData: PublicationObjectDataItem[]): DataTableDataType[] => {
-  return rawData.map((row, index) => {
-    return { ...row, name: String(index + 1) } as DataTableDataType;
-  });
+  return rawData.map((row, index) => ({ ...row, name: String(index + 1) }));
 };
 
 export const getDataItemExplorerData = (rawData: DataItemExplorerDataItem[]): FormattedData[] => {
