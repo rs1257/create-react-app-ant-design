@@ -1,4 +1,3 @@
-import './LineGraph.scss';
 import {
   ResponsiveContainer,
   LineChart,
@@ -14,6 +13,8 @@ import { roundNumber } from '../../utils/number';
 import hexToRgba from 'hex-to-rgba';
 import useInteractiveLegend from '../../hooks/useInteractiveLegend';
 import { LineGraphProps } from '../../types/props';
+import styles from './LineGraph.module.scss';
+import '../../assets/recharts.overrides.scss';
 
 const numberFormatter = (value: string): string => {
   return roundNumber(value);
@@ -53,7 +54,7 @@ const LineGraph = <T,>({
   return (
     <ResponsiveContainer width="100%" height={500}>
       <LineChart
-        className="line-graph"
+        className={styles.lineGraph}
         width={700}
         height={500}
         margin={{ top: 20, right: 20, left: 20, bottom: 20 }}

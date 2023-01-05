@@ -1,7 +1,7 @@
 import { ReactElement, FC } from 'react';
 import { Layout as AntLayout } from 'antd';
-import './layout.scss';
 import { LayoutTypeProps } from '../../types/props';
+import styles from './Layout.module.scss';
 
 const Layout: FC<LayoutTypeProps> = ({
   header,
@@ -11,14 +11,14 @@ const Layout: FC<LayoutTypeProps> = ({
   collapsed,
 }): ReactElement => {
   return (
-    <AntLayout className="outer-layout">
+    <AntLayout className={styles.outerLayout}>
       <div>{sidebar}</div>
       <AntLayout
         style={{ marginLeft: collapsed ? '80px' : '300px' }}
-        className="outer-layout__inner-layout"
+        className={styles.innerLayout}
       >
         <div>{header}</div>
-        <div className="outer-layout__inner-layout__content">{page}</div>
+        <div className={styles.content}>{page}</div>
         <div>{footer}</div>
       </AntLayout>
     </AntLayout>

@@ -3,6 +3,7 @@ import { DatePicker as AntDatePicker } from 'antd';
 import dayjs, { Dayjs } from 'dayjs';
 import { EventValue } from 'rc-picker/lib/interface';
 import { DatePickerProps } from '../../types/props';
+import styles from './DatePicker.module.scss';
 
 export const handleChange = (
   value: Dayjs | null,
@@ -24,7 +25,7 @@ const DatePicker: FC<DatePickerProps> = ({ date, setDate }): ReactElement => {
   const [displayValue, setDisplayValue] = useState<EventValue<dayjs.Dayjs>>(defaultValue);
 
   return (
-    <div className="date-picker">
+    <div className={styles.datePicker}>
       <AntDatePicker
         allowClear
         value={displayValue}

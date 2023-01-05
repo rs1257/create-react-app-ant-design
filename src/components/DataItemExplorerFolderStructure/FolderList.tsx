@@ -2,8 +2,8 @@ import { List } from 'antd';
 import { FC, ReactNode } from 'react';
 import { DataItemExplorerItem, DataItemExplorerNodeType } from '../../types/api';
 import FolderItem from './FolderItem';
-import './DataItemExplorerFolderStructure.scss';
 import { FolderListProps } from '../../types/props';
+import styles from './DataItemExplorerFolderStructure.module.scss';
 
 const FolderList: FC<FolderListProps> = ({ handleSelect, list }) => {
   const { items, level } = list;
@@ -33,7 +33,7 @@ const FolderList: FC<FolderListProps> = ({ handleSelect, list }) => {
     return <></>;
   };
   return (
-    <div className="folder-structure__list">
+    <div className={styles.list}>
       <List size="large" bordered dataSource={items} renderItem={renderList} />
     </div>
   );

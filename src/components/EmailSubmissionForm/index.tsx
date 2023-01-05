@@ -1,8 +1,8 @@
 import { FC, ReactElement } from 'react';
 import { Button, Form, Input } from 'antd';
-import './EmailSubmissionForm.scss';
 import { formValues } from '../../types/data';
 import { EmailSubmissionFormProps } from '../../types/props';
+import styles from './EmailSubmissionForm.module.scss';
 
 const layout = {
   labelCol: { lg: { span: 4 }, sm: { span: 6 }, xs: { span: 10 } },
@@ -24,7 +24,7 @@ export const submitRequest = (values: formValues): void => {
 
 const EmailSubmissionForm: FC<EmailSubmissionFormProps> = ({ submitRequest }): ReactElement => {
   return (
-    <div className="email-submission-form">
+    <div className={styles.emailSubmissionForm}>
       <Form
         {...layout}
         name="nest-messages"

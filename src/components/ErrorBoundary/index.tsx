@@ -1,6 +1,6 @@
 import { Component, ErrorInfo, ReactNode } from 'react';
 import { ErrorBoundaryProps, ErrorBoundaryState } from '../../types/props';
-import './ErrorBoundary.scss';
+import styles from './ErrorBoundary.module.scss';
 
 class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   public state: ErrorBoundaryState = {
@@ -18,7 +18,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   public render(): ReactNode {
     if (this.state.hasError) {
       return (
-        <div className="error-boundary">
+        <div className={styles.errorBoundary}>
           <h2>Oops... Something went wrong.</h2>
           <details>
             <div>{this.state.error && this.state.error.toString()}</div>
