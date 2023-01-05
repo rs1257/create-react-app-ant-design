@@ -1,6 +1,6 @@
 import { FC, ReactElement } from 'react';
 import { Button, Form, Input } from 'antd';
-import { formValues } from '../../types/data';
+import { FormValues } from '../../types/data';
 import { EmailSubmissionFormProps } from '../../types/props';
 import styles from './EmailSubmissionForm.module.scss';
 
@@ -16,7 +16,7 @@ const validateMessages = {
   },
 };
 
-export const submitRequest = (values: formValues): void => {
+export const submitRequest = (values: FormValues): void => {
   //eslint-disable-next-line
   console.log(values);
   //ToDo - Use API to send data via email, or use emailjs

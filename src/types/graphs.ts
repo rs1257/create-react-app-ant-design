@@ -25,6 +25,7 @@ export enum StorageStockPublicationObjectName {
 }
 
 //* Hooks
+
 export interface Lines {
   [key: string]: boolean;
 }

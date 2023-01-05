@@ -5,8 +5,7 @@ import { Dispatch, RefObject, SetStateAction } from 'react';
 import { InputRef } from 'antd';
 import { FilterDropdownProps } from 'antd/es/table/interface';
 import { DataIndex, DataTableDataType, DataTableHeader } from './tables';
-import { DataItemExplorerFolderList, formValues } from './data';
-import { RouteObject } from 'react-router-dom';
+import { DataItemExplorerFolderList, FormValues } from './data';
 
 //* Components
 
@@ -90,7 +89,7 @@ export interface ErrorBoundaryState {
 }
 
 export interface EmailSubmissionFormProps {
-  submitRequest: (values: formValues) => void;
+  submitRequest: (values: FormValues) => void;
 }
 
 export interface GraphCardProps {
@@ -124,24 +123,5 @@ export interface SidebarProps {
   collapsed: boolean;
   setCollapsed: Dispatch<SetStateAction<boolean>>;
 }
-
-//* Config
-
-export interface MenuItem {
-  label: string;
-  key: string;
-  icon?: ReactNode;
-}
-
-export interface NavRoute extends MenuItem {
-  children?: MenuItem[];
-}
-
-export type CustomRouteObject = RouteObject & {
-  hideHeader?: boolean;
-  hideFooter?: boolean;
-  hideSidebar?: boolean;
-  name: string;
-};
 
 //* Pages
