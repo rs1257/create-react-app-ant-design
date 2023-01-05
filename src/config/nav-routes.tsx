@@ -1,15 +1,6 @@
-import { createElement, ReactNode } from 'react';
+import { createElement } from 'react';
 import { DatabaseOutlined, LineChartOutlined, LinkOutlined, HomeOutlined } from '@ant-design/icons';
-
-interface MenuItem {
-  label: string;
-  key: string;
-  icon?: ReactNode;
-}
-
-interface NavRoute extends MenuItem {
-  children?: MenuItem[];
-}
+import { NavRoute } from '../types/props';
 
 const navRoutes: NavRoute[] = [
   {

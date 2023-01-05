@@ -1,12 +1,14 @@
 import { ButtonType } from 'antd/es/button';
 import { SizeType } from 'antd/es/config-provider/SizeContext';
-import { ReactNode } from 'react';
+import { ErrorInfo, ReactNode } from 'react';
 import { Dispatch, RefObject, SetStateAction } from 'react';
 import { InputRef } from 'antd';
 import { FilterDropdownProps } from 'antd/es/table/interface';
 import { DataIndex, DataTableDataType, DataTableHeader } from './tables';
+import { DataItemExplorerFolderList, formValues } from './data';
+import { RouteObject } from 'react-router-dom';
 
-//** Components
+//* Components
 
 export interface CustomButtonProps {
   size?: SizeType;
@@ -20,6 +22,20 @@ export interface CustomButtonProps {
 
 export interface IconButtonProps {
   name: 'XML' | 'CSV' | 'JSON';
+}
+
+export interface FolderItemProps {
+  id: string;
+  name: string;
+  selected?: boolean;
+  level: number;
+  handleSelect: (id: string, level: number) => void;
+  setItemSelected: (id: string) => void;
+}
+
+export interface FolderListProps {
+  handleSelect: (id: string, level: number) => void;
+  list: DataItemExplorerFolderList;
 }
 
 export interface DataTableProps {
@@ -63,4 +79,69 @@ export interface DateRangePickerProps {
   setDateRange: (date: [string, string]) => void;
 }
 
-//** Pages
+export interface ErrorBoundaryProps {
+  children?: ReactNode;
+}
+
+export interface ErrorBoundaryState {
+  hasError: boolean;
+  error?: Error;
+  errorInfo?: ErrorInfo;
+}
+
+export interface EmailSubmissionFormProps {
+  submitRequest: (values: formValues) => void;
+}
+
+export interface GraphCardProps {
+  title: string;
+  isLoading: boolean;
+  error: Error | null;
+  children: ReactNode | undefined;
+}
+
+export interface LayoutTypeProps {
+  header?: ReactNode;
+  footer?: ReactNode;
+  sidebar?: ReactNode;
+  collapsed?: boolean;
+  page: ReactNode;
+}
+
+export interface LineGraphProps<T> {
+  data: T[];
+  xAxisDataKey: string;
+  yAxisDataKey: string;
+  xAxisLabel?: string;
+  yAxisLabel?: string;
+  labels: string[];
+  xAxisTickFormatter?: (value: string) => string;
+  tooltipLabelFormatter?: (value: string) => string;
+  dot?: boolean;
+}
+
+export interface SidebarProps {
+  collapsed: boolean;
+  setCollapsed: Dispatch<SetStateAction<boolean>>;
+}
+
+//* Config
+
+export interface MenuItem {
+  label: string;
+  key: string;
+  icon?: ReactNode;
+}
+
+export interface NavRoute extends MenuItem {
+  children?: MenuItem[];
+}
+
+export type CustomRouteObject = RouteObject & {
+  hideHeader?: boolean;
+  hideFooter?: boolean;
+  hideSidebar?: boolean;
+  name: string;
+};
+
+//* Pages

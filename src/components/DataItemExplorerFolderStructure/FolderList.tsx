@@ -1,14 +1,9 @@
 import { List } from 'antd';
 import { FC, ReactNode } from 'react';
 import { DataItemExplorerItem, DataItemExplorerNodeType } from '../../types/api';
-import { DataItemExplorerFolderList } from '../../types/data';
 import FolderItem from './FolderItem';
 import './DataItemExplorerFolderStructure.scss';
-
-interface FolderListProps {
-  handleSelect: (id: string, level: number) => void;
-  list: DataItemExplorerFolderList;
-}
+import { FolderListProps } from '../../types/props';
 
 const FolderList: FC<FolderListProps> = ({ handleSelect, list }) => {
   const { items, level } = list;

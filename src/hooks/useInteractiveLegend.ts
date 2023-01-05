@@ -1,17 +1,6 @@
 import { useState } from 'react';
 import { Payload } from 'recharts/types/component/DefaultLegendContent';
-
-type Lines = {
-  [key: string]: boolean;
-};
-
-interface InteractiveLegend {
-  lines: Lines;
-  hover: string | undefined;
-  selectLine: (data: Payload) => void;
-  handleLegendMouseLeave: () => void;
-  handleLegendMouseEnter: (data: Payload) => void;
-}
+import { InteractiveLegend, Lines } from '../types/graphs';
 
 const useInteractiveLegend = (value: string[]): InteractiveLegend => {
   const [lines, toggleLines] = useState<Lines>(

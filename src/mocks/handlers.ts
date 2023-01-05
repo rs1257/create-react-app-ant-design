@@ -45,7 +45,7 @@ export const handlers = [
     return res(ctx.status(200), ctx.xml(soapResponse));
   }),
 
-  // Passthrough all static assets
+  //* Passthrough all static assets
   rest.get('/static/*', (req) => {
     return req.passthrough();
   }),

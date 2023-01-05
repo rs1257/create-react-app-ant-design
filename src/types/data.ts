@@ -14,3 +14,7 @@ export interface FolderTreeLoading {
   level?: number;
   loading?: boolean;
 }
+
+export interface formValues {
+  request: Record<string, string>;
+}

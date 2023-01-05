@@ -11,7 +11,7 @@ import SystemEntryPointsTable from './Tables/SystemEntryPointsTable';
 const Home = (): JSX.Element => {
   const onClick = (): void => {
     // eslint-disable-next-line no-console
-    console.log('click');
+    // console.log('click');
   };
 
   return (

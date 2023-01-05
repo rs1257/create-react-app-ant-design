@@ -3,15 +3,7 @@ import { List } from 'antd';
 import { RightOutlined, DownOutlined, FolderOutlined } from '@ant-design/icons';
 import CustomButton from '../CustomButton';
 import './DataItemExplorerFolderStructure.scss';
-
-export interface FolderItemProps {
-  id: string;
-  name: string;
-  selected?: boolean;
-  level: number;
-  handleSelect: (id: string, level: number) => void;
-  setItemSelected: (id: string) => void;
-}
+import { FolderItemProps } from '../../types/props';
 
 const FolderItem: FC<FolderItemProps> = ({
   id,

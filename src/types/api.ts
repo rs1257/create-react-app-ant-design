@@ -1,7 +1,42 @@
+import { DataItemExplorerDataItem } from './tables';
+
+//* Request
+
+export enum SoapRequestDateType {
+  gas = 'GASDAY',
+  normal = 'NORMALDAY',
+}
+
+export enum SoapRequestBoolean {
+  true = 'Y',
+  false = 'N',
+}
+export interface DataItemExplorerRequestProps {
+  latestFlag: SoapRequestBoolean;
+  applicableFor: SoapRequestBoolean;
+  dateTo: string;
+  dateFrom: string;
+  dateType: SoapRequestDateType;
+  names: string[];
+}
+
+//* Response
 export interface ApiResponse<T> {
   isLoading: boolean;
   error: Error | null;
   data?: T;
+}
+
+export interface SoapResponse {
+  'soap:Envelope': {
+    'soap:Body': {
+      GetPublicationDataWMResponse: {
+        GetPublicationDataWMResult: {
+          CLSMIPIPublicationObjectBE: DataItemExplorerDataItem[];
+        };
+      };
+    };
+  };
 }
 
 export interface GasDay {
