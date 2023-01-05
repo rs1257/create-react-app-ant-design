@@ -74,6 +74,23 @@ export enum DataItemExplorerNodeType {
   folder = 'Folder',
 }
 
+export enum SoapRequestDateType {
+  gas = 'GASDAY',
+  normal = 'NORMALDAY',
+}
+
+export enum SoapRequestBoolean {
+  true = 'Y',
+  false = 'N',
+}
+export interface DataItemExplorerRequestProps {
+  latestFlag: SoapRequestBoolean;
+  applicableFor: SoapRequestBoolean;
+  dateTo: string;
+  dateFrom: string;
+  dateType: SoapRequestDateType;
+  names: string[];
+}
 export interface DataItemExplorerItem {
   dataItemCategoryTreeNodeId: string;
   name: string;

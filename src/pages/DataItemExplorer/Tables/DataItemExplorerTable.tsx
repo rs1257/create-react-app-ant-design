@@ -1,14 +1,11 @@
 import { useEffect, useState } from 'react';
-import {
-  SoapRequestBoolean,
-  SoapRequestDateType,
-  useDataItemExplorerRequest,
-} from '../../../api/soap/useDataItemExplorerRequest';
+import { useDataItemExplorerRequest } from '../../../api/soap/useDataItemExplorerRequest';
 import DataTable from '../../../components/DataTable';
 import { getDataItemExplorerData } from '../../DataItemExplorer/Formatters/dataItemExplorerDataFormatter';
 import Loader from '../../../components/Loader';
 import { DataItemExplorerDataItem } from '../../../types/tables';
 import { convertXmlToJson } from '../../../utils/xmlToJson';
+import { SoapRequestBoolean, SoapRequestDateType } from '../../../types/api';
 
 interface SoapResponse {
   'soap:Envelope': {

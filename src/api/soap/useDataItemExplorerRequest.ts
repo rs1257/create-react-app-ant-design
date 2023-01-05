@@ -1,25 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
 import axios, { AxiosRequestConfig } from 'axios';
-import { ApiResponse } from '../../types/api';
-
-export interface DataItemExplorerRequestProps {
-  latestFlag: SoapRequestBoolean;
-  applicableFor: SoapRequestBoolean;
-  dateTo: string;
-  dateFrom: string;
-  dateType: SoapRequestDateType;
-  names: string[];
-}
-
-export enum SoapRequestDateType {
-  gas = 'GASDAY',
-  normal = 'NORMALDAY',
-}
-
-export enum SoapRequestBoolean {
-  true = 'Y',
-  false = 'N',
-}
+import {
+  ApiResponse,
+  DataItemExplorerRequestProps,
+  SoapRequestBoolean,
+  SoapRequestDateType,
+} from '../../types/api';
 
 export const getRequestBody = (
   latestFlag: SoapRequestBoolean,
