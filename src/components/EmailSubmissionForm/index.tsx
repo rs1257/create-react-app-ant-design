@@ -2,6 +2,7 @@ import { FC, ReactElement } from 'react';
 import { Button, Form, Input } from 'antd';
 import './EmailSubmissionForm.scss';
 import { formValues } from '../../types/data';
+import { EmailSubmissionFormProps } from '../../types/props';
 
 const layout = {
   labelCol: { lg: { span: 4 }, sm: { span: 6 }, xs: { span: 10 } },
@@ -19,10 +20,6 @@ export const submitRequest = (values: formValues): void => {
   //eslint-disable-next-line
   console.log(values);
   //ToDo - Use API to send data via email, or use emailjs
-};
-
-export type EmailSubmissionFormProps = {
-  submitRequest: (values: formValues) => void;
 };
 
 const EmailSubmissionForm: FC<EmailSubmissionFormProps> = ({ submitRequest }): ReactElement => {

@@ -5,7 +5,7 @@ import { Dispatch, RefObject, SetStateAction } from 'react';
 import { InputRef } from 'antd';
 import { FilterDropdownProps } from 'antd/es/table/interface';
 import { DataIndex, DataTableDataType, DataTableHeader } from './tables';
-import { DataItemExplorerFolderList } from './data';
+import { DataItemExplorerFolderList, formValues } from './data';
 import { RouteObject } from 'react-router-dom';
 
 //* Components
@@ -87,6 +87,10 @@ export interface ErrorBoundaryState {
   hasError: boolean;
   error?: Error;
   errorInfo?: ErrorInfo;
+}
+
+export interface EmailSubmissionFormProps {
+  submitRequest: (values: formValues) => void;
 }
 
 export interface GraphCardProps {
