@@ -36,16 +36,16 @@ const FolderStructure = (): JSX.Element => {
   const [treeStructure, setTreeStructure] = useState<DataItemExplorerFolderList[]>([]);
 
   //TODO - remove 'initial' from end of this url when actually calling the API
-  const { isLoading, error, data } = useGetRequest<DataItemExplorerItem[]>(
+  const { data } = useGetRequest<DataItemExplorerItem[]>(
     `${apiUrl}/api/v2/DataItemCategoryTreeInitial`,
     ['dataItemExplorer']
   );
 
   useEffect(() => {
-    if (data) {
+    if (data && !selectedId) {
       setTreeStructure((treeStructure) => getTreeStructure(treeStructure, data, treeLevel));
     }
-  }, [data, error, isLoading, treeLevel]);
+  }, [data, treeLevel, selectedId]);
 
   const handleSelect = (id: string, level: number): void => {
     setFolderStatus(id, level, setSelectedId, setTreeLevel);
@@ -55,22 +55,18 @@ const FolderStructure = (): JSX.Element => {
     if (!selectedId) {
       return;
     }
-    async (): Promise<void> => {
-      await getRequestHandler(
-        url,
-        `?id=${selectedId}`,
-        ({ children }: DataItemExplorerItem) => {
-          children &&
-            setTreeStructure((treeStructure) =>
-              getTreeStructure(treeStructure, children, treeLevel)
-            );
-        },
-        (error: Error): void => {
-          // eslint-disable-next-line no-console
-          console.log(error);
-        }
-      );
-    };
+    void getRequestHandler(
+      url,
+      `?id=${selectedId}`,
+      ({ children }: DataItemExplorerItem) => {
+        children &&
+          setTreeStructure((treeStructure) => getTreeStructure(treeStructure, children, treeLevel));
+      },
+      (error: Error): void => {
+        // eslint-disable-next-line no-console
+        console.warn(error);
+      }
+    );
   }, [selectedId, treeLevel, url]);
 
   return (
