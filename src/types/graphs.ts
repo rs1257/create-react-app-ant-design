@@ -4,6 +4,26 @@ export interface Graph {
   name: string;
 }
 
+export interface SupplyDemandData {
+  supply: Record<string, unknown>[];
+  demand: Record<string, unknown>[];
+}
+
+export enum SupplyDemandPublicationObjectName {
+  supply = 'Supply',
+  demand = 'Demand',
+}
+
+export interface StorageStockData {
+  current: Record<string, unknown>[];
+  previous: Record<string, unknown>[];
+}
+
+export enum StorageStockPublicationObjectName {
+  current = 'CURRENT',
+  previous = 'PREVIOUS',
+}
+
 //* Hooks
 export interface Lines {
   [key: string]: boolean;

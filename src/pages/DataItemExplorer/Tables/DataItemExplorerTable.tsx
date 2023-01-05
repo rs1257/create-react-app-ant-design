@@ -5,19 +5,7 @@ import { getDataItemExplorerData } from '../../DataItemExplorer/Formatters/dataI
 import Loader from '../../../components/Loader';
 import { DataItemExplorerDataItem } from '../../../types/tables';
 import { convertXmlToJson } from '../../../utils/xmlToJson';
-import { SoapRequestBoolean, SoapRequestDateType } from '../../../types/api';
-
-interface SoapResponse {
-  'soap:Envelope': {
-    'soap:Body': {
-      GetPublicationDataWMResponse: {
-        GetPublicationDataWMResult: {
-          CLSMIPIPublicationObjectBE: DataItemExplorerDataItem[];
-        };
-      };
-    };
-  };
-}
+import { SoapRequestBoolean, SoapRequestDateType, SoapResponse } from '../../../types/api';
 
 const DataItemExplorerTable = (): JSX.Element => {
   const [responseData, setResponseData] = useState<DataItemExplorerDataItem[] | undefined>();

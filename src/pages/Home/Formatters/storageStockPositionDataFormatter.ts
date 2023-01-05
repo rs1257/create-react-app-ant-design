@@ -1,16 +1,7 @@
 import { convertToEpochTime, trimDate } from '../../../utils/dateTime';
 import dayjs from 'dayjs';
 import { GraphApiResponseData } from '../../../types/api';
-
-interface StorageStockData {
-  current: Record<string, unknown>[];
-  previous: Record<string, unknown>[];
-}
-
-enum PublicationObjectName {
-  current = 'CURRENT',
-  previous = 'PREVIOUS',
-}
+import { StorageStockPublicationObjectName, StorageStockData } from '../../../types/graphs';
 
 export const storageStockPositionGraphDataFormatter = (
   forecastSupplyDemandData?: GraphApiResponseData[]
@@ -29,11 +20,11 @@ export const storageStockPositionGraphDataFormatter = (
     const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime, 'day'));
 
     const transformedDataItem = { ...dataItem, applicableAtUkLocalTime: epochTime };
-    if (publicationObjectName === PublicationObjectName.current) {
+    if (publicationObjectName === StorageStockPublicationObjectName.current) {
       acc.current.push(transformedDataItem);
     }
 
-    if (publicationObjectName === PublicationObjectName.previous) {
+    if (publicationObjectName === StorageStockPublicationObjectName.previous) {
       acc.previous.push({ ...dataItem, applicableAtUkLocalTime: +dayjs(epochTime).add(1, 'year') });
     }
 
