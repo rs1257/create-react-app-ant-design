@@ -5,6 +5,7 @@ import { Dispatch, RefObject, SetStateAction } from 'react';
 import { InputRef } from 'antd';
 import { FilterDropdownProps } from 'antd/es/table/interface';
 import { DataIndex, DataTableDataType, DataTableHeader } from './tables';
+import { DataItemExplorerFolderList } from './data';
 
 //** Components
 
@@ -20,6 +21,20 @@ export interface CustomButtonProps {
 
 export interface IconButtonProps {
   name: 'XML' | 'CSV' | 'JSON';
+}
+
+export interface FolderItemProps {
+  id: string;
+  name: string;
+  selected?: boolean;
+  level: number;
+  handleSelect: (id: string, level: number) => void;
+  setItemSelected: (id: string) => void;
+}
+
+export interface FolderListProps {
+  handleSelect: (id: string, level: number) => void;
+  list: DataItemExplorerFolderList;
 }
 
 export interface DataTableProps {
