@@ -1,31 +1,37 @@
 import { useState } from 'react';
-import { Form, Radio, Checkbox, Button, DatePicker, RadioChangeEvent } from 'antd';
+import { Form, Radio, Checkbox, Button, RadioChangeEvent } from 'antd';
 import dayjs from 'dayjs';
 import DataItemExplorerFolderStructure from '../../components/DataItemExplorerFolderStructure';
 import IconButton from '../../components/IconButton';
 import styles from './DataItemExplorer.module.scss';
-
-const { RangePicker } = DatePicker;
+import DateRangePicker from '../../components/DateRangePicker';
+import { SoapRequestBoolean, SoapRequestDateType } from '../../types/api';
+import { getDefaultDateRange } from '../../utils/dateTime';
 
 type TApplicable = 'applicableAt' | 'applicableFor';
 
 interface IFormData {
   latestValues: boolean;
   applicable: TApplicable;
-  datePicker: [string, string];
 }
 
 const DataItemExplorer = (): JSX.Element => {
   const [applicable, setApplicable] = useState<TApplicable>('applicableAt');
-  const [form] = Form.useForm<{
-    latestValues: boolean;
-    applicable: TApplicable;
-    datePicker: [string, string];
-  }>();
+  const [dateRange, setDateRange] = useState<[string, string]>(getDefaultDateRange());
+  const [form] = Form.useForm<IFormData>();
 
-  const onFinish = (values: IFormData): void => {
+  const onFinish = ({ latestValues, applicable }: IFormData): void => {
+    //TODO if gasday (applicableFor) then change fromDate time to 4am and toDate time to 3:59am
+    const fromDate = dayjs(dateRange[0]).format('YYYY-MM-DDTHH:mm:ss');
+    const toDate = dayjs(dateRange[1]).format('YYYY-MM-DDTHH:mm:ss');
+
+    const dateType =
+      applicable === 'applicableFor' ? SoapRequestDateType.gas : SoapRequestDateType.normal;
+
+    const latestFlag = latestValues ? SoapRequestBoolean.true : SoapRequestBoolean.false;
+
     // eslint-disable-next-line no-console
-    console.log(values);
+    console.log(latestFlag, fromDate, toDate, dateType);
   };
 
   const applicableOnChange = (values: RadioChangeEvent): void => {
@@ -43,7 +49,6 @@ const DataItemExplorer = (): JSX.Element => {
         initialValues={{
           latestValues: false,
           applicable: 'applicableAt',
-          datePicker: [dayjs(), dayjs()],
         }}
       >
         <div className={styles.formControls}>
@@ -59,7 +64,11 @@ const DataItemExplorer = (): JSX.Element => {
             </Form.Item>
           </div>
           <Form.Item name="datePicker">
-            <RangePicker showTime={applicable === 'applicableAt'} />
+            <DateRangePicker
+              dateRange={dateRange}
+              setDateRange={setDateRange}
+              showTime={applicable === 'applicableAt'}
+            />
           </Form.Item>
         </div>
         <div className={styles.buttonsContainer}>

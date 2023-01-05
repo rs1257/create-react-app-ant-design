@@ -75,8 +75,9 @@ export interface DatePickerProps {
 }
 
 export interface DateRangePickerProps {
-  dateRange?: [string, string] | null;
+  dateRange: [string, string];
   setDateRange: (date: [string, string]) => void;
+  showTime?: boolean;
 }
 
 export interface ErrorBoundaryProps {

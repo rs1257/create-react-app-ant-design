@@ -14,3 +14,8 @@ export const trimDate = (
 ): dayjs.Dayjs => dayjs(dateString).startOf(trimDateTo);
 
 export const convertToEpochTime = (date: dayjs.Dayjs): number => +date;
+
+export const getDefaultDateRange = (): [string, string] => [
+  dayjs('00:00:00', 'HH:mm:ss').add(-1, 'day').format('YYYY-MM-DDHH:mm:ss'),
+  dayjs('11:59:59', 'HH:mm:ss').add(-1, 'day').format('YYYY-MM-DDHH:mm:ss'),
+];

@@ -3,7 +3,6 @@ import { DatePicker as DatePicker } from 'antd';
 import dayjs, { Dayjs } from 'dayjs';
 import { EventValue, RangeValue } from 'rc-picker/lib/interface';
 import { DateRangePickerProps } from '../../types/props';
-import styles from './DateRangePicker.module.scss';
 
 const { RangePicker } = DatePicker;
 
@@ -17,28 +16,27 @@ export const handleChange = (
   setDateRange(formatString);
 };
 
-export const getValue = (dateRange?: [string, string] | null): RangeValue<Dayjs> => {
-  if (dateRange) {
-    return [dayjs(dateRange[0]), dayjs(dateRange[1])];
-  }
-  return [
-    dayjs('00:00:00', 'HH:mm:ss').add(-1, 'day'),
-    dayjs('11:59:59', 'HH:mm:ss').add(-1, 'day'),
-  ];
-};
+export const getValue = (dateRange: [string, string]): RangeValue<Dayjs> => [
+  dayjs(dateRange[0]),
+  dayjs(dateRange[1]),
+];
 
-const DateRangePicker: FC<DateRangePickerProps> = ({ dateRange, setDateRange }): ReactElement => {
+const DateRangePicker: FC<DateRangePickerProps> = ({
+  dateRange,
+  setDateRange,
+  showTime = true,
+}): ReactElement => {
   const defaultValue = getValue(dateRange);
   const [displayValue, setDisplayValue] = useState<
     [EventValue<dayjs.Dayjs>, EventValue<dayjs.Dayjs>] | null
   >(defaultValue);
 
   return (
-    <div className={styles.dateRangePicker}>
+    <div>
       <RangePicker
         allowClear
         value={displayValue}
-        showTime={{ defaultValue: [dayjs('00:00:00', 'HH:mm:ss'), dayjs('11:59:59', 'HH:mm:ss')] }}
+        showTime={showTime}
         showNow
         onChange={(values: RangeValue<Dayjs>, formatString: [string, string]): void =>
           handleChange(values, formatString, setDisplayValue, setDateRange)
