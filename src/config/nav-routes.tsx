@@ -1,6 +1,6 @@
 import { createElement } from 'react';
 import { DatabaseOutlined, LineChartOutlined, LinkOutlined, HomeOutlined } from '@ant-design/icons';
-import { NavRoute } from '../types/props';
+import { NavRoute } from '../types/data';
 
 const navRoutes: NavRoute[] = [
   {

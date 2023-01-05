@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { CustomRouteObject } from '../types/props';
+import { CustomRouteObject } from '../types/data';
 
 const Home = lazy(() => import('../pages/Home'));
 const InstantaneousView = lazy(() => import('../pages/InstantaneousView'));
