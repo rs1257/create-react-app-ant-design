@@ -1,10 +1,7 @@
 import { act, render } from '@testing-library/react';
 import { Button } from 'antd';
+import { InteractiveLegendTestComponentProps } from '../../types/graphs';
 import useInteractiveLegend from '../useInteractiveLegend';
-
-interface InteractiveLegendTestComponentProps {
-  payload?: { value: string | number | boolean };
-}
 
 const InteractiveLegendTestComponent = ({
   payload = { value: 'one' },

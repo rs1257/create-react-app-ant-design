@@ -1,13 +1,6 @@
 import Loader from '../Loader';
 import { Alert, Card } from 'antd';
-import { ReactNode } from 'react';
-
-interface GraphCardProps {
-  title: string;
-  isLoading: boolean;
-  error: Error | null;
-  children: ReactNode | undefined;
-}
+import { GraphCardProps } from '../../types/props';
 
 const GraphCard = ({ title, isLoading, error, children }: GraphCardProps): JSX.Element => {
   return (

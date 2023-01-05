@@ -1,16 +1,15 @@
-import { ReactElement, ReactNode, FC } from 'react';
+import { ReactElement, FC } from 'react';
 import { Layout as AntLayout } from 'antd';
+import { LayoutTypeProps } from '../../types/props';
 import styles from './Layout.module.scss';
 
-type LayoutType = {
-  header?: ReactNode;
-  footer?: ReactNode;
-  sidebar?: ReactNode;
-  collapsed?: boolean;
-  page: ReactNode;
-};
-
-const Layout: FC<LayoutType> = ({ header, footer, page, sidebar, collapsed }): ReactElement => {
+const Layout: FC<LayoutTypeProps> = ({
+  header,
+  footer,
+  page,
+  sidebar,
+  collapsed,
+}): ReactElement => {
   return (
     <AntLayout className={styles.outerLayout}>
       <div>{sidebar}</div>

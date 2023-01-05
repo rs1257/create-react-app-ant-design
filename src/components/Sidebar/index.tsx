@@ -1,15 +1,11 @@
-import { Dispatch, ReactElement, SetStateAction } from 'react';
+import { ReactElement } from 'react';
 import { Layout, Menu, MenuProps } from 'antd';
 import navRoutes from '../../config/nav-routes';
 import { useNavigate } from 'react-router-dom';
+import { SidebarProps } from '../../types/props';
 import styles from './Sidebar.module.scss';
 
 const { Sider } = Layout;
-
-interface SidebarProps {
-  collapsed: boolean;
-  setCollapsed: Dispatch<SetStateAction<boolean>>;
-}
 
 const Sidebar = ({ collapsed, setCollapsed }: SidebarProps): ReactElement => {
   const navigate = useNavigate();

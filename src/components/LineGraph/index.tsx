@@ -12,20 +12,9 @@ import { getTime } from '../../utils/dateTime';
 import { roundNumber } from '../../utils/number';
 import hexToRgba from 'hex-to-rgba';
 import useInteractiveLegend from '../../hooks/useInteractiveLegend';
+import { LineGraphProps } from '../../types/props';
 import styles from './LineGraph.module.scss';
 import '../../assets/recharts.overrides.scss';
-
-interface LineGraphProps<T> {
-  data: T[];
-  xAxisDataKey: string;
-  yAxisDataKey: string;
-  xAxisLabel?: string;
-  yAxisLabel?: string;
-  labels: string[];
-  xAxisTickFormatter?: (value: string) => string;
-  tooltipLabelFormatter?: (value: string) => string;
-  dot?: boolean;
-}
 
 const numberFormatter = (value: string): string => {
   return roundNumber(value);

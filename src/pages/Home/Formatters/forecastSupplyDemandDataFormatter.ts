@@ -1,15 +1,6 @@
 import { convertToEpochTime, trimDate } from '../../../utils/dateTime';
 import { GraphApiResponseData } from '../../../types/api';
-
-export interface SupplyDemandData {
-  supply: Record<string, unknown>[];
-  demand: Record<string, unknown>[];
-}
-
-enum PublicationObjectName {
-  supply = 'Supply',
-  demand = 'Demand',
-}
+import { SupplyDemandPublicationObjectName, SupplyDemandData } from '../../../types/graphs';
 
 export const forecastSupplyDemandDataFormatter = (
   forecastSupplyDemandData?: GraphApiResponseData[]
@@ -24,11 +15,11 @@ export const forecastSupplyDemandDataFormatter = (
     const epochTime = convertToEpochTime(trimDate(applicableAtUkLocalTime, 'hour'));
 
     const transformedDataItem = { ...dataItem, applicableAtUkLocalTime: epochTime };
-    if (publicationObjectName === PublicationObjectName.supply) {
+    if (publicationObjectName === SupplyDemandPublicationObjectName.supply) {
       acc.supply.push(transformedDataItem);
     }
 
-    if (publicationObjectName === PublicationObjectName.demand) {
+    if (publicationObjectName === SupplyDemandPublicationObjectName.demand) {
       acc.demand.push(transformedDataItem);
     }
 

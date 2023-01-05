@@ -1,26 +1,11 @@
 import { useEffect, useState } from 'react';
-import {
-  SoapRequestBoolean,
-  SoapRequestDateType,
-  useDataItemExplorerRequest,
-} from '../../../api/soap/useDataItemExplorerRequest';
+import { useDataItemExplorerRequest } from '../../../api/soap/useDataItemExplorerRequest';
 import DataTable from '../../../components/DataTable';
 import { getDataItemExplorerData } from '../../DataItemExplorer/Formatters/dataItemExplorerDataFormatter';
 import Loader from '../../../components/Loader';
 import { DataItemExplorerDataItem } from '../../../types/tables';
 import { convertXmlToJson } from '../../../utils/xmlToJson';
-
-interface SoapResponse {
-  'soap:Envelope': {
-    'soap:Body': {
-      GetPublicationDataWMResponse: {
-        GetPublicationDataWMResult: {
-          CLSMIPIPublicationObjectBE: DataItemExplorerDataItem[];
-        };
-      };
-    };
-  };
-}
+import { SoapRequestBoolean, SoapRequestDateType, SoapResponse } from '../../../types/api';
 
 const DataItemExplorerTable = (): JSX.Element => {
   const [responseData, setResponseData] = useState<DataItemExplorerDataItem[] | undefined>();
