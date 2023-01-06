@@ -62,6 +62,16 @@ export interface DataItemExplorerDataItem {
   PublicationObjectData: { CLSPublicationObjectDataBE: PublicationObjectDataItem[] };
 }
 
+export enum InstantaneousFlowTableDescription {
+  zoneSupply = 'Zone Supply',
+  terminalSupply = 'Terminal Supply',
+  totalSupply = 'Total Supply',
+  categoryDemandFlow = 'Category Demand Flow',
+  interconnectorFlow = 'Interconnector Flow',
+  totalDemand = 'Total Demand',
+  actualLinepack = 'NTS Actual Linepack',
+}
+
 export interface InstantaneousFlowDataItem {
   ApplicableAt: string;
   FlowRate: number;
@@ -71,13 +81,13 @@ export interface InstantaneousFlowDataItem {
 
 export interface InstantaneousFlowDataSet {
   EDPObjectName: string;
-  EnergyDataList: InstantaneousFlowDataItem[];
+  EnergyDataList: { EDPEnergyDataBE: InstantaneousFlowDataItem[] };
 }
 export interface InstantaneousFlowDataSetCollection {
   EDPEnergyGraphTableName: string;
   ItemPosition: number;
-  EDPObjectCollection: { EDPObjectBE: InstantaneousFlowDataSet[] };
-  Description: string;
+  EDPObjectCollection: { EDPObjectBE: InstantaneousFlowDataSet[] | InstantaneousFlowDataSet };
+  Description: InstantaneousFlowTableDescription;
 }
 export interface InstantaneousFlowResponseData {
   PageName: string;

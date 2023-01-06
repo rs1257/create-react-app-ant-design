@@ -19,7 +19,6 @@ const InstantaneousView = (): JSX.Element => {
       setPageContent(<>{'An error has occurred: ' + error.message}</>);
     }
     if (data) {
-      // eslint-disable-next-line no-console
       const {
         'soap:Envelope': {
           'soap:Body': {
