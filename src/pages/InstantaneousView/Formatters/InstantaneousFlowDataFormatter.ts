@@ -11,6 +11,7 @@ import {
   InstantaneousFlowPageData,
   InstantaneousFlowTableHeaderName,
 } from '../../../types/tables';
+import dayjs from 'dayjs';
 
 export const getTableHeaderName = (
   tableName: InstantaneousFlowTableDescription
@@ -36,7 +37,7 @@ export const getColumns = (
   headerName: InstantaneousFlowTableHeaderName,
   EDPEnergyDataBE: InstantaneousFlowDataItem[]
 ): DataTableHeader[] => {
-  const columns = EDPEnergyDataBE.map(({ ApplicableAt }) => ApplicableAt);
+  const columns = EDPEnergyDataBE.map(({ ApplicableAt }) => dayjs(ApplicableAt).format('HH:mm'));
   columns.unshift(headerName);
   return columns.map((header, index) => ({ title: header, dataIndex: `${index}` }));
 };

@@ -8,6 +8,9 @@ const DataTable: FC<DataTableProps> = ({ data, headers }) => {
   const [searchText, setSearchText] = useState<string>('');
   const [searchedColumn, setSearchedColumn] = useState<string>('');
 
+  // eslint-disable-next-line no-console
+  console.log('here');
+
   const searchInput = useRef<InputRef>(null);
 
   const columns = Columns({

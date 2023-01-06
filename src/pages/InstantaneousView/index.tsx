@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useInstantaneousFlowsRequest } from '../../api/soap/useInstantaneousFlowsRequest';
+import DataTable from '../../components/DataTable';
 import Loader from '../../components/Loader';
 import { InstantaneousFlowResponseData, InstantaneousFlowSoapResponse } from '../../types/api';
 import { convertXmlToJson } from '../../utils/xmlToJson';
@@ -38,7 +39,16 @@ const InstantaneousView = (): JSX.Element => {
     }
     const formattedData = getInstantaneousFlowData(responseData);
     // eslint-disable-next-line no-console
-    formattedData;
+    setPageContent(
+      <>
+        {formattedData.data.map(({ tableName, tableData }, index) => (
+          <div style={{ margin: '50px', width: '75vw' }} key={index}>
+            <div>{tableName}</div>
+            <DataTable data={tableData.data} headers={tableData.headers} />
+          </div>
+        ))}
+      </>
+    );
   }, [responseData]);
 
   return (
