@@ -40,6 +40,7 @@ const InstantaneousView = (): JSX.Element => {
     const formattedData = getInstantaneousFlowData(responseData);
     setPageContent(
       <>
+        <span>Instantaneous View</span>
         {formattedData.data.map(({ tableName, tableData }, index) => (
           <div style={{ margin: '50px', width: '75vw' }} key={index}>
             <div>{tableName}</div>
@@ -52,7 +53,6 @@ const InstantaneousView = (): JSX.Element => {
 
   return (
     <div className={styles.container}>
-      <span> Instantaneous View</span>
       <div>{pageContent}</div>
     </div>
   );
