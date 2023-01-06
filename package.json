@@ -24,7 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "react-scripts test --coverage --watchAll",
+    "coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "lint": "npm run stylelint && npm run eslint",
     "eslint": "eslint src",
