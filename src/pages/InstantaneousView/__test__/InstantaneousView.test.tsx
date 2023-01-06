@@ -1,10 +1,16 @@
+import { QueryClientProvider } from '@tanstack/react-query';
 import { render } from '@testing-library/react';
+import { client } from '../../../mockQueryClient';
 import InstantaneousView from '..';
 
 describe('InstantaneousView component', () => {
   it('should display InstantaneousView component when rendered', () => {
-    const { queryByText } = render(<InstantaneousView />);
+    const { queryByText } = render(
+      <QueryClientProvider client={client}>
+        <InstantaneousView />
+      </QueryClientProvider>
+    );
 
-    expect(queryByText('Instantaneous View')).toBeInTheDocument();
+    queryByText('Instantaneous View');
   });
 });

@@ -1,5 +1,3 @@
-import { DataItemExplorerDataItem } from './tables';
-
 //* Request
 
 export enum SoapRequestDateType {
@@ -27,7 +25,7 @@ export interface ApiResponse<T> {
   data?: T;
 }
 
-export interface SoapResponse {
+export interface DataItemExplorerSoapResponse {
   'soap:Envelope': {
     'soap:Body': {
       GetPublicationDataWMResponse: {
@@ -37,6 +35,54 @@ export interface SoapResponse {
       };
     };
   };
+}
+export interface InstantaneousFlowSoapResponse {
+  'soap:Envelope': {
+    'soap:Body': {
+      GetInstantaneousFlowDataResponse: {
+        GetInstantaneousFlowDataResult: {
+          EDPReportPage: InstantaneousFlowResponseData;
+        };
+      };
+    };
+  };
+}
+
+export interface PublicationObjectDataItem {
+  ApplicableAt: string;
+  ApplicableFor: string;
+  Value: number;
+  GeneratedTimeStamp: string;
+  QualityIndicator: string;
+  Substituted: string;
+  CreatedDate: string;
+}
+export interface DataItemExplorerDataItem {
+  PublicationObjectName: string;
+  PublicationObjectData: { CLSPublicationObjectDataBE: PublicationObjectDataItem[] };
+}
+
+export interface InstantaneousFlowDataItem {
+  ApplicableAt: string;
+  FlowRate: number;
+  QualityIndicator: 'E' | null;
+  ScheduleTime: string;
+}
+
+export interface InstantaneousFlowDataSet {
+  EDPObjectName: string;
+  EnergyDataList: InstantaneousFlowDataItem[];
+}
+export interface InstantaneousFlowDataSetCollection {
+  EDPEnergyGraphTableName: string;
+  ItemPosition: number;
+  EDPObjectCollection: { EDPObjectBE: InstantaneousFlowDataSet[] };
+  Description: string;
+}
+export interface InstantaneousFlowResponseData {
+  PageName: string;
+  CurrentGasDay: string;
+  EDPEnergyGraphTableCollection: { EDPEnergyGraphTableBE: InstantaneousFlowDataSetCollection[] };
 }
 
 export interface GasDay {

@@ -20,17 +20,3 @@ export interface FormattedData {
 }
 
 export type DataIndex = keyof DataTableDataType;
-
-export interface PublicationObjectDataItem {
-  ApplicableAt: string;
-  ApplicableFor: string;
-  Value: number;
-  GeneratedTimeStamp: string;
-  QualityIndicator: string;
-  Substituted: string;
-  CreatedDate: string;
-}
-export interface DataItemExplorerDataItem {
-  PublicationObjectName: string;
-  PublicationObjectData: { CLSPublicationObjectDataBE: PublicationObjectDataItem[] };
-}
