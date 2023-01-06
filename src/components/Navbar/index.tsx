@@ -3,6 +3,7 @@ import { Layout, Menu, MenuProps } from 'antd';
 import navRoutes from '../../config/nav-routes';
 import { useNavigate } from 'react-router-dom';
 import styles from './Navbar.module.scss';
+import '../../assets/antD.overrides.scss';
 
 const { Header } = Layout;
 
@@ -14,7 +15,7 @@ const Navbar = (): ReactElement => {
   };
 
   return (
-    <Header className={styles.navbar}>
+    <Header className={styles.navbar} style={{ paddingInline: '0' }}>
       <Menu
         mode="horizontal"
         className={styles.menu}
