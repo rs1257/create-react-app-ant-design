@@ -38,7 +38,6 @@ const InstantaneousView = (): JSX.Element => {
       return;
     }
     const formattedData = getInstantaneousFlowData(responseData);
-    // eslint-disable-next-line no-console
     setPageContent(
       <>
         {formattedData.data.map(({ tableName, tableData }, index) => (

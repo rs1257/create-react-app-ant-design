@@ -44,11 +44,11 @@ export const getColumns = (
 
 export const getData = (dataSet: InstantaneousFlowDataSet[]): DataTableDataType[] => {
   return dataSet.map(({ EDPObjectName, EnergyDataList }) => {
-    const columnOne = { 0: EDPObjectName };
+    const columnOne = { 0: EDPObjectName, name: 'IF0' };
     const row = EnergyDataList.EDPEnergyDataBE.reduce(
       (result: DataTableDataType, item, index): DataTableDataType => {
         result[String(index + 1) as keyof DataTableDataType] = item.FlowRate;
-        // result.name = `${index}`;
+        result.name = `IF${index + 1}`;
         return result;
       },
       {}
