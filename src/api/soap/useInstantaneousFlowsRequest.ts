@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import axios, { AxiosRequestConfig } from 'axios';
 import { ApiResponse } from '../../types/api';
 
-export const headers = {
+const headers = {
   SOAPAction: 'http://www.NationalGrid.com/EDP/UI/GetInstantaneousFlowData',
   'Content-Type': 'text/xml; charset=utf-8',
 };

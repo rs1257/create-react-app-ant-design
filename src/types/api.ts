@@ -36,6 +36,7 @@ export interface DataItemExplorerSoapResponse {
     };
   };
 }
+
 export interface InstantaneousFlowSoapResponse {
   'soap:Envelope': {
     'soap:Body': {
@@ -57,6 +58,7 @@ export interface PublicationObjectDataItem {
   Substituted: string;
   CreatedDate: string;
 }
+
 export interface DataItemExplorerDataItem {
   PublicationObjectName: string;
   PublicationObjectData: { CLSPublicationObjectDataBE: PublicationObjectDataItem[] };
@@ -83,12 +85,14 @@ export interface InstantaneousFlowDataSet {
   EDPObjectName: string;
   EnergyDataList: { EDPEnergyDataBE: InstantaneousFlowDataItem[] };
 }
+
 export interface InstantaneousFlowDataSetCollection {
   EDPEnergyGraphTableName: string;
   ItemPosition: number;
   EDPObjectCollection: { EDPObjectBE: InstantaneousFlowDataSet[] | InstantaneousFlowDataSet };
   Description: InstantaneousFlowTableDescription;
 }
+
 export interface InstantaneousFlowResponseData {
   PageName: string;
   CurrentGasDay: string;
