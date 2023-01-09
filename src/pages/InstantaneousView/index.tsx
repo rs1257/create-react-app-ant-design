@@ -42,7 +42,7 @@ const InstantaneousView = (): JSX.Element => {
       <>
         <span>Instantaneous View</span>
         {formattedData.data.map(({ tableName, tableData }, index) => (
-          <div style={{ margin: '50px', width: '75vw' }} key={index}>
+          <div className={styles.tableContainer} key={index}>
             <div>{tableName}</div>
             <DataTable data={tableData.data} headers={tableData.headers} />
           </div>
