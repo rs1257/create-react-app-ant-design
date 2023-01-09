@@ -3,7 +3,7 @@ import { Layout, Menu, MenuProps } from 'antd';
 import navRoutes from '../../config/nav-routes';
 import { useNavigate } from 'react-router-dom';
 import styles from './Navbar.module.scss';
-import '../../assets/antD.overrides.scss';
+import '../../assets/antDesign.overrides.scss';
 
 const { Header } = Layout;
 
