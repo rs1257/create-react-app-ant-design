@@ -24,6 +24,23 @@ export enum StorageStockPublicationObjectName {
   previous = 'PREVIOUS',
 }
 
+export interface BarChartDataType {
+  name: string;
+  value: number;
+}
+
+export interface BarChartProps {
+  chartData: BarChartDataType[];
+  xAxisLabel?: string;
+  yAxisLabel?: string;
+  chartName?: string;
+}
+
+export enum InstantaneousFlowChartTitle {
+  latestFlows = 'Latest Available Instantaneous Flows Into the NTS',
+  latestCategoryDemandFlows = 'Latest Available Instantaneous Category Demand Flows',
+}
+
 //* Hooks
 
 export interface Lines {

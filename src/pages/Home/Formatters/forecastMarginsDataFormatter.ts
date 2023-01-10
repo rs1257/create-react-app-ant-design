@@ -1,5 +1,5 @@
 import { ForecastMarginsNoticeAndDemandResponseData } from '../../../types/api';
-import { DataTableDataType, DataTableHeader, FormattedData } from '../../../types/tables';
+import { DataTableDataType, DataTableHeader, FormattedTableData } from '../../../types/tables';
 import { getDate, getTime } from '../../../utils/dateTime';
 
 const getHeaders = (header: string[]): DataTableHeader[] =>
@@ -28,7 +28,7 @@ const getDemandForecastData = (demandData: string[]): DataTableDataType => {
 
 export const getFormattedForecastMarginsData = (
   rawData?: ForecastMarginsNoticeAndDemandResponseData
-): FormattedData => {
+): FormattedTableData => {
   if (!rawData) {
     return {
       headers: [],
