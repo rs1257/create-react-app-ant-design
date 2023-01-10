@@ -1,0 +1,43 @@
+trigger:
+  - develop
+
+pool:
+  vmImage: ubuntu-22.04
+
+stages:
+  - stage:
+    jobs:
+      - job: build
+        displayName: 'build'
+        steps:
+          - template: /.azuredevops/InstallTestAndBuild
+
+          - task: CopyFiles@2
+            displayName: 'Copy files'
+            inputs:
+              sourceFolder: './build'
+              Contents: '**/*'
+              TargetFolder: '$(Build.ArtifactStagingDirectory)'
+              cleanTargetFolder: true
+
+          - task: ArchiveFiles@2
+            displayName: 'Archive files'
+            inputs:
+              rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
+              includeRootFolder: false
+              archiveType: zip
+              archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+              replaceExistingArchive: true
+
+          - task: PublishBuildArtifacts@1
+            displayName: 'Publish Build Artifacts'
+            inputs:
+              pathtoPublish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+
+          # - task: AzureWebApp@1
+          #   displayName: 'Deploy to App Service on Azure, and restart'
+          #   inputs:
+          #     azureSubscription: '$(serviceConnection)'
+          #     appName: '$(appServiceName)'
+          #     appType: 'webApp'
+          #     package: '$(System.ArtifactsDirectory)/$(Build.BuildId).zip'

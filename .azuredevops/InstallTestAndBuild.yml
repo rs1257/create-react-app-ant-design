@@ -1,0 +1,9 @@
+steps:
+  - script: npm install
+    displayName: 'npm install'
+
+  - script: npm run coverage
+    displayName: 'npm coverage'
+
+  - script: npm run build
+    displayName: 'yarn build'
