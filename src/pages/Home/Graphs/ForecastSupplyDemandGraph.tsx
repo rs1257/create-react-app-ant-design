@@ -1,7 +1,6 @@
 import LineGraph from '../../../components/LineGraph';
-import { forecastSupplyDemandDataFormatter } from '../Formatters/forecastSupplyDemandDataFormatter';
 import useGetRequest from '../../../api/useGetRequest';
-import { GraphResponseData } from '../../../types/api';
+import { SupplyDemandResponseData } from '../../../types/api';
 import GraphCard from '../../../components/GraphCard';
 
 const ForecastSupplyDemandGraph = (): JSX.Element => {
@@ -9,14 +8,11 @@ const ForecastSupplyDemandGraph = (): JSX.Element => {
     isLoading,
     error,
     data: forecastSupplyDemandData,
-  } = useGetRequest<GraphResponseData>(
-    `${
-      process.env.REACT_APP_API || ''
-    }/api/WithinDayForecastSupplyAndDemand?currentUtcDateTimeOverride`,
-    ['demandSupplyGraph']
-  );
+  } = useGetRequest<SupplyDemandResponseData>('api/forecast-supply-demand', ['demandSupplyGraph']);
 
-  const { supply, demand } = forecastSupplyDemandDataFormatter(forecastSupplyDemandData?.data);
+  const {
+    data: { supply, demand },
+  } = forecastSupplyDemandData || { data: { supply: [], demand: [] } };
 
   return (
     <GraphCard title="Forecast Supply and Demand" isLoading={isLoading} error={error}>
