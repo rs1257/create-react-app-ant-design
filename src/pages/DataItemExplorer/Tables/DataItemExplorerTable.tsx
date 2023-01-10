@@ -3,9 +3,13 @@ import { useDataItemExplorerRequest } from '../../../api/soap/useDataItemExplore
 import DataTable from '../../../components/DataTable';
 import { getDataItemExplorerData } from '../../DataItemExplorer/Formatters/dataItemExplorerDataFormatter';
 import Loader from '../../../components/Loader';
-import { DataItemExplorerDataItem } from '../../../types/tables';
+import { DataItemExplorerDataItem } from '../../../types/api';
 import { convertXmlToJson } from '../../../utils/xmlToJson';
-import { SoapRequestBoolean, SoapRequestDateType, SoapResponse } from '../../../types/api';
+import {
+  SoapRequestBoolean,
+  SoapRequestDateType,
+  DataItemExplorerSoapResponse,
+} from '../../../types/api';
 
 const DataItemExplorerTable = (): JSX.Element => {
   const [responseData, setResponseData] = useState<DataItemExplorerDataItem[] | undefined>();
@@ -35,7 +39,7 @@ const DataItemExplorerTable = (): JSX.Element => {
             },
           },
         },
-      } = convertXmlToJson<SoapResponse>(data);
+      } = convertXmlToJson<DataItemExplorerSoapResponse>(data);
       setResponseData(CLSMIPIPublicationObjectBE);
     }
   }, [data, error, isLoading]);

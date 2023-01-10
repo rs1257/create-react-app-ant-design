@@ -1,10 +1,5 @@
-import {
-  DataTableDataType,
-  DataTableHeader,
-  FormattedData,
-  DataItemExplorerDataItem,
-  PublicationObjectDataItem,
-} from '../../../types/tables';
+import { DataTableDataType, DataTableHeader, FormattedTableData } from '../../../types/tables';
+import { DataItemExplorerDataItem, PublicationObjectDataItem } from '../../../types/api';
 
 export const getHeaders = (dataItem: PublicationObjectDataItem): DataTableHeader[] => {
   const headers = [];
@@ -22,7 +17,9 @@ export const getData = (rawData: PublicationObjectDataItem[]): DataTableDataType
   return rawData.map((row, index) => ({ ...row, name: String(index + 1) }));
 };
 
-export const getDataItemExplorerData = (rawData: DataItemExplorerDataItem[]): FormattedData[] => {
+export const getDataItemExplorerData = (
+  rawData: DataItemExplorerDataItem[]
+): FormattedTableData[] => {
   return rawData.map((dataSet) => {
     const {
       PublicationObjectData: { CLSPublicationObjectDataBE },

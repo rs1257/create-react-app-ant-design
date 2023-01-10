@@ -1,3 +1,6 @@
+import { InstantaneousFlowTableDescription } from './api';
+import { BarChartProps } from './graphs';
+
 export interface DataTableDataType {
   [key: string]: string | number;
 }
@@ -13,7 +16,7 @@ export interface DataTableMetaData {
   name?: string;
 }
 
-export interface FormattedData {
+export interface FormattedTableData {
   data: DataTableDataType[];
   headers: DataTableHeader[];
   meta: DataTableMetaData;
@@ -21,16 +24,20 @@ export interface FormattedData {
 
 export type DataIndex = keyof DataTableDataType;
 
-export interface PublicationObjectDataItem {
-  ApplicableAt: string;
-  ApplicableFor: string;
-  Value: number;
-  GeneratedTimeStamp: string;
-  QualityIndicator: string;
-  Substituted: string;
-  CreatedDate: string;
+export enum InstantaneousFlowTableHeaderName {
+  systemEntry = 'System Entry Name',
+  terminalTotals = 'Terminal Totals',
+  totalSupply = 'Total System Supply',
+  interconnectorFlow = 'Interconnector Export Totals',
+  totalDemand = 'Total Demand Data',
+  actualLinepack = 'NTS Actual Linepack',
 }
-export interface DataItemExplorerDataItem {
-  PublicationObjectName: string;
-  PublicationObjectData: { CLSPublicationObjectDataBE: PublicationObjectDataItem[] };
+
+export interface InstantaneousFlowPageData {
+  gasDay: string;
+  data: {
+    tableName: InstantaneousFlowTableDescription;
+    tableData: FormattedTableData;
+    barChartData: BarChartProps;
+  }[];
 }

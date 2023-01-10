@@ -1,11 +1,11 @@
-import { DataTableDataType, FormattedData } from '../../../types/tables';
+import { DataTableDataType, FormattedTableData } from '../../../types/tables';
 import { getDate, getTime } from '../../../utils/dateTime';
 import { LatestSupplyEntryPointResponseData, SystemEntryPointData } from '../../../types/api';
 
 export const getDateTimeFromData = (data: SystemEntryPointData[]): string =>
   data[0].applicableAtUkLocalTime;
 
-const getFormattedData = (data: SystemEntryPointData[]): DataTableDataType[] =>
+const getFormattedTableData = (data: SystemEntryPointData[]): DataTableDataType[] =>
   data.map((row) => {
     return {
       name: row.name,
@@ -15,7 +15,7 @@ const getFormattedData = (data: SystemEntryPointData[]): DataTableDataType[] =>
 
 export const getFormattedSystemEntryPointsData = (
   rawData?: LatestSupplyEntryPointResponseData
-): FormattedData => {
+): FormattedTableData => {
   if (!rawData) {
     return {
       headers: [],
@@ -29,7 +29,7 @@ export const getFormattedSystemEntryPointsData = (
       { title: 'System Entry Name', dataIndex: 'name' },
       { title: 'Flow Rate (mcm/d)', dataIndex: 'value' },
     ],
-    data: getFormattedData(data),
+    data: getFormattedTableData(data),
     meta: {
       date: getDate(getDateTimeFromData(data)),
       time: getTime(getDateTimeFromData(data)),

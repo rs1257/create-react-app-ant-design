@@ -1,5 +1,4 @@
 import { SupplyDemandData } from './graphs';
-import { DataItemExplorerDataItem } from './tables';
 
 //* Request
 
@@ -28,7 +27,7 @@ export interface ApiResponse<T> {
   data?: T;
 }
 
-export interface SoapResponse {
+export interface DataItemExplorerSoapResponse {
   'soap:Envelope': {
     'soap:Body': {
       GetPublicationDataWMResponse: {
@@ -38,6 +37,68 @@ export interface SoapResponse {
       };
     };
   };
+}
+
+export interface InstantaneousFlowSoapResponse {
+  'soap:Envelope': {
+    'soap:Body': {
+      GetInstantaneousFlowDataResponse: {
+        GetInstantaneousFlowDataResult: {
+          EDPReportPage: InstantaneousFlowResponseData;
+        };
+      };
+    };
+  };
+}
+
+export interface PublicationObjectDataItem {
+  ApplicableAt: string;
+  ApplicableFor: string;
+  Value: number;
+  GeneratedTimeStamp: string;
+  QualityIndicator: string;
+  Substituted: string;
+  CreatedDate: string;
+}
+
+export interface DataItemExplorerDataItem {
+  PublicationObjectName: string;
+  PublicationObjectData: { CLSPublicationObjectDataBE: PublicationObjectDataItem[] };
+}
+
+export enum InstantaneousFlowTableDescription {
+  zoneSupply = 'Zone Supply',
+  terminalSupply = 'Terminal Supply',
+  totalSupply = 'Total Supply',
+  categoryDemandFlow = 'Category Demand Flow',
+  interconnectorFlow = 'Interconnector Flow',
+  totalDemand = 'Total Demand',
+  actualLinepack = 'NTS Actual Linepack',
+}
+
+export interface InstantaneousFlowDataItem {
+  ApplicableAt: string;
+  FlowRate: number;
+  QualityIndicator: 'E' | null;
+  ScheduleTime: string;
+}
+
+export interface InstantaneousFlowDataSet {
+  EDPObjectName: string;
+  EnergyDataList: { EDPEnergyDataBE: InstantaneousFlowDataItem[] };
+}
+
+export interface InstantaneousFlowDataSetCollection {
+  EDPEnergyGraphTableName: string;
+  ItemPosition: number;
+  EDPObjectCollection: { EDPObjectBE: InstantaneousFlowDataSet[] | InstantaneousFlowDataSet };
+  Description: InstantaneousFlowTableDescription;
+}
+
+export interface InstantaneousFlowResponseData {
+  PageName: string;
+  CurrentGasDay: string;
+  EDPEnergyGraphTableCollection: { EDPEnergyGraphTableBE: InstantaneousFlowDataSetCollection[] };
 }
 
 export interface GasDay {
