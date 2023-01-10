@@ -2,6 +2,7 @@
   "name": "create-react-app-template",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:7071",
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
     "@tanstack/react-query": "^4.20.4",
