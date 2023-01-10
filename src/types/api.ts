@@ -1,3 +1,5 @@
+import { SupplyDemandData } from './graphs';
+
 //* Request
 
 export enum SoapRequestDateType {
@@ -161,7 +163,7 @@ export interface SystemEntryPointData {
 
 export interface DataApiResponse<T> {
   gasDay: GasDay;
-  data: T[];
+  data: T;
 }
 
 export enum DataItemExplorerNodeType {
@@ -193,5 +195,6 @@ export interface GraphApiResponseData {
   rawDisplayValue: string;
 }
 
-export type GraphResponseData = DataApiResponse<GraphApiResponseData>;
-export type LatestSupplyEntryPointResponseData = DataApiResponse<SystemEntryPointData>;
+export type GraphResponseData = DataApiResponse<GraphApiResponseData[]>;
+export type SupplyDemandResponseData = DataApiResponse<SupplyDemandData>;
+export type LatestSupplyEntryPointResponseData = DataApiResponse<SystemEntryPointData[]>;

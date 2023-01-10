@@ -22,12 +22,7 @@ describe('Forecast Supply Demand Graph component', () => {
 
   it('should display Forecast Supply Demand Graph component error message when rendered', async () => {
     const statusCode = 404;
-    server.use(
-      setupFailedNetworkRequest(
-        `${process.env.REACT_APP_API || ''}/api/WithinDayForecastSupplyAndDemand`,
-        statusCode
-      )
-    );
+    server.use(setupFailedNetworkRequest(`api/forecast-supply-demand`, statusCode));
 
     const { queryByText, container } = render(
       <QueryClientProvider client={client}>
