@@ -3,6 +3,7 @@ import { DatePicker as DatePicker } from 'antd';
 import dayjs, { Dayjs } from 'dayjs';
 import { EventValue, RangeValue } from 'rc-picker/lib/interface';
 import { DateRangePickerProps } from '../../types/props';
+import { DateRange } from '../../utils/dateTime';
 
 const { RangePicker } = DatePicker;
 
@@ -17,8 +18,8 @@ export const handleChange = (
 };
 
 export const getValue = (dateRange: [string, string]): RangeValue<Dayjs> => [
-  dayjs(dateRange[0]),
-  dayjs(dateRange[1]),
+  dayjs(dateRange[DateRange.StartDate]),
+  dayjs(dateRange[DateRange.EndDate]),
 ];
 
 const DateRangePicker: FC<DateRangePickerProps> = ({

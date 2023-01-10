@@ -19,3 +19,8 @@ export const getDefaultDateRange = (): [string, string] => [
   dayjs('00:00:00', 'HH:mm:ss').add(-1, 'day').format('YYYY-MM-DD HH:mm:ss'),
   dayjs('11:59:59', 'HH:mm:ss').add(-1, 'day').format('YYYY-MM-DD HH:mm:ss'),
 ];
+
+export enum DateRange {
+  StartDate = 0,
+  EndDate,
+}

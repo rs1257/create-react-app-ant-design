@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import IconButton from '../../../components/IconButton';
 import DateRangePicker from '../../../components/DateRangePicker';
 import { SoapRequestBoolean, SoapRequestDateType } from '../../../types/api';
-import { getDefaultDateRange } from '../../../utils/dateTime';
+import { DateRange, getDefaultDateRange } from '../../../utils/dateTime';
 import { Applicable, DataItemExplorerFormData } from '../../../types/data';
 import styles from './DataItemExplorerForm.module.scss';
 
@@ -15,8 +15,8 @@ const DataItemExplorerForm = (): JSX.Element => {
 
   const onFinish = ({ latestValues, applicable }: DataItemExplorerFormData): void => {
     //TODO if gasday (applicableFor) then change fromDate time to 4am and toDate time to 3:59am
-    const fromDate = dayjs(dateRange[0]).format('YYYY-MM-DDTHH:mm:ss');
-    const toDate = dayjs(dateRange[1]).format('YYYY-MM-DDTHH:mm:ss');
+    const fromDate = dayjs(dateRange[DateRange.StartDate]).format('YYYY-MM-DDTHH:mm:ss');
+    const toDate = dayjs(dateRange[DateRange.EndDate]).format('YYYY-MM-DDTHH:mm:ss');
 
     const dateType =
       applicable === 'applicableFor' ? SoapRequestDateType.gas : SoapRequestDateType.normal;
