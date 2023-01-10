@@ -21,8 +21,14 @@ export interface FormValues {
   request: Record<string, string>;
 }
 
-//* Config
+export type Applicable = 'applicableAt' | 'applicableFor';
 
+export interface DataItemExplorerFormData {
+  latestValues: boolean;
+  applicable: Applicable;
+}
+
+//* Config
 export interface MenuItem {
   label: string;
   key: string;
