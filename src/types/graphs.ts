@@ -24,6 +24,17 @@ export enum StorageStockPublicationObjectName {
   previous = 'PREVIOUS',
 }
 
+export interface BarChartDataType {
+  name: string;
+  value: number;
+}
+
+export interface BarChartProps {
+  data: BarChartDataType[];
+  xAxisLabel?: string;
+  yAxisLabel: string;
+}
+
 //* Hooks
 
 export interface Lines {

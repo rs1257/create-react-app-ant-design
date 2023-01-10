@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useInstantaneousFlowsRequest } from '../../api/soap/useInstantaneousFlowsRequest';
+import BarChart from '../../components/BarChart';
 import DataTable from '../../components/DataTable';
 import Loader from '../../components/Loader';
 import { InstantaneousFlowResponseData, InstantaneousFlowSoapResponse } from '../../types/api';
@@ -54,6 +55,14 @@ const InstantaneousView = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <div>{pageContent}</div>
+      <BarChart
+        data={[
+          { name: 'London', value: 10 },
+          { name: 'Brighton', value: 17 },
+        ]}
+        yAxisLabel={'mcm/day'}
+        xAxisLabel={'Location'}
+      />
     </div>
   );
 };
