@@ -7,11 +7,12 @@ import {
 import {
   DataTableDataType,
   DataTableHeader,
-  FormattedData,
+  FormattedTableData,
   InstantaneousFlowPageData,
   InstantaneousFlowTableHeaderName,
 } from '../../../types/tables';
 import dayjs from 'dayjs';
+import { BarChartProps, InstantaneousFlowChartTitle } from '../../../types/graphs';
 
 export const getTableHeaderName = (
   tableName: InstantaneousFlowTableDescription
@@ -60,7 +61,7 @@ export const getData = (dataSet: InstantaneousFlowDataSet[]): DataTableDataType[
 export const getTableData = (
   dataSet: InstantaneousFlowDataSet | InstantaneousFlowDataSet[],
   tableName: InstantaneousFlowTableDescription
-): FormattedData => {
+): FormattedTableData => {
   const headerName = getTableHeaderName(tableName);
   const data = Array.isArray(dataSet) ? dataSet : [dataSet];
   const firstRow = data[0].EnergyDataList.EDPEnergyDataBE;
@@ -68,6 +69,41 @@ export const getTableData = (
     data: getData(data),
     headers: getColumns(headerName, firstRow),
     meta: {},
+  };
+};
+
+export const getChartName = (
+  tableName: InstantaneousFlowTableDescription
+): InstantaneousFlowChartTitle => {
+  switch (tableName) {
+    case InstantaneousFlowTableDescription.zoneSupply:
+    case InstantaneousFlowTableDescription.terminalSupply:
+      return InstantaneousFlowChartTitle.latestFlows;
+    case InstantaneousFlowTableDescription.categoryDemandFlow:
+    case InstantaneousFlowTableDescription.interconnectorFlow:
+      return InstantaneousFlowChartTitle.latestCategoryDemandFlows;
+    default:
+      return InstantaneousFlowChartTitle.latestFlows;
+  }
+};
+
+export const getBarChartData = (
+  dataSet: InstantaneousFlowDataSet | InstantaneousFlowDataSet[],
+  tableName: InstantaneousFlowTableDescription
+): BarChartProps => {
+  if (Array.isArray(dataSet)) {
+    return {
+      xAxisLabel: 'Location',
+      yAxisLabel: 'mcm/day',
+      chartData: dataSet.map(({ EDPObjectName, EnergyDataList }) => ({
+        name: EDPObjectName,
+        value: EnergyDataList.EDPEnergyDataBE[EnergyDataList.EDPEnergyDataBE.length - 1].FlowRate,
+      })),
+      chartName: getChartName(tableName),
+    };
+  }
+  return {
+    chartData: [],
   };
 };
 
@@ -80,7 +116,7 @@ export const getInstantaneousFlowData = ({
       return {
         tableName: Description,
         tableData: getTableData(EDPObjectCollection.EDPObjectBE, Description),
-        hasBarChart: true,
+        barChartData: getBarChartData(EDPObjectCollection.EDPObjectBE, Description),
       };
     }
   );

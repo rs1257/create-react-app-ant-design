@@ -30,9 +30,15 @@ export interface BarChartDataType {
 }
 
 export interface BarChartProps {
-  data: BarChartDataType[];
+  chartData: BarChartDataType[];
   xAxisLabel?: string;
-  yAxisLabel: string;
+  yAxisLabel?: string;
+  chartName?: string;
+}
+
+export enum InstantaneousFlowChartTitle {
+  latestFlows = 'Latest Available Instantaneous Flows Into the NTS',
+  latestCategoryDemandFlows = 'Latest Available Instantaneous Category Demand Flows',
 }
 
 //* Hooks

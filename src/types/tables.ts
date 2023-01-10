@@ -1,4 +1,5 @@
 import { InstantaneousFlowTableDescription } from './api';
+import { BarChartProps } from './graphs';
 
 export interface DataTableDataType {
   [key: string]: string | number;
@@ -15,7 +16,7 @@ export interface DataTableMetaData {
   name?: string;
 }
 
-export interface FormattedData {
+export interface FormattedTableData {
   data: DataTableDataType[];
   headers: DataTableHeader[];
   meta: DataTableMetaData;
@@ -36,7 +37,7 @@ export interface InstantaneousFlowPageData {
   gasDay: string;
   data: {
     tableName: InstantaneousFlowTableDescription;
-    tableData: FormattedData;
-    hasBarChart: boolean;
+    tableData: FormattedTableData;
+    barChartData: BarChartProps;
   }[];
 }

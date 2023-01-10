@@ -4,10 +4,10 @@ export default `<?xml version="1.0" encoding="utf-8"?>
         <GetInstantaneousFlowDataResponse xmlns="http://www.NationalGrid.com/EDP/UI/">
             <GetInstantaneousFlowDataResult>
                 <ReportName xmlns="http://www.NationalGrid.com/EDP/BusinessEntities/Public">Instantaneous Flow Report</ReportName>
-                <PublishedTime xmlns="http://www.NationalGrid.com/EDP/BusinessEntities/Public">2023-01-06T12:23:10</PublishedTime>
+                <PublishedTime xmlns="http://www.NationalGrid.com/EDP/BusinessEntities/Public">2023-01-10T13:11:09</PublishedTime>
                 <EDPReportPage xmlns="http://www.NationalGrid.com/EDP/BusinessEntities/Public">
                     <PageName>page1</PageName>
-                    <CurrentGasDay>2023-01-06T00:00:00</CurrentGasDay>
+                    <CurrentGasDay>2023-01-10T00:00:00</CurrentGasDay>
                     <EDPEnergyGraphTableCollection>
                         <EDPEnergyGraphTableBE>
                             <EDPEnergyGraphTableName>table1</EDPEnergyGraphTableName>
@@ -17,40 +17,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>ALDBROUGH</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -58,40 +58,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>BACTON BBL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -99,40 +99,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>BACTON IC</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -140,40 +140,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>BACTON PERENCO</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -181,40 +181,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>BACTON SEAL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>7.19059</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>7.21706</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>7.19059</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>7.21706</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>7.19059</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>7.21706</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>7.19059</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>7.21406</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>7.19059</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>7.21406</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>7.19059</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>7.21406</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -222,40 +222,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>BACTON SHELL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>6.72653</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>6.71537</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>6.72653</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>6.71537</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>6.72653</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>6.71537</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>6.72653</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>6.71537</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>6.72653</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>6.71537</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>6.72653</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>6.71537</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -263,40 +263,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>EASINGTON DIMLINGTON</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>4.09247</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>4.20691</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>4.1783</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>4.20691</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>4.25727</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>4.18173</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>4.22065</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>4.18173</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>4.07416</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>4.2195</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>4.06043</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>4.16228</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -304,40 +304,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>EASINGTON LANGELED</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>63.16732</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>72.83658</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>63.05837</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>73.22957</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>62.97665</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>73.3463</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>63.33852</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>72.6965</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>63.09728</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>72.64981</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>63.31907</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>72.9572</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -345,40 +345,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>EASINGTON ROUGH ST</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>5.20485</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>8.58778</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>5.19112</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>8.66102</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>5.20485</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>8.62669</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>5.39254</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>8.63355</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>5.26665</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>8.55573</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>5.28267</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>9.14855</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -386,40 +386,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>GRAIN NTS 1</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -427,40 +427,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>GRAIN NTS 2</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>50.71458</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>50.71458</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>50.71458</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>50.71458</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>50.71458</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>50.71458</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -468,40 +468,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>HILLTOP</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -509,40 +509,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>HOLE HOUSE FARM</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>4.01952</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>4.02864</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>3.95088</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>4.0296</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>3.96576</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>4.056</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -550,40 +550,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>HOLFORD</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -591,40 +591,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>HORNSEA</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>8.53285</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>8.53285</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>8.53285</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>8.53285</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>8.53285</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>8.53285</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -632,40 +632,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>MILFORD HAVEN - DRAGON</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>10.53951</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>10.98557</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>10.23518</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>11.13498</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>9.86053</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>11.06796</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>9.73748</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>11.11191</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>9.67595</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>11.23496</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>9.62102</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>11.18003</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -673,40 +673,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>MILFORD HAVEN - SOUTH HOOK</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -714,40 +714,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>ST FERGUS MOBIL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>14.37034</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>11.64569</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>14.47196</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>11.64569</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>14.55436</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>11.64569</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>14.48844</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>11.64569</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>14.62577</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>11.64569</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>14.30167</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>11.64569</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -755,40 +755,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>ST FERGUS NSMP</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>19.72735</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>18.59794</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>19.72735</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>18.59794</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>19.72735</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>18.18924</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>19.62188</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>17.96951</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>19.62188</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>17.96951</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>19.62188</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>17.85965</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -796,40 +796,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>ST FERGUS SHELL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>27.47283</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>25.85562</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>27.51458</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>25.95889</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>27.56292</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>25.95889</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>27.56292</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>25.95889</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>27.56292</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>25.95889</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>27.54974</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>25.95889</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -837,40 +837,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>STUBLACH</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -878,40 +878,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>TEESSIDE CATS</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>22.03008</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>21.63</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>22.03008</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>21.63</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>22.03008</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>21.63</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>22.03008</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>21.63</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>22.03008</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>21.63</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>22.03008</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>21.63</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -919,40 +919,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>TEESSIDE PX</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>6.84898</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>6.28373</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>6.88524</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>6.32822</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>6.84239</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>6.44523</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>6.80613</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>6.48313</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>6.83085</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>6.49961</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>6.87205</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>6.5062</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -960,40 +960,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>THEDDLETHORPE</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1008,40 +1008,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>BACTON IPs Terminal</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1049,40 +1049,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>BACTON UKCS Terminal</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>13.91712</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>13.93243</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>13.91712</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>13.93243</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>13.91712</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>13.93243</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>13.91712</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>13.92943</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>13.91712</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>13.92943</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>13.91712</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>13.92943</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1090,40 +1090,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>BARROW TERMINAL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>5.73583</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>5.50907</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>5.63475</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>5.49852</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>5.63475</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>5.56796</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>5.56444</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>5.52665</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>5.60048</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>5.43963</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>5.57675</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>5.45897</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1131,40 +1131,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>EASINGTON TERMINAL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>72.46464</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>85.63127</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>72.42779</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>86.09751</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>72.43877</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>86.15473</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>72.95171</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>85.51179</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>72.43809</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>85.42504</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>72.66217</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>86.26802</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1172,40 +1172,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>ISLE OF GRAIN TERMINAL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>53.64334</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>53.67235</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>53.64334</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>53.674</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>53.64334</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>53.64104</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>53.64334</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>53.64104</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>53.61269</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>53.64104</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>53.61269</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>53.64104</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1213,40 +1213,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>MILFORD HAVEN TERMINAL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>61.07572</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>61.61736</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>60.95266</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>61.67119</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>60.71755</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>61.60417</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>60.44838</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>61.64812</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>60.11988</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>61.77117</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>60.21216</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>61.71624</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1254,40 +1254,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>ST FERGUS TERMINAL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>61.57052</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>56.09924</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>61.71389</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>56.20252</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>61.84463</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>55.79382</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>61.67324</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>55.57409</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>61.81057</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>55.57409</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>61.47329</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>55.46423</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1295,40 +1295,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>TEESSIDE TERMINAL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>28.87906</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>27.91373</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>28.91532</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>27.95822</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>28.87247</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>28.07523</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>28.83621</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>28.11313</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>28.86093</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>28.12961</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>28.90213</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>28.1362</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1336,40 +1336,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>THEDDLETHORPE TERMINAL</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1384,40 +1384,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>TOTAL SUPPLY</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>310.80513</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>313.70255</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>310.71854</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>314.36369</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>310.54513</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>314.09868</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>310.54951</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>313.30959</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>309.81098</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>313.24943</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>309.89235</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>313.97259</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1432,40 +1432,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>Industrial Demand Flow</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>0</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>2.23251</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>0</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>2.25123</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>0</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>2.15348</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>0</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>2.19677</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>0</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>2.1852</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>0</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>2.21366</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1473,40 +1473,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>Interconnector Export Demand Flow</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>18.32992</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>18.16314</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>18.32992</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>18.19577</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>18.32992</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>18.19577</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>18.49065</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>18.19577</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>18.40726</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>18.16797</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>18.38188</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>18.2006</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1514,40 +1514,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>LDZ Offtake Flow</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>159.42929</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>174.74023</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>158.79891</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>174.99042</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>158.53062</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>174.71162</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>159.08498</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>174.82035</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>158.79357</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>174.68245</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>159.02086</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>174.69211</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1555,40 +1555,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>Power Station Demand Flow</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>38.63879</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>33.27021</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>38.53583</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>33.22654</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>38.65138</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>33.39279</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>38.74926</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>33.40304</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>38.80568</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>33.42448</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>38.77766</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>33.22602</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1596,40 +1596,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>Storage Demand Flow</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>2.40272</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>2.40272</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>2.40272</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>2.41646</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>2.41646</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>2.43049</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1644,40 +1644,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>Bacton BBL Export</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1685,40 +1685,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>Bacton INT Export</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1726,40 +1726,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>Moffat Export</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
                                             <FlowRate>0</FlowRate>
                                             <QualityIndicator />
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1774,40 +1774,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>NTS Demand Flow</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>218.76712</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>229.13317</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>219.06655</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>228.58077</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>218.23274</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>228.75031</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>217.983</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>228.75386</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>218.46862</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>228.58635</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>218.4064</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>228.50204</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>
@@ -1822,40 +1822,40 @@ export default `<?xml version="1.0" encoding="utf-8"?>
                                     <EDPObjectName>NTS Actual Linepack</EDPObjectName>
                                     <EnergyDataList>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:12:00</ApplicableAt>
-                                            <FlowRate>286.3135</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:00:00</ApplicableAt>
+                                            <FlowRate>278.81262</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:14:00</ApplicableAt>
-                                            <FlowRate>286.3135</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:02:00</ApplicableAt>
+                                            <FlowRate>278.74659</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:16:00</ApplicableAt>
-                                            <FlowRate>286.25044</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:04:00</ApplicableAt>
+                                            <FlowRate>278.74659</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:18:00</ApplicableAt>
-                                            <FlowRate>286.25044</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:06:00</ApplicableAt>
+                                            <FlowRate>278.74659</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:20:00</ApplicableAt>
-                                            <FlowRate>286.16995</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:08:00</ApplicableAt>
+                                            <FlowRate>278.74659</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                         <EDPEnergyDataBE>
-                                            <ApplicableAt>2023-01-06T12:22:00</ApplicableAt>
-                                            <FlowRate>286.16995</FlowRate>
+                                            <ApplicableAt>2023-01-10T13:10:00</ApplicableAt>
+                                            <FlowRate>278.67566</FlowRate>
                                             <QualityIndicator>E</QualityIndicator>
-                                            <ScheduleTime>2023-01-06T12:24:00</ScheduleTime>
+                                            <ScheduleTime>2023-01-10T13:12:00</ScheduleTime>
                                         </EDPEnergyDataBE>
                                     </EnergyDataList>
                                 </EDPObjectBE>

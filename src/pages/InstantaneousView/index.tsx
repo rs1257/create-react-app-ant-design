@@ -42,12 +42,28 @@ const InstantaneousView = (): JSX.Element => {
     setPageContent(
       <>
         <span>Instantaneous View</span>
-        {formattedData.data.map(({ tableName, tableData }, index) => (
-          <div className={styles.tableContainer} key={index}>
-            <div>{tableName}</div>
-            <DataTable data={tableData.data} headers={tableData.headers} />
-          </div>
-        ))}
+        {formattedData.data.map(({ tableName, tableData, barChartData }, index) => {
+          const { data, headers } = tableData;
+          const { chartData, yAxisLabel, xAxisLabel, chartName } = barChartData;
+          return (
+            <>
+              <div className={styles.tableContainer} key={index}>
+                <div>{tableName}</div>
+                <DataTable data={data} headers={headers} />
+              </div>
+              {chartData.length && (
+                <div className={styles.chartContainer}>
+                  <BarChart
+                    chartData={chartData}
+                    yAxisLabel={yAxisLabel}
+                    xAxisLabel={xAxisLabel}
+                    chartName={chartName}
+                  />
+                </div>
+              )}
+            </>
+          );
+        })}
       </>
     );
   }, [responseData]);
@@ -55,14 +71,6 @@ const InstantaneousView = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <div>{pageContent}</div>
-      <BarChart
-        data={[
-          { name: 'London', value: 10 },
-          { name: 'Brighton', value: 17 },
-        ]}
-        yAxisLabel={'mcm/day'}
-        xAxisLabel={'Location'}
-      />
     </div>
   );
 };
